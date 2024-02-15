@@ -1,21 +1,18 @@
-# Grupo1-WORKOUT-507-STORE 
+# Grupo1-WORKOUT-507-STORE
 
-* Breve descripción de la oferta de productos o servicios ofrecidos por su sitio:
+- Breve descripción de la oferta de productos o servicios ofrecidos por su sitio:
 
 Ofreceremos una amplia gama de equipos de fitness de primera calidad, ropa deportiva y suplementos nutricionales a través de nuestro ecommerce. Desde pesas hasta accesorios, brindamos todo lo necesario para potenciar los entrenamientos.
 
-
-* Breve descripción del público al que apunta el sitio:
+- Breve descripción del público al que apunta el sitio:
 
 Nos dirigimos a entusiastas del fitness, amantes del gimnasio que buscan productos de calidad para entrenar en casa o en el gimnasio. Buscamos que nuestra audiencia aprecie la comodidad de comprar productos de alta calidad en línea.
 
-
-* Breve descripción del como ajustaremos nuestra oferta a ese público:
+- Breve descripción del como ajustaremos nuestra oferta a ese público:
 
 Adaptamos nuestra oferta para sastifacer las necesidades de aquellos que buscan conveniencia, calidad y variedad en productos de fitness. Con envíos rápidos y un proceso de compra sencillo, Con nuestra tienda Workout-507-Store hacemos que equiparse para el fitness sea fácil y accesible.
 
-
-* Breve descripción de los integrantes de este grupo:
+- Breve descripción de los integrantes de este grupo:
 
 1. Celso Rodríguez: Tengo 27 años soy Licenciado en edificaciones y actualmente finalizando la docencia media. También estoy en este curso de Desarrollo Web donde he adquirido nuevos conocimientos en el area digital. Mi pasatiempo favorito es tocar instrumentos como la guitarra, bateria y canta. Me gusta enseñar y ayudar a los demás, visitar paisajes naturales. Soy lider de jóvenes y niño. Y por ultimo no me gusta la impuntualidad.
 
@@ -27,21 +24,19 @@ Adaptamos nuestra oferta para sastifacer las necesidades de aquellos que buscan 
 
 5. Anibal Acosta: Tengo 21 años me gusta mucho hacer ejercicio llevar una vida saludable. Me gusta aprender nuevas cosas y esto de la tecnología y de las páginas web está buenisimo y al mismo tiempo algo complicado pero aprendemos poco a poco. Y finalmente puedo decir que me gusta tambien aprender ingles.
 
-
-* Listado de 5 sitios referentes.
+- Listado de 5 sitios referentes.
 
 1. Amazon (www.amazon.com):
-la escogimos por la amplia variedad de productos fitness, interfaz limpia y fácil de navegar, con funciones clave como reseñas y comparación de productos. Inspiración para diversificar nuestro catálogo y proporcionar una experiencia de usuario intuitiva.
+   la escogimos por la amplia variedad de productos fitness, interfaz limpia y fácil de navegar, con funciones clave como reseñas y comparación de productos. Inspiración para diversificar nuestro catálogo y proporcionar una experiencia de usuario intuitiva.
 
 2. AlphaGym Store (alphagym.store):
-esta la escogimos porque ofrece equipos de entrenamiento de alta calidad con un diseño moderno y atractivo. Nos inspira para destacar la calidad de nuestros productos y proporcionar una experiencia de compra atractiva con funciones como búsqueda avanzada y guías informativas.
+   esta la escogimos porque ofrece equipos de entrenamiento de alta calidad con un diseño moderno y atractivo. Nos inspira para destacar la calidad de nuestros productos y proporcionar una experiencia de compra atractiva con funciones como búsqueda avanzada y guías informativas.
 
 3. Alibaba (www.alibaba.com):
-fue elegida por ser una plataforma lider en la compra de productos a gran escala, con énfasis en detalles de productos y opciones de personalización. Nos inspira para explorar la venta a mayoristas y facilitar la comunicación directa con nuestros clientes y proveedores.
+   fue elegida por ser una plataforma lider en la compra de productos a gran escala, con énfasis en detalles de productos y opciones de personalización. Nos inspira para explorar la venta a mayoristas y facilitar la comunicación directa con nuestros clientes y proveedores.
 
 4. Fitness Factory Pty (fitnessfactorypty.com):
-La escogimos porque es especializado en equipos y accesorios fitness de alta gama, con un diseño atractivo que resalta la calidad de los productos. Inspiración para destacar la durabilidad de nuestros productos y ofrecer funciones como la de una excelente búsqueda avanzada.
+   La escogimos porque es especializado en equipos y accesorios fitness de alta gama, con un diseño atractivo que resalta la calidad de los productos. Inspiración para destacar la durabilidad de nuestros productos y ofrecer funciones como la de una excelente búsqueda avanzada.
 
 5. Decathlon (www.decathlon.com):
-Finalmente escogimos esta ultima pagina porque es conocido por su amplia gama de productos deportivos a precios accesibles. Inspiración para ofrecer opciones asequibles sin comprometer la calidad. Su interfaz sencilla y centrada en el cliente también sirve como referencia para una experiencia de compra fácil y satisfactoria.
-
+   Finalmente escogimos esta ultima pagina porque es conocido por su amplia gama de productos deportivos a precios accesibles. Inspiración para ofrecer opciones asequibles sin comprometer la calidad. Su interfaz sencilla y centrada en el cliente también sirve como referencia para una experiencia de compra fácil y satisfactoria.

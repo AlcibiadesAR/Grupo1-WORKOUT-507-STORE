@@ -1,4 +1,11 @@
-header{
+header {
+  background-color: red;
+  margin: 50px;
+  width: 100%;
+  border: 2px solid black;
+  display: flex;
+}
+/*header{
     background-color: rgb(255, 102, 0);
     padding: 10%;
     display: flex;
@@ -10,4 +17,4 @@ header{
         text-align: center;
         height: 50%;
     }
-}
+}*/
