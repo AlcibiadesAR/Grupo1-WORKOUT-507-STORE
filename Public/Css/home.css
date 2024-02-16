@@ -1,20 +1,52 @@
-header {
-  background-color: red;
-  margin: 50px;
-  width: 100%;
-  border: 2px solid black;
-  display: flex;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-/*header{
-    background-color: rgb(255, 102, 0);
-    padding: 10%;
+.container_header{
+    background-color: #00e1ff;
+    border-bottom: 2px solid #6A2C70 ;
+}
+.nav {
     display: flex;
+    flex-direction: row;
+    height: 100px;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
-@media (min-width:480px){
-    #buscador{
-        width: 90%;
-        text-align: center;
-        height: 50%;
+@media (max-width: 480px) {
+    .nav ul, .close_menu{
+        display: none;
     }
-}*/
+    .nav {
+
+    }
+    .open_menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 5%;
+    }
+    .open_menu button{
+        padding: 7px;
+    }
+    .fa-bars {
+        font-size: 20px;
+    }
+    .nav img {
+        width: 40%;
+        height: 130%;
+    }
+    .user_button button,.shopping_button button, .search_button button {
+        max-height: 50%;
+        background-color: #00e1ff;
+        border: 0;
+    }
+    .fa-user,.fa-cart-shopping,.fa-magnifying-glass {
+        font-size: 20px;
+        background-color: #00e1ff;
+        color: white;
+    }
+}
