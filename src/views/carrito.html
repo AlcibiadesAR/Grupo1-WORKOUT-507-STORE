@@ -40,6 +40,20 @@
           </article>
           <article class="description-article">
             <h3>Nombre del Producto</h3>
+            <img src="/Images/1708085110068.png" width="150px" height="150px" />
+            <p>Precio c/u: <span>$0.00</span></p>
+            <div class="box-quantity">
+              <i class="fa-light fa-plus"></i>
+              <input type="text" value="1" class="quantity-item" disabled />
+              <i class="fa-solid fa-minus"></i>
+            </div>
+            <p id="Subtotal">Subtotal: <span>$0.00</span></p>
+            <button class="button-delete" type="submit">
+              Eliminar <i class="fa-solid fa-trash"></i>
+            </button>
+          </article>
+          <article class="description-article">
+            <h3>Nombre del Producto</h3>
             <img src="/Images/1708085110086.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <div class="box-quantity">
@@ -96,17 +110,42 @@
           </article>
         </div>
       </section>
-          <div class="box-total">
-            <h2>Total</h2>
-            <p>$0.00</p>
-          </div>
-          <h2 id="payment">Metodo de pago <i class="fa-solid fa-pager"></i></h2>
-          <section class="products-payment">
-              <img src="/Images/metodo de pago.png">
+      <section class="products-payment">
+        <div class="box-total">
+          <h2>Envío</h2>
+          <p>$0.00</p>
+        </div>
+        <div class="box-Subtotal">
+          <h2>SubTotal</h2>
+          <p>$0.00</p>
+        </div>
+        <div class="box-total">
+          <h2>Total</h2>
+          <p>$0.00</p>
+        </div>
+        <h2 id="payment">Metodo de pago <i class="fa-solid fa-pager"></i></h2>
+        <img src="/Images/metodo de pago.png" />
+        <div class="information-credit">
+          <label for="opciones">Seleciona una opción</label>
+          <select name="opciones" id="opciones">
+            <option value="Visa">Visa</option>
+            <option value="MasterCard">MasterCard</option>
+            <option value="PayPal">PayPal</option>
+          </select>
+          <label for="Numero de tarjeta">Número de tarjeta</label>
+          <input type="password" name="numero de tarjeta">
+          <label for="fecha de expiración">Fecha de expiración</label>
+          <input type="date" name="fecha de expiración">
+          <label for="CVV">CVV</label>
+          <input type="password" name="CVV" >
+        </div>
+        <div class="information-credit">
+          <p>¡Serás dirigido a la página de PayPal!</p>
+        </div>
+        <div class="box-button">
+          <button class="button-pager">Pagar</button>
+        </div>
       </section>
-      <div class="box-button">
-        <button class="button-pager">Pagar</button>
-      </div>
     </main>
   </body>
 </html>

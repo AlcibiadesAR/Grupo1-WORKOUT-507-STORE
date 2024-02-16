@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/*#00e1ff*/
 body {
   font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 12px;
@@ -125,14 +124,12 @@ main {
 }
 
 #payment {
-  color: #22A699;
-  margin: 2rem;
+  margin: 3rem;
   padding-bottom: 1em;
   border-bottom: 2px solid #6A2C70;
 }
 
 #payment .fa-pager{
-  color: #22A699;
   font-size: 16px;
 }
 
@@ -145,37 +142,87 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2rem;
+  margin: 1em 3rem;
   border-top: 2px solid #6A2C70;
-  color: #22A699;
-  padding: 1em 0;
+  padding: 2em 0 1em 0;
 }
 
 .box-total p{
   color: #6A2C70;
-  font-size: 14px;
+  font-size: 16px;
 }
 
-.box-button{
+.box-Subtotal{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin: 0 3rem;
+}
+
+.box-Subtotal p{
+  color: #6A2C70;
+  font-size: 16px;
+}
+
+.products-payment .box-button{
   text-align: center;
+  margin: 0 auto;
 }
 
 .button-pager{
-  padding: 20px 8%;
+  padding: 10px 13%;
   margin: 20px 0;
   background-color: #434242;
   color: #ffff;
   border-radius: 10px;
   box-shadow: 0 0 15px #BBC3A4;
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .button-pager:hover{
   background-color: #6C22A6;
 }
+
+@media(min-width: 1024px){
+
+  .products{
+      width: 60%;
+      display: flex;
+      float: left;
+    }
+
+    .products-payment{
+      width: 35%;
+      display: flex;
+      float: left;
+      flex-direction: column;
+      color: #22A699;
+      border-radius: 10px;
+      margin: 40px 30px;
+      box-shadow: 0 0 15px 2px #BBC3A4;
+    }
+
+    .box-button{
+      width: 70%;
+    }
+
+    .information-credit{
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      margin: 0 auto;
+    }
+
+    #opciones, .information-credit label, .information-credit input{
+      margin: 5px;
+    }
+
+    .information-credit p{
+      font-size: 14px;
+    }
+}
+
+
 
 
 
