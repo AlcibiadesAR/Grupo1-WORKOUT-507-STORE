@@ -12,31 +12,74 @@ body {
 
 header{
     background-color: #00E1FF;
-    text-align: center;
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    border-bottom: 2px solid #6C22A6;
+    border-bottom: 2px solid #fff;
+    width: 100vh;
+    height: 114px;
 }
 
-nav{
-    display: flex;
-    flex-direction: column;
+.logo{
+  width: 170px;
+  height: 60px;
+  margin: 0 40px;
 }
 
-nav ul {
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
+.search-box{
+  padding: 10px;
+  background-color: #00E1FF;
+  border-bottom: #6c22a6 solid;
 }
 
-nav ul li a{
-    text-decoration: none;
-    outline: none;
-    list-style: none;
+.search{
+  padding: 7px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin: 0 20px;
+  width: 40%;
+  min-width: 200px;
+  position: relative;
 }
 
-nav ul li a span{
-    display: none;
+.placeholder{
+  font-size: 16px;
+}
+
+button{
+  padding: 7px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  position: absolute;
+  left: 203px;
+  background-color: #6c22a6;
+  color: #fff;
+}
+
+.menu-burguer{
+  position: relative;
+}
+
+.menu-burguer:hover{
+  width: 30vh;
+  height: 100vh;
+  background-color: black;
+}
+
+.fa-bars{
+  position: absolute;
+  top: -95px;
+  left: 10px;
+  font-size: 24px;
+}
+
+
+#nav-ul-1 li a i{
+  position: relative;
+  bottom: 94px;;
+  right: -220px;
+  font-size: 24px;
+  color: #fff;
+}
+
+#nav-ul-2 li a{
+  display: none;
 }
