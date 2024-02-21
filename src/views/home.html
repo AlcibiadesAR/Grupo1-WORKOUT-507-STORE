@@ -19,61 +19,56 @@
   <body>
     <header>
       <nav>
-        <img
-          class="logo"
-          src="/Images/workout507.png"
-          alt="Logo Workouts"
-        />
+        <div class="nav-bar">
+          <img class="logo" src="/Images/workout507.png" alt="Logo Workouts" />
+          <input type="checkbox" id="check">
+          <label for="check">
+            <i class="fa-solid fa-bars" id="fa-bars"></i>
+            <i class="fa fa-times" id="cancel"></i>
+          </label>
+          <div class="slider-bar">
+            <h2>Categorias</h2>
+          <ul id="nav-ul-1">
+            <li><a href="#">Equipamiento</a></li>
+            <li><a href="#">Accesorios </a></li>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Suplementos</a></li>
+            <li><a href="#">Electrónica</a></li>
+            <li><a href="#">y más...</a></li>
+          </ul>
+        </div>
+        </div>
         <div class="search-box">
           <input
             class="search"
             type="search"
+            id="search"
+            name="search"
             placeholder="Busca tus productos.."
           />
           <button><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
-        <div class="menu-burguer">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="menu-container">
-
-        </div>
-        <ul id="nav-ul-1">
+        <ul id="nav-ul-3">
           <li>
-            <a href="./login.html"><i class="fa-solid fa-circle-user"></i></a>
-          </li>
-        </ul>
-        <ul id="nav-ul-2">
-          <li>
-            <a href="./home.html"><i class="fa-solid fa-house"><span>home</span></i></a>
+            <a href="./home.html"
+              ><i class="fa-solid fa-house-circle-check"></i></a
+            >
           </li>
           <li>
-            <a href="./login.html"><i class="fa-solid fa-circle-user"><span>Inicio de sesion</span></i></a>
+            <a href="./detallesDelProducto.html"><i class="fas fa-list"></i></a>
+          </li>
+          <li>
+            <a href="./registro.html"><i class="fas fa-user"></i></a>
           </li>
           <li>
             <a href="./carrito.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+              ><i class="fa-solid fa-cart-plus"></i></a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main></main>
-    <footer>
-        <ul>
-          <li><a href="#">Contáctanos</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Soporte</a></li>
-          <li><a href="#">Redes sociales</a></li>
-        </ul>
-  
-        <div>
-          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
-    </footer>
+    <footer></footer>
   </body>
 </html>
