@@ -30,3 +30,8 @@ app.get("/carrito.html", (req, res) => {
 app.get("/registro.html", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/registro.html"));
 });
+
+// ruta para la página de registro en '/registro.html'
+app.get("/detallesDelProducto.html", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "./views/detallesDelProducto.html"));
+});

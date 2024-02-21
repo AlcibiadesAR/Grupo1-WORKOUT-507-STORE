@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+  }
+  header{
+    background-color: #00E1FF;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+h2{
+  background-color: #00E1FF;
+  font-size: 12px;
+  text-align: center; 
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.products{
+    background-color: #00E1FF;
+    padding: 10px;
+}
+.description-article{
+  background-color: #00E1FF;
+  padding: 10px;
+  font-size: 12px;
+}
+.description-article img{
+  margin-top: 15px;
+  width: 100%;
+  background-color: #fff;
+}
+.Añadir-Al-Carrito{
+  background-color: #820629;
+}
+.imagen-principal{
+  display:flex;
+  margin-top: 15px;
+  width: 100%;
+  background-color: #2fff00;
+}
+.contenedor-foto1{
+  margin:2px;
+  padding: 2px;
+  display:flex;
+  margin-top: 15px;
+  width: 100%;
+  background-color: #00E1FF;
+  justify-content: space-between; 
+}
+.contenedor-FotosRelacionadas{
+  margin:2px;
+  padding: 2px;
+  display:flex;
+  background-color: #00E1FF;
+  justify-content: space-between;
+  align-items: center;
+}
