@@ -12,8 +12,9 @@ body {
 
 header {
   background-color: #00e1ff;
-  border-bottom: 3px solid #6a2c70;
+  height: 120px;
 }
+
 
 nav .nav-bar {
   display: flex;
@@ -23,22 +24,15 @@ nav .nav-bar {
 }
 
 nav .nav-bar img {
-  text-align: center;
-  min-width: 70%;
-  max-width: 70%;
-  height: auto;
-  width: auto
-
-}
-
-nav .nav-bar i {
-  font-size: 30px;
-  color: #fff;
+  width: 250px;
+  position: absolute;
+  top: -90px;
+  left: 1px;
 }
 
 #check{
   display: none;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .slider-bar {
@@ -49,6 +43,7 @@ nav .nav-bar i {
   height: 100%;
   background-color: #fff;
   z-index: 1;
+  transition: all 1s;
 }
 
 .slider-bar h2 {
@@ -69,54 +64,58 @@ nav .nav-bar i {
   padding-left: 40px;
   list-style: none;
   text-decoration: none;
-  color: #6a2c70;
+  color: #B4B4B8;
 }
 
 #nav-ul-1 li a:hover {
-  background-color: #00e1ff;
+  background-color: #B4B4B8;
   color: #fff;
+  border-radius: 5px;
 }
 
 label #fa-bars,
 label #cancel {
-  position: absolute;
+  position: fixed;
+  margin-top: 10px;
   cursor: pointer;
 }
 
 label #fa-bars {
-  left: 50px;
-  top: 30px;
+  right: 6px;
+  top: 5px;
+  opacity: 0;
+  font-size: 30px;
+  color: #fff;
 }
 
 label #cancel {
-  z-index: 11;
-  left: 200px;
-  top: 20px;
+  right: 6px;
+  top: 10px;
   font-size: 30px;
+  opacity: 1;
+  color: #fff;
 }
 
 #check:checked  ~ .slider-bar {
   left: -250px;
   opacity: 0;
   pointer-events: none;
-
 }
 
-#check:checked  ~ label #fa-bars {
-right: 10px;
-}
-
-#check:checked  ~ label #cancel {
-  left: 195px;
+#check:checked  ~ label #cancel{
   opacity: 0;
 }
 
+#check:checked  ~ label #fa-bars{
+  opacity: 1;
+}
 
 .search-box {
   padding: 20px 10px 10px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
   background-color: #00e1ff;
 }
 
@@ -125,8 +124,8 @@ right: 10px;
   outline: none;
   border-radius: 5px;
   border: none;
-  min-width: 80%;
-  min-height: 80%;
+  min-width: 97%;
+  min-height: 97%;
   position: relative;
 }
 
@@ -135,13 +134,13 @@ button {
   color: #fff;
   padding: 6px;
   position: absolute;
-  right: 2rem;
+  right: 1em;
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 
 #nav-ul-3 {
-  background-color: #6a2c70;
+  background-color: #B4B4B8;
   padding: 5px;
   width: 100%;
   position: fixed;
@@ -162,6 +161,39 @@ nav #nav-ul-3 li {
   padding: 8px;
   border-radius: 6px;
   font-size: 20px;
+}
+
+@media(min-width: 768px){
+  #nav-ul-3 li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  #nav-ul-3{
+  background-color: #00e1ff;
+  padding: 5px;
+  width: 70%;
+  height: 10%;
+  position: fixed;
+  top: 10px;
+  right: 80px;
+  justify-content: space-around;
+  }
+
+  #nav-ul-3 li a:hover{
+    background-color: #B4B4B8;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  label #fa-bars,
+label #cancel {
+  margin: 12px 10px 0 0;
+}
+
 }
 
 /*<footer>
