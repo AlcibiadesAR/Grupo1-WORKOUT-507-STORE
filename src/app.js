@@ -12,26 +12,31 @@ const publicpath = path.resolve(__dirname, "../public");
 app.use(express.static(publicpath));
 
 // Iniciar servidor en el puerto 7000
-app.listen(7000, () => {
-  console.log("Server running on port 7000");
+const port = process.env.PORT || 7000;
+app.listen(port, function () {
+  console.log('Servidor Levantado 🎉');
 });
 
-// ruta para la página principal en '/'
+// creacion de las rutas
+
 app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/home.html"));
 });
 
-// ruta para la página de carrito en '/carrito.html'
 app.get("/carrito.html", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/carrito.html"));
 });
 
-// ruta para la página de registro en '/registro.html'
 app.get("/registro.html", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/registro.html"));
 });
 
-// ruta para la página de registro en '/registro.html'
 app.get("/detallesDelProducto.html", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/detallesDelProducto.html"));
 });
+
+app.get('/js/main.js', function(req, res) {
+  res.type('application/javascript');
+  res.sendFile(path.resolve(__dirname, '../js/main.js'));
+});
+

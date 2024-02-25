@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" , href="/Css/carrito.css" />
+    <link rel="stylesheet" type="text/css" href="/Css/carrito.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,11 +14,58 @@
       href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Charis+SIL:ital@1&family=Francois+One&family=Gabriela&family=Literata:opsz,wght@7..72,500&family=Montserrat:ital,wght@0,900;1,100&family=Open+Sans:wght@500&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <script src="/Public/js/main.js"></script>
     <title>Carrito De Compras</title>
   </head>
   <body>
+    <header>
+      <img src="/Images/workout507.ico" alt="" />
+      <div class="search-box">
+        <input type="text" placeholder="Busca lo que necesites..." />
+        <span class="fas fa-search" id="search-icon"></span>
+      </div>
+      <i class="fa-solid fa-gear"></i>
+      <div class="truck-box">
+        <i class="fa-solid fa-truck-fast"></i
+        ><span>Envío Rápido en 24 Horas</span>
+      </div>
+    </header>
+    <nav>
+      <ul class="nav1">
+        <button id="button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="box-menu">
+          <ul>
+            <li><a href="#">Equipamiento</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Electronica</a></li>
+            <li><a href="#">Suplementos</a></li>
+          </ul>
+        </div>
+        <span>Categorias</span>
+      </ul>
+      <ul class="nav2">
+        <li>
+          <a href="#"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+        </li>
+        <li>
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping"></i
+            ><span id="number">0</span></a
+          >
+        </li>
+      </ul>
+    </nav>
     <main>
-      <h1>Tu Carrito <i class="fa-solid fa-cart-shopping"></i></h1>
+      <h1>Mi Carrito <i class="fa-solid fa-cart-shopping"></i></h1>
+      <div class="main-box">
       <section class="products">
         <div class="products-item">
           <article class="description-article">
@@ -26,7 +73,7 @@
             <img src="/Images/1708085109952.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <div class="box-quantity">
-                 <i class="fa-solid fa-minus"></i>
+              <i class="fa-solid fa-minus"></i>
               <input type="text" value="1" class="quantity-item" disabled />
               <i class="fa-light fa-plus"></i>
             </div>
@@ -108,32 +155,51 @@
         </div>
       </section>
       <section class="products-payment">
+        <h2 id="Title-totales">Total de carrito</h2>
         <div class="box-total">
-          <h2>Envío</h2>
+          <h2>Subtotal</h2>
           <p>$0.00</p>
         </div>
         <div class="box-Subtotal">
-          <h2>SubTotal</h2>
+          <h2>Envio</h2>
           <p>$0.00</p>
         </div>
         <div class="box-total">
           <h2>Total</h2>
           <p>$0.00</p>
         </div>
-        <h2 id="payment">Eliga su forma de pago <i class="fa-solid fa-pager"></i></h2>
+        <h2 id="payment">
+          Elige su forma de pago <i class="fa-solid fa-pager"></i>
+        </h2>
         <div class="box-card">
           <a href="#">
-            <img id="visa" src="/Images/visa.png">
+            <img id="visa" src="/Images/visa.png" />
           </a>
           <a href="#">
-            <img id="MasterCard" src="/Images/MasterCard.png">
+            <img id="MasterCard" src="/Images/MasterCard.png" />
           </a>
           <a href="#">
-            <img id="PayPal" src="/Images/PayPal.png">
+            <img id="PayPal" src="/Images/PayPal.png" />
           </a>
-        </div>
+          <a href="#">
+            <img id="yappy" src="/Images/yappy.png" />
+          </a>
         </div>
       </section>
+    </div>
     </main>
+    <footer>
+     <ul><li><a href="#">Contactanos</a></li></ul>
+     <ul><li><a href="#">Nosotros</a></li></ul>
+     <ul><li><a href="#">Terminos y condiciones</a></li></ul>
+      <div>
+        <img src="/Images/workout507.ico" />
+      </div>
+      <ul><li><a href="#">ALL rights reserved | 2024</a></li></ul>
+      <ul><li><a href="#">soporte</a></li></ul>
+      <ul><li><a href="#">Redes Sociales
+      </a></li>
+  </ul>
+    </footer>
   </body>
 </html>
