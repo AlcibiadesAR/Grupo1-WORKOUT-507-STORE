@@ -11,10 +11,10 @@ const app = express();
 const publicpath = path.resolve(__dirname, "../public");
 app.use(express.static(publicpath));
 
-// Iniciar servidor en el puerto 7000
-const port = process.env.PORT || 7000;
+// Iniciar servidor en el puerto 3001
+const port = process.env.PORT || 3001;
 app.listen(port, function () {
-  console.log('Servidor Levantado 🎉');
+  console.log('Servidor Levantado');
 });
 
 // creacion de las rutas

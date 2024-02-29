@@ -3,7 +3,7 @@
     "express": "^4.18.2"
   },
   "name": "grupo1-workout-507-store",
-  "description": "- Breve descripción de la oferta de productos o servicios ofrecidos por su sitio:",
+  "description": "Breve descripción de la oferta de productos o servicios ofrecidos por su sitio.",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
