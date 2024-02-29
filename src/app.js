@@ -35,8 +35,3 @@ app.get("/detallesDelProducto.html", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./views/detallesDelProducto.html"));
 });
 
-app.get('/js/main.js', function(req, res) {
-  res.type('application/javascript');
-  res.sendFile(path.resolve(__dirname, '../js/main.js'));
-});
-
