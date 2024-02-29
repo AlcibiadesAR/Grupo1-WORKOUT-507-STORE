@@ -36,12 +36,9 @@ header i {
 
 header .fa-gear{
   display: none;
-}
-
-
-.fa-gear {
   cursor: pointer;
 }
+
 
 /*mi header finaliza aqui*/
 h1 {
@@ -158,7 +155,8 @@ main {
 
 .products-payment{
   background-color: #fff;
-  height: 420px;
+  width: 100%;
+
 }
 
 #payment {
@@ -173,7 +171,7 @@ main {
 
 .products-payment img {
   margin-left: 20%;
-  width: 20%;
+  width: 5%;
 }
 
 .box-total {
@@ -254,6 +252,8 @@ footer i{
     align-items: center;
     color: #fff;
   }
+
+  
 
   main {
     width: 90%;
@@ -369,10 +369,14 @@ footer i{
     transform-origin: left;
   }
 
-  .fa-gear {
-    cursor: pointer;
+  .truck-box{
+    display: block;
   }
   
+  header .fa-gear{
+    display: block;
+    cursor: pointer;
+  }
   nav .nav1 span {
     margin-top: 5px;
   }
@@ -434,14 +438,8 @@ footer i{
   }
 
   footer{
-    margin: auto 0;
-    padding-bottom: 10px;
-    background-color: #00e1ff;
-    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
   }
 
 }
