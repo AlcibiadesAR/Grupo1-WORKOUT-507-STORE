@@ -1,18 +1,18 @@
 {
-  "name": "GRUPO1-WORKOUT-507-STORE",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "grupo1-workout-507-store",
+  "description": "- Breve descripción de la oferta de productos o servicios ofrecidos por su sitio:",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2"
-  },
-  "devDependencies": {
-    "prettier": "^3.2.5"
-  }
+  "license": "ISC"
 }
