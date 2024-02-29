@@ -1,8 +1,8 @@
 {
-  "name": "grupo1-gymbros",
+  "name": "GRUPO1-WORKOUT-507-STORE",
   "version": "1.0.0",
   "description": "",
-  "main": "prueba.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/app.js"
