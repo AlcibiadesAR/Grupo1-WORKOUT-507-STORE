@@ -36,10 +36,10 @@ header {
 }
 
 .search-box input {
-  width: 89%;
-  height: 35px;
+  width: 90%;
+  height: 39px;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 1%;
   text-indent: 10px;
   font-size: 18px;
@@ -50,14 +50,14 @@ header {
 #search-icon {
   position: relative;
   left: -35px;
-  top: 6px;
+  top: 5px;
   font-size: 18px;
   color: #fff;
   cursor: pointer;
   z-index: 10;
   background-color: #a9a9a9;
-  border-radius: 50%;
-  padding: 5px;
+  border-radius: 10%;
+  padding: 10px;
 }
 
 .truck-box i,
@@ -377,14 +377,52 @@ footer i {
   display: none;
 }
 
-/*media 1024px*/
+/*media query 481px*/
+@media (min-width: 481px){
 
-@media (min-width: 1024px) {
   header {
     flex-direction: row;
     justify-content: space-around;
     height: 103px;
   }
+
+  .search-box {
+    width: 63%;
+  }
+
+  .search-box input {
+    width: 112%;
+    height: 36px;
+  }
+
+  #search-icon {
+    padding: 9px 10px 10px 10px;
+    border-radius: 5px;
+    left: -30px;
+    top: 6px
+  }
+
+  .nav1{
+     display: flex;
+     gap: 30px;
+  }
+  .nav1 #categoria{
+    display: block;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  nav .nav2 {
+    width: 25%;
+  }
+
+
+}
+
+
+/*media query 1024px*/
+
+@media (min-width: 1024px) {
 
   .truck-box i,
   .truck-box span,
@@ -398,8 +436,7 @@ footer i {
     gap: 10px;
   }
 
-  .box-menu,
-  .nav1 #categoria {
+  .box-menu {
     display: none;
   }
 
@@ -423,8 +460,9 @@ footer i {
   }
 
   #search-icon {
-    padding: 10px;
+    padding: 12px;
     left: -40px;
+    top: 4px
   }
 
   .fa-gear:hover {
@@ -457,9 +495,9 @@ footer i {
   }
 
   .products {
-    width: 60%;
+    width: 100%;
     display: flex;
-    float: left;
+    flex-wrap: nowrap;
   }
 
   .products-payment {
