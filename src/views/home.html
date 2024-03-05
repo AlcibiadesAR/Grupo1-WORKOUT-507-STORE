@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" , href="/Grupo1-GYMBROS/Public/Css/home.css" />
+    <link rel="stylesheet" type="text/css"  href="/Css/home.css" />
+    <link rel="stylesheet" type="text/css" href="/Css/carrito.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -18,24 +19,31 @@
   </head>
   <body class="body-raleway">
     <header>
-      <nav>
-        <img
-          class="logo"
-          src="/Grupo1-GYMBROS/Public/Images/workout507.png"
-          alt="Logo Workouts"
-          width="250px"
-          height="100px"
-        />
-        <div class="search-box">
-          <input
-            class="search"
-            type="search"
-            placeholder="Busca, compara y elige con confianza.."
-          />
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="menu-burguer">
-          <i class="fa-solid fa-bars"></i>
+      <img src="/Images/workout507.ico" alt="logo" />
+      <div class="search-box">
+        <input type="text" placeholder="Buscar..." />
+        <span class="fas fa-search" id="search-icon"></span>
+      </div>
+      <div class="truck-box">
+        <i class="fa-solid fa-truck-fast"></i
+        ><span>Envío Rápido en 24 Horas</span>
+      </div>
+    </header>
+    <nav>
+      <ul class="nav1">
+        <button id="button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="box-menu">
+          <ul>
+            <li><a href="#">Equipamiento</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Electronica</a></li>
+            <li><a href="#">Suplementos</a></li>
+          </ul>
         </div>
         <span id="categoria">Categorias</span>
       </ul>
@@ -48,7 +56,7 @@
           <a href="#"><i class="fa-solid fa-circle-user"></i></a>
         </li>
         <li>
-          <a href="/carrito.html">
+          <a href="#">
             <i class="fa-solid fa-cart-shopping"></i><span id="number">0</span>
           </a>
         </li>
@@ -57,17 +65,17 @@
         <div class="title-car">
           <h2>Tu Carrito</h2>
         </div>
-        <div class="description-car">
+        <div class="descriptions-car">
           <img src="/Images/1708085109952.jpg" alt="" />
           <span>$0.00</span>
           <i class="fa-solid fa-trash"></i>
         </div>
-        <div class="description-car">
+        <div class="descriptions-car">
           <img src="/Images/1708085110068.png" alt="" />
           <span>$0.00</span>
           <i class="fa-solid fa-trash"></i>
         </div>
-        <div class="description-car">
+        <div class="descriptions-car">
           <img src="/Images/1708085110086.jpg" alt="" />
           <span>$0.00</span>
           <i class="fa-solid fa-trash"></i>
@@ -76,9 +84,9 @@
           <p>Total</p>
           <span>$0.00</span>
         </div>
-        <div class="box-button-car">
-          <button class="button-car" type="submit">Ir al carrito</button>
-          <button class="button-car" type="submit">Pagar</button>
+        <div class="box-button-cars">
+          <button class="button-cars" type="submit">Ir al carrito</button>
+          <button class="button-cars" type="submit">Pagar</button>
         </div>
       </div>
     </nav>
