@@ -4,15 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
+.body-raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
   display: flex;
   flex-direction: column;
   min-height: 100%;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
-  background-image: url("https://png.pngtree.com/background/20230528/original/pngtree-gym-is-reflected-in-an-odd-light-picture-image_2773779.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+ background-color: #eaeaea;
   margin: 0;
 }
 
@@ -25,18 +27,20 @@ header {
   flex-direction: column;
   align-items: center;
   color: #fff;
+  margin-top: 5px;
 }
 
 .search-box {
   position: relative;
-  width: 98%;
+  width: 89%;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 30px;
 }
 
 .search-box input {
-  width: 90%;
+  width: 100%;
   height: 39px;
   border: none;
   border-radius: 5px;
@@ -49,20 +53,19 @@ header {
 
 #search-icon {
   position: relative;
-  left: -35px;
+  left: -40px;
   top: 5px;
   font-size: 18px;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   z-index: 10;
-  background-color: #a9a9a9;
-  border-radius: 10%;
+  background-color: #fff;
+  border-radius: 50%;
   padding: 10px;
 }
 
 .truck-box i,
 .truck-box span,
-header .fa-gear,
 nav #categoria {
   display: none;
 }
@@ -92,6 +95,17 @@ nav .nav2 {
   margin-right: 10px;
 }
 
+.fa-sun{
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.fa-moon{
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
 .nav2 #number {
   margin-left: 10px;
 }
@@ -105,6 +119,56 @@ nav ul li a {
 
 nav ul li a i:hover {
   scale: 1.3;
+}
+
+.box-car{
+  display: none;
+  position: absolute;
+  top: 220px;
+  right: 0;
+  width: 80%;
+  height: 60%;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.title-car{
+  width: 100%;
+  height: 14%;
+  background-color: #000;
+  padding-top: 10px;
+}
+
+.box-car h2{
+  text-align: center;
+  color: #fff;
+}
+
+.description-car{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+.description-car img{
+  width: 50px;
+}
+
+.box-total-car{
+  background-color: #a9a9a9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
 }
 
 button {
@@ -129,13 +193,13 @@ button > div {
 
 /*main*/
 h1 {
-  color: #fff;
+  color: #000;
   margin: 3rem 2rem 2rem 2rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
 }
 
 h1 .fa-cart-shopping {
-  color: #fff;
+  color: #000;
   font-size: 16px;
 }
 
@@ -165,15 +229,18 @@ main {
 }
 
 .products .products-item .description-article {
-  background-color: #00e1ff;
+  background-color: #a9a9a9;
   color: #fff;
   max-width: 250px;
   padding: 18px;
   margin: auto;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 0 15px #bbc3a4;
-  transition: 0.3s;
+  transition: 0.3s
+}
+
+.products .products-item .description-article:hover{
+  box-shadow: 0 0 10px #000;
 }
 
 .products .products-item .description-article img {
@@ -181,7 +248,7 @@ main {
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
-  border: 1px solid #6c22a6;
+  border: 1px solid #000;
 }
 
 .products-item .description-article:hover {
@@ -199,7 +266,7 @@ main {
 }
 
 .description-article span {
-  color: #6a2c70;
+  color: #000;
 }
 
 .description-article form {
@@ -224,7 +291,7 @@ main {
   text-align: center;
   margin: 0 auto;
   background-color: #fff;
-  border: 1px solid #6c22a6;
+  border: 1px solid #000;
   border-radius: 5px;
   padding: 3px;
 }
@@ -249,19 +316,20 @@ main {
 }
 
 .products-payment {
-  background-color: #fff;
+  background-color: #a9a9a9;
   width: 90%;
   height: 50%;
+  padding-bottom: 30px;
   margin: 0 auto;
   border-radius: 10px;
-  color: #22a699;
+  color: #fff;
   margin-bottom: 20px;
 }
 
 #payment {
   margin: 3rem;
   padding-bottom: 1em;
-  border-bottom: 2px solid #6a2c70;
+  border-bottom: 2px solid #000;
 }
 
 #payment .fa-pager {
@@ -278,12 +346,12 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 1em 3rem;
-  border-top: 2px solid #6a2c70;
+  border-top: 2px solid #000;
   padding: 2em 0 1em 0;
 }
 
 .box-total p {
-  color: #6a2c70;
+  color: #000;
   font-size: 16px;
 }
 
@@ -295,7 +363,7 @@ main {
 }
 
 .box-Subtotal p {
-  color: #6a2c70;
+  color: #000;
   font-size: 16px;
 }
 
@@ -332,8 +400,8 @@ main {
 
 footer {
   margin: auto 0;
-  padding-bottom: 10px;
-  background-color: #00e1ff;
+  padding: 5px;
+  background-color: #00e1ff ;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -347,12 +415,11 @@ ul li a {
   text-decoration: none;
   list-style: none;
   color: #fff;
-  text-transform: uppercase;
+  font-size: 16px;
 }
 
 footer li:hover {
-  padding: 8px;
-  background-color: #a9a9a9;
+  scale: 1.10;
   border-radius: 5px;
 }
 
@@ -396,10 +463,10 @@ footer i {
   }
 
   #search-icon {
-    padding: 9px 10px 10px 10px;
-    border-radius: 5px;
-    left: -30px;
-    top: 6px
+    padding: 8px;
+    border-radius: 50%;
+    left: -38px;
+    top: 5px
   }
 
   .nav1{
@@ -426,9 +493,18 @@ footer i {
 
   .truck-box i,
   .truck-box span,
-  header .fa-gear {
+  header .fa-sun {
     display: block;
     font-size: 18px;
+  }
+
+  .fa-sun{
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .fa-moon{
+    margin-top: 5px;
   }
 
   .truck-box {
@@ -460,23 +536,13 @@ footer i {
   }
 
   #search-icon {
-    padding: 12px;
+    padding: 10px; 
     left: -40px;
     top: 4px
   }
 
-  .fa-gear:hover {
-    animation: girarInfinito 2s linear infinite;
-  }
-
-  @keyframes girarInfinito {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
   nav .nav2 {
-    width: 10%;
+    width: 20%;
   }
 
   .box-menu,
