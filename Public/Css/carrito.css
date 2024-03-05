@@ -14,7 +14,9 @@
   min-height: 100%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
- background-color: #eaeaea;
+  background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
 }
 
@@ -27,7 +29,6 @@ header {
   flex-direction: column;
   align-items: center;
   color: #fff;
-  margin-top: 5px;
 }
 
 .search-box {
@@ -144,7 +145,7 @@ nav ul li a i:hover {
   color: #fff;
 }
 
-.description-car{
+.descriptions-car{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -157,7 +158,7 @@ nav ul li a i:hover {
   margin-top: 2px;
 }
 
-.description-car img{
+.descriptions-car img{
   width: 50px;
 }
 
@@ -193,9 +194,9 @@ button > div {
 
 /*main*/
 h1 {
-  color: #000;
+  color: #fff;
   margin: 3rem 2rem 2rem 2rem;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 
 h1 .fa-cart-shopping {
@@ -208,19 +209,19 @@ main {
   margin: 0 auto;
 }
 
-.main-box {
+.box-main {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
 }
 
-.products {
+.product {
   padding: 10px;
   margin: 20px auto;
   display: flex;
 }
 
-.products .products-item {
+.product .product-item {
   margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -228,8 +229,8 @@ main {
   flex-grow: 1;
 }
 
-.products .products-item .description-article {
-  background-color: #a9a9a9;
+.product .product-item .descriptions-article {
+  background-color: #00e1ff;
   color: #fff;
   max-width: 250px;
   padding: 18px;
@@ -239,11 +240,11 @@ main {
   transition: 0.3s
 }
 
-.products .products-item .description-article:hover{
+.product .product-item .descriptions-article:hover{
   box-shadow: 0 0 10px #000;
 }
 
-.products .products-item .description-article img {
+.product .product-item .descriptions-article img {
   margin-top: 15px;
   width: 100%;
   background-color: #fff;
@@ -251,42 +252,42 @@ main {
   border: 1px solid #000;
 }
 
-.products-item .description-article:hover {
+.product-item .descriptions-article:hover {
   scale: 1.05;
   box-shadow: 0 0 15px #000;
 }
 
-.description-article h3 {
+.descriptions-article h3 {
   text-transform: uppercase;
 }
 
-.description-article p {
+.descriptions-article p {
   margin-top: 10px;
   font-size: 16px;
 }
 
-.description-article span {
+.descriptions-article span {
   color: #000;
 }
 
-.description-article form {
+.descriptions-article form {
   margin-top: 10px;
 }
 
-.box-quantity {
+.box-quantitys {
   display: flex;
   padding: 5px;
   margin: 10px 0;
 }
 
-.box-quantity .fa-plus,
+.box-quantitys .fa-plus,
 .fa-minus {
   font-size: 24px;
   cursor: pointer;
   padding: 0 12px;
 }
 
-.box-quantity .quantity-item {
+.box-quantitys .quantitys-item {
   width: 50%;
   text-align: center;
   margin: 0 auto;
@@ -315,8 +316,8 @@ main {
   cursor: pointer;
 }
 
-.products-payment {
-  background-color: #a9a9a9;
+.product-payment {
+  background-color: #00e1ff;
   width: 90%;
   height: 50%;
   padding-bottom: 30px;
@@ -329,14 +330,14 @@ main {
 #payment {
   margin: 3rem;
   padding-bottom: 1em;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #fff;
 }
 
 #payment .fa-pager {
   font-size: 16px;
 }
 
-.products-payment img {
+.product-payment img {
   margin-left: 20%;
   width: 5%;
 }
@@ -346,7 +347,7 @@ main {
   justify-content: space-between;
   align-items: center;
   margin: 1em 3rem;
-  border-top: 2px solid #000;
+  border-top: 2px solid #fff;
   padding: 2em 0 1em 0;
 }
 
@@ -521,7 +522,7 @@ footer i {
     margin: 0 auto;
   }
 
-  .main-box {
+  .box-main {
     display: flex;
     flex-wrap: nowrap;
   }
@@ -560,14 +561,14 @@ footer i {
     padding: 4px;
   }
 
-  .products {
+  .product {
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
   }
 
-  .products-payment {
-    width: 35%;
+  .product-payment {
+    width: 38%;
     display: flex;
     flex-direction: column;
     margin: 40px 30px;

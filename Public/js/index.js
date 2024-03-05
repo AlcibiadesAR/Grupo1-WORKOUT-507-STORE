@@ -11,27 +11,27 @@ let iconhabilitado = false;
 icon.addEventListener('click', function () {
     iconhabilitado = !iconhabilitado;
     if (iconhabilitado) {
-        lightMode(body, header, footer)
+        lightMode(body, header, footer,icon)
     } else {
         darkMode(body, header, footer, icon, h1,  shoppingIcon)
     }
 })
 
-function lightMode(body, header, footer){
-    body.style.backgroundColor = '#eaeaea'
+function lightMode(body, header, footer,icon){
+    body.style.backgroundImage = 'url(https://png.pngtree.com/background/20230519/original/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg)'
+    body.style.backgroundRepeat = 'no repeat'
+    body.style.backgroundSize = 'cover'
     header.style.backgroundColor = '#00e1ff'
     footer.style.backgroundColor = '#00e1ff'
-    h1.style.borderBottom = '2px solid #000'
-    h1.style.color = '#000';
     icon.classList.remove('fa-moon');
     icon.classList.add('fa-sun');
-    shoppingIcon.style.color = '#000';
 }
 
 function darkMode(body, header, footer, icon, h1,  shoppingIcon){
+    body.style.backgroundImage = 'none'
     body.style.backgroundColor = '#000';
-    header.style.backgroundColor = '#000';
-    footer.style.backgroundColor = '#000';
+    header.style.backgroundColor = '#00e1ff';
+    footer.style.backgroundColor = '#00e1ff';
     footer.style.borderTop = '2px solid #a9a9a9';
     icon.classList.remove('fa-sun');
     icon.classList.add('fa-moon');
@@ -40,20 +40,93 @@ function darkMode(body, header, footer, icon, h1,  shoppingIcon){
     shoppingIcon.style.color = '#fff';
 }
 
-/*api*/
+/*productos*/
 let products = [
     {
         id: "1",
-        name: "Pesa Rusa",
-        precio: 20000
+        name: "Juego de Mancuernas",
+        precio: 50.99,
+        Image: '../Images/juego_de_mancuernas.webp',
+        stock: 5
     },
     {
         id: "2",
-        name: "Mancuernas",
-        precio: 30000
+        name: "Mancuernas par De 5Lbs",
+        precio: 25.99,
+        Image: '../Images/par_de_mancuernas.jpg',
+        stock: 10
+    },
+    {
+        id: "3",
+        name: "Bicicleta estatica RALI",
+        precio: 315.00,
+        Image: '../Images/bici_estatica_rali.jpg',
+        stock: 5
+    },
+    {
+        id: "4",
+        name: "Banco De Mancuernas",
+        precio: 159.99,
+        Image: '../Images/banco_de_mancuernas.jpg',
+        stock: 5
+    },
+    {
+        id: "5",
+        name: "Barra Recta De 1,5m De Largo",
+        precio: 25.99,
+        Image: '../Images/barra_recta.jpg',
+        stock: 10
+    }, {
+        id: "6",
+        name: "Guantes De Boexeo Everlast Classic",
+        precio: 49.99,
+        Image: '../Images/guantes_everlast.jpg',
+        stock: 8
+    },
+    {
+        id: "7",
+        name: "Cuerda Para Saltar Everlast",
+        precio: 9.99,
+        Image: '../Images/cuerda_para_saltar.jpg',
+        stock: 12
+    },
+    {
+        id: "8",
+        name: "Saco De Boexeo Everlast",
+        precio: 899.95,
+        Image: '../Images/saco_de_boxeo.jpg',
+        stock: 5
+    },
+    {
+        id: "9",
+        name: "Pera De Boxeo Everlast",
+        precio: 34.95,
+        Image: '../Images/pera_de_boxeo.jpg',
+        stock: 8
+    },
+    {
+        id: "10",
+        name: "Maquinaria De Abdominales",
+        precio: 269.99,
+        Image: '../Images/maquina_abdominales.jpg',
+        stock: 6
+    },
+    {
+        id: "11",
+        name: "Maquina Prensa De Hombro",
+        precio: 2100.00,
+        Image: '../Images/prensa_de_hombro.jpg',
+        stock: 6
+    },
+    {
+        id: "12",
+        name: "Banco De Pesas Negro",
+        precio: 159.99,
+        Image: '../Images/banco_de_pesas.jpg',
+        stock: 6
     }
-
 ]
 
 /*aumentar, disminuir y eliminar */
+
 
