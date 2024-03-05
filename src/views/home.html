@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" , href="/Grupo1-GYMBROS/Public/Css/home.css" />
+    <link rel="stylesheet" type="text/css" , href="/Grupo1-WORKOUT-507-STORE/Public/Css/home.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -21,7 +21,7 @@
       <nav>
         <img
           class="logo"
-          src="/Grupo1-GYMBROS/Public/Images/workout507.png"
+          src="/Grupo1-WORKOUT-507-STORE/Public/Images/workout507.png"
           alt="Logo Workouts"
           width="250px"
           height="100px"
@@ -76,45 +76,32 @@
       </nav>
     </header>
     <main>
-      <section class="carrusel">
-        <h2 class="titulo">slider automatico</h2>
-        <div class="slider-box">
-        <ul>  
-          <li>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" alt="">
-            <div class="texto">
-            <h2>imagen 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit at reprehenderit doloremque facere corrupti unde eum sapiente nostrum repellat aspernatur velit, esse vel sequi maxime voluptatibus amet quibusdam blanditiis!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" alt="">
-          <div class="texto">
-          <h2>imagen 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit at reprehenderit doloremque facere corrupti unde eum sapiente nostrum repellat aspernatur velit, esse vel sequi maxime voluptatibus amet quibusdam blanditiis!
-            </p>
-          </div>
-            </li>
-            <li>
-              <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" alt="">
-              <div class="texto">
-              <h2>imagen 1</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit at reprehenderit doloremque facere corrupti unde eum sapiente nostrum repellat aspernatur velit, esse vel sequi maxime voluptatibus amet quibusdam blanditiis!
-                </p>
-              </div>
-              </li>
-        </ul>  
+      <section id="gallery">
+        <div class="gallery-container">
+            <figure class="gallery-item">
+                <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/banco_de_mancuernas.jpg" alt="Imagen 1">
+                <figcaption>Descripción de la imagen 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/bici_estatica_rali.jpg" alt="Imagen 2">
+                <figcaption>Descripción de la imagen 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/MasterCard.png" alt="Imagen 3">
+                <figcaption>Descripción de la imagen 3</figcaption>
+            </figure>
+            <!-- ... otras imágenes ... -->
         </div>
-      </section>
+        <nav class="gallery-navigation">
+            <button class="nav-button prev-button">Anterior</button>
+            <button class="nav-button next-button">Siguiente</button>
+        </nav>
+    </section>
       <section class="products">
         <div class="products-item">
           <article class="description-article">
             <h3>Juego De Mancuernas</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/juego_de_mancuernas.webp" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/juego_de_mancuernas.webp" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -126,7 +113,7 @@
           </article>
           <article class="description-article">
             <h3>Mancuernas par De 5Lbs</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/par_de_mancuernas.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/par_de_mancuernas.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -138,7 +125,7 @@
           </article>
           <article class="description-article">
             <h3>Bicicleta estatica RALI</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/bici_estatica_rali.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/bici_estatica_rali.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -150,7 +137,7 @@
           </article>
           <article class="description-article">
             <h3>Banco De Mancuernas</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/banco_de_mancuernas.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -162,7 +149,7 @@
           </article>
           <article class="description-article">
             <h3>Barra Recta De 1,5m De Largo</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/barra_recta.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/barra_recta.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span><span><span>Añadir al carrito</span></span></span>
@@ -175,7 +162,7 @@
           </article>
           <article class="description-article">
             <h3>Guantes De Boexeo Everlast Classic</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/guantes_everlast.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/guantes_everlast.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -187,7 +174,7 @@
           </article>
           <article class="description-article">
             <h3>Cuerda Para Saltar Everlast</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/cuerda_para_saltar.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/cuerda_para_saltar.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -199,7 +186,7 @@
           </article>
           <article class="description-article">
             <h3>Saco De Boexeo Everlast</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/saco_de_boxeo.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/saco_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -211,7 +198,7 @@
           </article>
           <article class="description-article">
             <h3>Pera De Boxeo Everlast</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/pera_de_boxeo.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/pera_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -223,7 +210,7 @@
           </article>
           <article class="description-article">
             <h3>Maquinaria De Abdominales</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/maquina_abdominales.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/maquina_abdominales.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -235,7 +222,7 @@
           </article>
           <article class="description-article">
             <h3>Maquina Prensa De Hombro</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/prensa_de_hombro.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/prensa_de_hombro.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -247,7 +234,7 @@
           </article>
           <article class="description-article">
             <h3>Banco De Pesas Negro</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_pesas.jpg" width="150px" height="150px" />
+            <img src="/Grupo1-WORKOUT-507-STORE/Public/Images/banco_de_pesas.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
