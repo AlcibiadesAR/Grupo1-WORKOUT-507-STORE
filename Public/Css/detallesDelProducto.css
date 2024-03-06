@@ -23,19 +23,18 @@ header {
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  text-align: center;
+  
 }
 
 header i {
   font-size: 30px;
-}
 
+}
 .box-main{
   display: flex;
   justify-content: left;
   align-items: center;
   flex-direction: row;
-  text-align: center;
 }
 .product0{
   width: 65%;
@@ -50,16 +49,16 @@ header i {
   width: 100px;
   background-color: #00e1ff;
   height: 650px;
-  border: 2px solid #c36425;
+  border: 2px solid white;
 }
 h3{
-  color:  #c36425;
+  color:  white;
   text-align: center;
   margin-top:20px;
   margin-left:20px;
   font-size: 30px;
-}
 
+}
 /*mi header finaliza aqui*/
 h1 {
   color: #fff;
@@ -73,11 +72,10 @@ main {
   color: white;
   text-align: center;
   font-size: 24px;
-  
 }
 .contenido{
-  width: 80%;
-  height: 80%;
+  width: 97%;
+  height: 95%;
   margin: 40px ;
   display: flex;
   flex-wrap: wrap;
@@ -91,17 +89,17 @@ main {
   border: 5px solid white;
   border-radius: 10px;
   box-shadow: 0 0 15px #bbc3a4;
-  transition: 0.3s;
+  transition: 0.3s; 
 }
 h2{
-  color:  #c36425;
+  color:  white;
   text-align: center;
   margin-top:20px;
   margin-left:20px;
   font-size: 30px;
 }
 p{
-  color:  #c36425;
+  color:  white;
   text-align: center;
   margin-top:30px;
   margin-left:30px;
@@ -117,15 +115,18 @@ p{
   gap: 20px;
   flex-grow: 1;
 }
+#img-1, #img-2, #img-3, #img-4{
+  width: 170px;
+}
 p{
   text-align: justify;
 
 }
 .description-article0 img{
   margin: 0;
-  width: 80%;
+  width: 70%;
   height: 80%;
-  border: 5px solid #165b32;
+  border: 5px solid #465b16;
   border-radius: 10px;
   box-shadow: 0 0 15px #bbc3a4;
   transition: 0.3s;
@@ -184,18 +185,16 @@ p{
 }
 
 .box-quantity .quantity-item {
-  width: 50%;
-  margin-left: 12px;
+  width: 30%;
+  margin-left: 40px;
   background-color: #fff;
-  border: 1px solid #6c22a6;
+  border: 3px solid #6c22a6;
   border-radius: 5px;
   padding: 3px;
+  text-align: center;
 
 }
-h3{
-  text-align: center;
-  font-size: 30px;
-}
+
 .button-delete {
   background-color: #1a8453;
   padding: 5px;
@@ -204,7 +203,7 @@ h3{
   color: #ffff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   text-align: center;
   cursor: pointer;
 }
