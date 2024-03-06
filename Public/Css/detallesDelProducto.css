@@ -243,7 +243,9 @@ p{
     margin: 0 2em;
     width: 65%;
   }
-
+#yappy{
+  width: 35%;
+}
   .box-card img:hover {
     scale: 1.05;
   }
