@@ -153,7 +153,7 @@ nav ul li a i:hover {
   justify-content: space-between;
   align-items: center;
   gap: 5px;
-  background-color: #fff;
+  background-color: #eaeaea;
   color: #000;
   font-size: 14px;
   font-weight: bold;
@@ -172,12 +172,15 @@ nav ul li a i:hover {
   color: #000;
   padding: 10px;
   font-size: 14px;
-  border-top: 2px solid #000;
+  border-top: 2px solid #fff;
+  background-color: #eaeaea;
 }
 
 .box-button-cars{
  display: flex;
  flex-direction: row;
+ background-color: #eaeaea;
+ padding-bottom: 20px;
 }
 
 .button-cars{
@@ -599,9 +602,9 @@ footer i {
   }
 
   .box-car {
-    width: 22%;
+    width: 24%;
     top: 153px;
-    height: 54%;
+    height: 68%;
   }
 
   main {

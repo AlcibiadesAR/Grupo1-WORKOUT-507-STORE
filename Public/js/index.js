@@ -171,7 +171,7 @@ function obtenerLocalStorage(productId) {
   }
 }
 
-obtenerLocalStorage("20");
+obtenerLocalStorage("2");
 
 /*aumentar, disminuir y eliminar */
 
