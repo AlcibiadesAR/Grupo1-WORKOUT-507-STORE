@@ -44,7 +44,7 @@
     transform: translateX(-50%);
 }
 
-.input-field {
+.input-box {
     background-color: #515966;
     margin: 15px 0;
     border-radius: 3px;
@@ -67,7 +67,7 @@ input::placeholder {
     color: #FFFFFF;
 }
 
-.input-field i {
+.input-box i {
     margin-left: 15px;
     color: #00ffff;
 }
@@ -83,13 +83,13 @@ form p a {
     margin-left: 5px;
 }
 
-.btn-field {
+.btn-wrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.btn-field button {
+.btn-wrapper button {
     flex-basis: 48%;
     font-size: 16px;
     background-color: #00ffff;
@@ -102,11 +102,11 @@ form p a {
     transition: background 1s;
 }
 
-.input-group {
+.input-container {
     height: 300px;
 }
 
-.btn-field button.disable {
+.btn-wrapper button.disable {
     background-color: #EAEAEA;
     color: #2C2F35;
 }

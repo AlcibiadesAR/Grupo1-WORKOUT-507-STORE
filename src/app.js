@@ -8,7 +8,7 @@ const path = require("path");
 const app = express();
 
 // Directorio para archivos como imágenes y estilos
-const publicpath = path.resolve(__dirname, "../public");
+const publicpath = path.resolve(__dirname, "..");
 app.use(express.static(publicpath));
 
 // Iniciar servidor en el puerto 3001

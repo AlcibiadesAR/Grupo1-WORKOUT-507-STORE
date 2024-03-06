@@ -176,14 +176,14 @@ nav ul li a i:hover {
   background-color: #eaeaea;
 }
 
-.box-button-cars{
- display: flex;
- flex-direction: row;
- background-color: #eaeaea;
- padding-bottom: 20px;
+.box-button-cars {
+  display: flex;
+  flex-direction: row;
+  background-color: #eaeaea;
+  padding-bottom: 20px;
 }
 
-.button-cars{
+.button-cars {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,7 +321,7 @@ main {
   padding: 0 14px 10px 14px;
 }
 
-.box-quantitys .fa-minus{
+.box-quantitys .fa-minus {
   font-size: 18px;
   padding: 15px 14px 0 14px;
 }
@@ -336,7 +336,7 @@ main {
   padding: 3px;
 }
 
-#Subtotal {
+.subtotal {
   margin-bottom: 10px;
 }
 
@@ -550,7 +550,7 @@ footer i {
     top: 153px;
     width: 60%;
   }
-  
+
   .logo-card {
     width: 80%;
     flex-direction: row;
@@ -568,9 +568,9 @@ footer i {
     width: 18%;
   }
 
-.box-car{
-  width: 40%;
-}
+  .box-car {
+    width: 40%;
+  }
 }
 
 /*media query 1024px*/
