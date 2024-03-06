@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/Css/carrito.css" />
+    <link rel="stylesheet" type="text/css" href="../Public/Css/carrito.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -11,19 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Charis+SIL:ital@1&family=Francois+One&family=Gabriela&family=Literata:opsz,wght@7..72,500&family=Montserrat:ital,wght@0,900;1,100&family=Open+Sans:wght@500&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@500&family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
     <title>Carrito De Compras</title>
   </head>
-  <body>
+  <body class="body-raleway">
     <header>
-      <img src="/Images/workout507.ico" alt="" />
+      <img src="/Images/workout507.ico" alt="logo" />
       <div class="search-box">
         <input type="text" placeholder="Buscar..." />
         <span class="fas fa-search" id="search-icon"></span>
       </div>
-      <i class="fa-solid fa-gear"></i>
       <div class="truck-box">
         <i class="fa-solid fa-truck-fast"></i
         ><span>Envío Rápido en 24 Horas</span>
@@ -48,8 +47,9 @@
         <span id="categoria">Categorias</span>
       </ul>
       <ul class="nav2">
+        <i class="fa-solid fa-sun" id="fa-sun"></i>
         <li>
-          <a href="#"><i class="fa-solid fa-house"></i></a>
+          <a href="/"><i class="fa-solid fa-house"></i></a>
         </li>
         <li>
           <a href="#"><i class="fa-solid fa-circle-user"></i></a>
@@ -62,11 +62,15 @@
       </ul>
     </nav>
     <main>
-      <h1>Mi Carrito <i class="fa-solid fa-cart-shopping"></i></h1>
-      <div class="main-box">
-        <section class="products">
-          <div class="products-item">
-            <article class="description-article">
+      <h1>Tu Carrito <i class="fa-solid fa-cart-shopping"></i></h1>
+      <div class="box-main">
+        <div id="mensajeCarritoVacio">
+          <img src="/Images/carritovacio.png.png" alt="" />
+          <h3>Tu carrito está vacío</h3>
+        </div>
+        <section class="product">
+          <div class="product-item">
+            <article class="descriptions-article">
               <h3>Nombre del Producto</h3>
               <img
                 src="/Images/1708085109952.jpg"
@@ -74,17 +78,17 @@
                 height="150px"
               />
               <p>Precio c/u:<span>$0.00</span></p>
-              <div class="box-quantity">
-                <i class="fa-solid fa-minus"></i>
-                <input type="text" value="1" class="quantity-item" disabled />
+              <div class="box-quantitys">
+                <i class="fa-solid fa-minus fa-xs"></i>
+                <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
               <p id="Subtotal">Subtotal: <span>$0.00</span></p>
-              <button class="button-delete" type="submit">
+              <button class="button-delete" type="button">
                 Eliminar <i class="fa-solid fa-trash"></i>
               </button>
             </article>
-            <article class="description-article">
+            <article class="descriptions-article">
               <h3>Nombre del Producto</h3>
               <img
                 src="/Images/1708085110068.png"
@@ -92,17 +96,17 @@
                 height="150px"
               />
               <p>Precio c/u: <span>$0.00</span></p>
-              <div class="box-quantity">
-                <i class="fa-solid fa-minus"></i>
-                <input type="text" value="1" class="quantity-item" disabled />
+              <div class="box-quantitys">
+                <i class="fa-solid fa-minus fa-xs"></i>
+                <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
               <p id="Subtotal">Subtotal: <span>$0.00</span></p>
-              <button class="button-delete" type="submit">
+              <button class="button-delete" type="button">
                 Eliminar <i class="fa-solid fa-trash"></i>
               </button>
             </article>
-            <article class="description-article">
+            <article class="descriptions-article">
               <h3>Nombre del Producto</h3>
               <img
                 src="/Images/1708085110086.jpg"
@@ -110,17 +114,17 @@
                 height="150px"
               />
               <p>Precio c/u: <span>$0.00</span></p>
-              <div class="box-quantity">
-                <i class="fa-solid fa-minus"></i>
-                <input type="text" value="1" class="quantity-item" disabled />
+              <div class="box-quantitys">
+                <i class="fa-solid fa-minus fa-xs"></i>
+                <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
               <p id="Subtotal">Subtotal: <span>$0.00</span></p>
-              <button class="button-delete" type="submit">
+              <button class="button-delete" type="button">
                 Eliminar <i class="fa-solid fa-trash"></i>
               </button>
             </article>
-            <article class="description-article">
+            <article class="descriptions-article">
               <h3>Nombre del Producto</h3>
               <img
                 src="/Images/1708085109993.jpg"
@@ -128,17 +132,17 @@
                 height="150px"
               />
               <p>Precio c/u: <span>$0.00</span></p>
-              <div class="box-quantity">
-                <i class="fa-solid fa-minus"></i>
-                <input type="text" value="1" class="quantity-item" disabled />
+              <div class="box-quantitys">
+                <i class="fa-solid fa-minus fa-xs"></i>
+                <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
               <p id="Subtotal">Subtotal: <span>$0.00</span></p>
-              <button class="button-delete" type="submit">
+              <button class="button-delete" type="button">
                 Eliminar <i class="fa-solid fa-trash"></i>
               </button>
             </article>
-            <article class="description-article">
+            <article class="descriptions-article">
               <h3>Nombre del Producto</h3>
               <img
                 src="/Images/1708085110049.jpg"
@@ -146,17 +150,17 @@
                 height="150px"
               />
               <p>Precio c/u: <span>$0.00</span></p>
-              <div class="box-quantity">
-                <i class="fa-solid fa-minus"></i>
-                <input type="text" value="1" class="quantity-item" disabled />
+              <div class="box-quantitys">
+                <i class="fa-solid fa-minus fa-xs"></i>
+                <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
               <p id="Subtotal">Subtotal: <span>$0.00</span></p>
-              <button class="button-delete" type="submit">
+              <button class="button-delete" type="button">
                 Eliminar <i class="fa-solid fa-trash"></i>
               </button>
             </article>
-            <article class="description-article">
+            <article class="descriptions-article">
               <h3>Nombre del Producto</h3>
               <img
                 src="/Images/1708085110008.jpg"
@@ -164,19 +168,19 @@
                 height="150px"
               />
               <p>Precio c/u: <span>$0.00</span></p>
-              <div class="box-quantity">
-                <i class="fa-solid fa-minus"></i>
-                <input type="text" value="1" class="quantity-item" disabled />
+              <div class="box-quantitys">
+                <i class="fa-solid fa-minus fa-xs"></i>
+                <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
               <p id="Subtotal">Subtotal: <span>$0.00</span></p>
-              <button class="button-delete" type="submit">
+              <button class="button-delete" type="button">
                 Eliminar <i class="fa-solid fa-trash"></i>
               </button>
             </article>
           </div>
         </section>
-        <section class="products-payment">
+        <section class="product-payment">
           <h2 id="Title-totales">Total de carrito</h2>
           <div class="box-total">
             <h2>Subtotal</h2>
@@ -195,22 +199,19 @@
           </h2>
           <div class="box-card">
             <div class="logo-card">
-            <a href="#">
               <img id="visa" src="/Images/visa.png" />
-            </a>
-            <a href="#">
               <img id="MasterCard" src="/Images/MasterCard.png" />
-            </a>
-          </div>
-          <div class="logo-card">
-            <a href="#">
+            </div>
+            <div class="logo-card">
               <img id="PayPal" src="/Images/PayPal.png" />
-            </a>
-            <a href="#">
               <img id="yappy" src="/Images/yappy.png" />
-            </a>
+            </div>
           </div>
+          <button class="button-pague" type="button">
+            Pagar <i class="fas fa-lock"></i>
+          </button>
         </section>
+      </div>
     </main>
     <footer>
       <div id="logo-top">
@@ -237,11 +238,19 @@
       <ul>
         <li><a href="#" id="redes">Redes Sociales </a></li>
         <div class="box-redes">
-        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-      </div>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </div>
       </ul>
     </footer>
     <script src="/js/index.js"></script>

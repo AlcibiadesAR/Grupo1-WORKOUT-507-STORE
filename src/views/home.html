@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" type="text/css" , href="/Grupo1-GYMBROS/Public/Css/home.css" />
+    <link rel="stylesheet" type="text/css"  href="/Css/home.css" />
+    <link rel="stylesheet" type="text/css" href="/Css/carrito.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,105 +17,105 @@
     />
     <title>Workouts Store 507</title>
   </head>
-  <body>
+  <body class="body-raleway">
     <header>
-      <nav>
-        <img
-          class="logo"
-          src="/Grupo1-GYMBROS/Public/Images/workout507.png"
-          alt="Logo Workouts"
-          width="250px"
-          height="100px"
-        />
-        <div class="search-box">
-          <input
-            class="search"
-            type="search"
-            placeholder="Busca, compara y elige con confianza.."
-          />
-          <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-        <div class="menu-burguer">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="ul-mobile">
-          <li>
-            <a href="./home.html"><i class="fa-solid fa-house"></i></a>
-          </li>
-          <li>
-            <a href="./login.html"><i class="fa-solid fa-user"></i></a>
-          </li>
-          <li>
-            <a href="./registrate"><i class="fa-solid fa-circle-user"></i></a>
-          </li>
-          <li>
-            <a href="./carrito.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </li>
-        </ul>
-        <ul class="ul-desktop">
-          <li>
-            <a href="./home.html"><i class="fa-solid fa-house"></i>home</a>
-          </li>
-          <li>
-            <a href="./login.html"
-              ><i class="fa-solid fa-user"></i>inicia sesión</a
-            >
-          </li>
-          <li>
-            <a href="./registrate"
-              ><i class="fa-solid fa-circle-user"></i>registrate</a
-            >
-          </li>
-          <li>
-            <a href="./carrito.html"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+      <img src="/Images/workout507.ico" alt="logo" />
+      <div class="search-box">
+        <input type="text" placeholder="Buscar..." />
+        <span class="fas fa-search" id="search-icon"></span>
+      </div>
+      <div class="truck-box">
+        <i class="fa-solid fa-truck-fast"></i
+        ><span>Envío Rápido en 24 Horas</span>
+      </div>
     </header>
-    <main>
-      <section class="carrusel">
-        <h2 class="titulo">slider automatico</h2>
-        <div class="slider-box">
-        <ul>  
-          <li>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" alt="">
-            <div class="texto">
-            <h2>imagen 1</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit at reprehenderit doloremque facere corrupti unde eum sapiente nostrum repellat aspernatur velit, esse vel sequi maxime voluptatibus amet quibusdam blanditiis!
-              </p>
-            </div>
-          </li>
-          <li>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" alt="">
-          <div class="texto">
-          <h2>imagen 1</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit at reprehenderit doloremque facere corrupti unde eum sapiente nostrum repellat aspernatur velit, esse vel sequi maxime voluptatibus amet quibusdam blanditiis!
-            </p>
-          </div>
-            </li>
-            <li>
-              <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" alt="">
-              <div class="texto">
-              <h2>imagen 1</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima impedit at reprehenderit doloremque facere corrupti unde eum sapiente nostrum repellat aspernatur velit, esse vel sequi maxime voluptatibus amet quibusdam blanditiis!
-                </p>
-              </div>
-              </li>
-        </ul>  
+    <nav>
+      <ul class="nav1">
+        <button id="button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="box-menu">
+          <ul>
+            <li><a href="#">Equipamiento</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Electronica</a></li>
+            <li><a href="#">Suplementos</a></li>
+          </ul>
         </div>
-      </section>
+        <span id="categoria">Categorias</span>
+      </ul>
+      <ul class="nav2">
+        <i class="fa-solid fa-sun" id="fa-sun"></i>
+        <li>
+          <a href="/"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+        </li>
+        <li>
+          <a href="/carrito.html">
+            <i class="fa-solid fa-cart-shopping"></i><span id="number">0</span>
+          </a>
+        </li>
+      </ul>
+      <div class="box-car">
+        <div class="title-car">
+          <h2>Tu Carrito</h2>
+        </div>
+        <div class="descriptions-car">
+          <img src="/Images/1708085109952.jpg" alt="" />
+          <span>$0.00</span>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="descriptions-car">
+          <img src="/Images/1708085110068.png" alt="" />
+          <span>$0.00</span>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="descriptions-car">
+          <img src="/Images/1708085110086.jpg" alt="" />
+          <span>$0.00</span>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="box-total-car">
+          <p>Total</p>
+          <span>$0.00</span>
+        </div>
+        <div class="box-button-cars">
+          <button class="button-cars" type="submit" id="myButton">Ir al carrito >></button>
+          <button class="button-cars" type="submit">Pagar <i class="fas fa-lock"></i></button>
+        </div>
+    </nav>
+    <main>
+      <section id="gallery">
+        <div class="gallery-container">
+            <figure class="gallery-item">
+                <img src="/Images/banco_de_mancuernas.jpg" alt="Imagen 1">
+                <figcaption>Descripción de la imagen 1</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="/Images/bici_estatica_rali.jpg" alt="Imagen 2">
+                <figcaption>Descripción de la imagen 2</figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="/Images/MasterCard.png" alt="Imagen 3">
+                <figcaption>Descripción de la imagen 3</figcaption>
+            </figure>
+            <!-- ... otras imágenes ... -->
+        </div>
+        <nav class="gallery-navigation">
+            <button class="nav-button prev-button">Anterior</button>
+            <button class="nav-button next-button">Siguiente</button>
+        </nav>
+    </section>
       <section class="products">
         <div class="products-item">
           <article class="description-article">
             <h3>Juego De Mancuernas</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/juego_de_mancuernas.webp" width="150px" height="150px" />
+            <img src="/Images/juego_de_mancuernas.webp" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -126,7 +127,7 @@
           </article>
           <article class="description-article">
             <h3>Mancuernas par De 5Lbs</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/par_de_mancuernas.jpg" width="150px" height="150px" />
+            <img src="/Images/par_de_mancuernas.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -138,7 +139,7 @@
           </article>
           <article class="description-article">
             <h3>Bicicleta estatica RALI</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/bici_estatica_rali.jpg" width="150px" height="150px" />
+            <img src="/Images/bici_estatica_rali.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -150,7 +151,7 @@
           </article>
           <article class="description-article">
             <h3>Banco De Mancuernas</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_mancuernas.jpg" width="150px" height="150px" />
+            <img src="/Images/banco_de_mancuernas.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -162,7 +163,7 @@
           </article>
           <article class="description-article">
             <h3>Barra Recta De 1,5m De Largo</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/barra_recta.jpg" width="150px" height="150px" />
+            <img src="/Images/barra_recta.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span><span><span>Añadir al carrito</span></span></span>
@@ -175,7 +176,7 @@
           </article>
           <article class="description-article">
             <h3>Guantes De Boexeo Everlast Classic</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/guantes_everlast.jpg" width="150px" height="150px" />
+            <img src="/Images/guantes_everlast.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -187,7 +188,7 @@
           </article>
           <article class="description-article">
             <h3>Cuerda Para Saltar Everlast</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/cuerda_para_saltar.jpg" width="150px" height="150px" />
+            <img src="/Images/cuerda_para_saltar.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -199,7 +200,7 @@
           </article>
           <article class="description-article">
             <h3>Saco De Boexeo Everlast</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/saco_de_boxeo.jpg" width="150px" height="150px" />
+            <img src="/Images/saco_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -211,7 +212,7 @@
           </article>
           <article class="description-article">
             <h3>Pera De Boxeo Everlast</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/pera_de_boxeo.jpg" width="150px" height="150px" />
+            <img src="/Images/pera_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -223,7 +224,7 @@
           </article>
           <article class="description-article">
             <h3>Maquinaria De Abdominales</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/maquina_abdominales.jpg" width="150px" height="150px" />
+            <img src="/Images/maquina_abdominales.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -235,7 +236,7 @@
           </article>
           <article class="description-article">
             <h3>Maquina Prensa De Hombro</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/prensa_de_hombro.jpg" width="150px" height="150px" />
+            <img src="/Images/prensa_de_hombro.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -247,7 +248,7 @@
           </article>
           <article class="description-article">
             <h3>Banco De Pesas Negro</h3>
-            <img src="/Grupo1-GYMBROS/Public/Images/banco_de_pesas.jpg" width="150px" height="150px" />
+            <img src="/Images/banco_de_pesas.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
@@ -261,20 +262,46 @@
       </section>
     </main>
     <footer>
-        <ul>
-          <li><a href="#">Contáctanos</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Soporte</a></li>
-          <li><a href="#">Redes sociales</a></li>
-        </ul>
-  
-        <div>
-          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+      <div id="logo-top">
+        <img src="//Images/workout507.ico" />
+      </div>
+      <ul>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Terminos y condiciones</a></li>
+      </ul>
+      <div id="logo-medium">
+        <img src="//Images/workout507.ico" />
+      </div>
+      <ul>
+        <li><a href="#">ALL rights reserved | 2024</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">soporte</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" id="redes">Redes Sociales </a></li>
+        <div class="box-redes">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
         </div>
+      </ul>
     </footer>
+    <script src="/js/index.js"></script>
+    <script src="/js/slider.js"></script>
   </body>
 </html>

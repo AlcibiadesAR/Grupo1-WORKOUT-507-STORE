@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Detalles del producto</title>
-    <link rel="stylesheet" href="/Public/Css/detallesDelProducto.css">
+    <link rel="stylesheet" href="/Public/Css/detalles.css">
 </head>
 <body>
    <header>
@@ -21,64 +21,66 @@
    </header> 
    <main>
     <h1>DETALLES DEL PRODUCTO<i class="fa-solid fa-cart-shopping"></i></h1>
-    <div class="box-main">
+    <div class="main-box">
     <section class="product0">
+        <div class="product-item0">
             <article class="description-article0">
                 <h3>MANCUERNA DE 25 KG</h3>
-                <img src="/Public/Images/pesas_25kg.jpg" />
+                <img src="/Public/Images/pesas_25kg.jpg" width="450px" height="300px" />
                 <p>Precio c/u:<span> $120.00</span></p>
                 <div class="box-quantity">
                  <i class="fa-solid fa-minus fa-xs"></i></i>
                   <input type="text" value="1" class="quantity-item" disabled />
                   <i class="fa-light fa-plus"></i>
+                </div>
                 <button class="button-delete" type="submit">
                     AÑADIR AL CARRITO  <i class="fa-solid fa-trash"></i>
                   </button>
             </article>
-          </section>
-    <section class="products-payment">
-      <h3>ESPECIFICACIONES TÉCNICAS</h3>
-      <h3>Marca: Singular WOD</h3>
-      <h3>Color: Negro</h3>
-      <h3>Material: Mango de Acero con laterales de caucho.</h3>
-      <h3>Diámetro del mango: 3,3 cm</h3>
-      <h3>Peso: 25 kg</h3>
-      <h3 id="payment">
-          ELIGA SU FORMA DE PAGO <i class="fa-solid fa-pager"></i>
-        </h2>
-        <div class="box-card">
-          <a href="#">
-            <img id="visa" src="/Public/Images/visa.png" />
-          </a>
-          <a href="#">
-            <img id="MasterCard" src="/Public/Images/MasterCard.png" />
-          </a>
-          <a href="#">
-            <img id="PayPal" src="/Public/Images/PayPal.png" />
-          </a>
-          <a href="#">
-            <img id="yappy" src="/Public/Images/yappy.png" />
-          </a>
         </div>
-  </section>
-</div>
+    </section>
     <section class="products">
       <div class="products-item">
-        <article class="description-article" id="img-1">
+        <article class="description-article">
           <img src="/Public/Images/pesa-hexaonal-25kgweb-600x600.jpg" width="100px" height="120px" />
         </article>
-        <article class="description-article" id="img-2">
-          <img src="/Public/Images/par-de-mancuernas-hexagonales-de-25-libras.jpg" width="170px" height="120px" />
+        <article class="description-article">
+          <img src="/Public/Images/par-de-mancuernas-hexagonales-de-25-libras.jpg" width="100px" height="120px" />
         </article>
-        <article class="description-article" id="img-3">
+        <article class="description-article">
           <img src="/Public/Images/2-pesas.jpg" width="100px" height="120px" />
         </article>
-        <article class="description-article" id="img-4">
+        <article class="description-article">
           <img src="/Public/Images/mancuerna-hexagonal-de-goma-25-kg.jpg" width="100px" height="120px" />
         </article>
     </section>
+    <section class="products-payment">
+        <h3>ESPECIFICACIONES TÉCNICAS</h3>
+        <h3>Marca: Singular WOD</h3>
+        <h3>Color: Negro</h3>
+        <h3>Material: Mango de Acero con laterales de caucho.</h3>
+        <h3>Diámetro del mango: 3,3 cm</h3>
+        <h3>Peso: 25 kg</h3>
+        <h2 id="payment">
+            ELIGA SU FORMA DE PAGO <i class="fa-solid fa-pager"></i>
+          </h2>
+          <div class="box-card">
+            <a href="#">
+              <img id="visa" src="/Public/Images/visa.png" />
+            </a>
+            <a href="#">
+              <img id="MasterCard" src="/Public/Images/MasterCard.png" />
+            </a>
+            <a href="#">
+              <img id="PayPal" src="/Public/Images/PayPal.png" />
+            </a>
+            <a href="#">
+              <img id="yappy" src="/Public/Images/yappy.png" />
+            </a>
+          </div>
+    </section>
+  </div>
   <section class="contenido">
-    <div class="contenido-inter">
     <h2>DESCRIPCIÓN DE LAS MANCUERNAS DE 25 KG</h2>
     <p> Están fabricadas en caucho de primera calidad y sin olor, manteniendo el rebote y forma natural durante toda su vida útil. 
         El mango está diseñado para darte el mayor agarrre posible.
@@ -87,7 +89,6 @@
          También es una alternativa perfecta para adaptar ejercicios a varios niveles manteniendo el mismo estímulo muscular y aumentando la coordinación.
     </p>
     <h2>PRODUCTOS RELACIONADOS</h2>
-  </div>
   </section>
   <section class="products1">
     <div class="products-item1">
@@ -131,7 +132,7 @@
         </button>
       </article>
       <article class="description-article1">
-        <h3>Pesa</h3>
+        <h3>PESA</h3>
         <img src="/Public/Images/image-06003b7096034271ba612726e7de2497.webp" width="150px" height="150px" />
         <p>Precio c/u: <span>$65.99</span></p>
         <div class="box-quantity">
