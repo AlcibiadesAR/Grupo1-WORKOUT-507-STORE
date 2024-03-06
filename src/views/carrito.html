@@ -60,38 +60,15 @@
           </a>
         </li>
       </ul>
-      <div class="box-car">
-        <div class="title-car">
-          <h2>Tu Carrito</h2>
-        </div>
-        <div class="descriptions-car">
-          <img src="/Images/1708085109952.jpg" alt="" />
-          <span>$0.00</span>
-          <i class="fa-solid fa-trash"></i>
-        </div>
-        <div class="descriptions-car">
-          <img src="/Images/1708085110068.png" alt="" />
-          <span>$0.00</span>
-          <i class="fa-solid fa-trash"></i>
-        </div>
-        <div class="descriptions-car">
-          <img src="/Images/1708085110086.jpg" alt="" />
-          <span>$0.00</span>
-          <i class="fa-solid fa-trash"></i>
-        </div>
-        <div class="box-total-car">
-          <p>Total</p>
-          <span>$0.00</span>
-        </div>
-        <div class="box-button-cars">
-          <button class="button-cars" type="submit">Ir al carrito</button>
-          <button class="button-cars" type="submit">Pagar</button>
-        </div>
-      </div>
     </nav>
     <main>
       <h1>Tu Carrito <i class="fa-solid fa-cart-shopping"></i></h1>
       <div class="box-main">
+        <div id="mensajeCarritoVacio">
+          <img src="/Images/carritovacio.png.png" alt="" /> 
+          <h3>Tu carrito está
+            vacío</h3>
+        </div>
         <section class="product">
           <div class="product-item">
             <article class="descriptions-article">
@@ -103,7 +80,7 @@
               />
               <p>Precio c/u:<span>$0.00</span></p>
               <div class="box-quantitys">
-                <i class="fa-solid fa-minus"></i>
+               <i class="fa-solid fa-minus fa-xs"></i></i>
                 <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
@@ -121,7 +98,7 @@
               />
               <p>Precio c/u: <span>$0.00</span></p>
               <div class="box-quantitys">
-                <i class="fa-solid fa-minus"></i>
+               <i class="fa-solid fa-minus fa-xs"></i></i>
                 <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
@@ -139,7 +116,7 @@
               />
               <p>Precio c/u: <span>$0.00</span></p>
               <div class="box-quantitys">
-                <i class="fa-solid fa-minus"></i>
+               <i class="fa-solid fa-minus fa-xs"></i></i>
                 <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
@@ -157,7 +134,7 @@
               />
               <p>Precio c/u: <span>$0.00</span></p>
               <div class="box-quantitys">
-                <i class="fa-solid fa-minus"></i>
+               <i class="fa-solid fa-minus fa-xs"></i></i>
                 <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
@@ -175,7 +152,7 @@
               />
               <p>Precio c/u: <span>$0.00</span></p>
               <div class="box-quantitys">
-                <i class="fa-solid fa-minus"></i>
+               <i class="fa-solid fa-minus fa-xs"></i></i>
                 <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
@@ -193,7 +170,7 @@
               />
               <p>Precio c/u: <span>$0.00</span></p>
               <div class="box-quantitys">
-                <i class="fa-solid fa-minus"></i>
+               <i class="fa-solid fa-minus fa-xs"></i></i>
                 <input type="text" value="1" class="quantitys-item" disabled />
                 <i class="fa-light fa-plus"></i>
               </div>
@@ -223,22 +200,17 @@
           </h2>
           <div class="box-card">
             <div class="logo-card">
-              <a href="#">
-                <img id="visa" src="/Images/visa.png" />
-              </a>
-              <a href="#">
-                <img id="MasterCard" src="/Images/MasterCard.png" />
-              </a>
+              <img id="visa" src="/Images/visa.png" />
+              <img id="MasterCard" src="/Images/MasterCard.png" />
             </div>
             <div class="logo-card">
-              <a href="#">
-                <img id="PayPal" src="/Images/PayPal.png" />
-              </a>
-              <a href="#">
-                <img id="yappy" src="/Images/yappy.png" />
-              </a>
+              <img id="PayPal" src="/Images/PayPal.png" />
+              <img id="yappy" src="/Images/yappy.png" />
             </div>
           </div>
+          <button class="button-pague" type="button">
+            Pagar <i class="fas fa-lock"></i>
+          </button>
         </section>
       </div>
     </main>
