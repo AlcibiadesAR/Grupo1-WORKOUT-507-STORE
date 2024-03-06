@@ -115,6 +115,9 @@ p{
   gap: 20px;
   flex-grow: 1;
 }
+#precio{
+  text-align: center;
+}
 #img-1, #img-2, #img-3, #img-4{
   width: 170px;
 }
@@ -236,7 +239,7 @@ p{
   }
   .box-card {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0 40px 25px 40px;
   }
   .box-card a img {
