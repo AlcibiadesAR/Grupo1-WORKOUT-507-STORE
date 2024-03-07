@@ -17,11 +17,12 @@ icon.addEventListener("click", function () {
   }
 });
 
-/*home*/
-let botonCar = document.querySelector('#myButton')
+/*rutas de botones*/
+let botonCar = document.querySelector('#myButton');
 botonCar.addEventListener('click', function() {
     window.location.href = '/carrito.html';
 })
+
 
 function lightMode(body, header, footer, icon) {
   body.style.backgroundImage =

@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registro</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -14,9 +13,55 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@500&family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/registro.css" />
+    <link rel="stylesheet" href="/Css/carrito.css">
+    <link rel="stylesheet" href="/Css/registro.css" />
+    <title>Registro</title>
   </head>
-  <body>
+  <body class="body-raleway">
+    <header>
+      <img src="/Images/workout507.ico" alt="logo" />
+      <div class="search-box">
+        <input type="text" placeholder="Buscar..." />
+        <span class="fas fa-search" id="search-icon"></span>
+      </div>
+      <div class="truck-box">
+        <i class="fa-solid fa-truck-fast"></i
+        ><span>Envío Rápido en 24 Horas</span>
+      </div>
+    </header>
+    <nav>
+      <ul class="nav1">
+        <button id="button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <div class="box-menu">
+          <ul>
+            <li><a href="#">Equipamiento</a></li>
+            <li><a href="#">Accesorios</a></li>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Electronica</a></li>
+            <li><a href="#">Suplementos</a></li>
+          </ul>
+        </div>
+        <span id="categoria">Categorias</span>
+      </ul>
+      <ul class="nav2">
+        <i class="fa-solid fa-sun" id="fa-sun"></i>
+        <li>
+          <a href="/"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="/login.html"><i class="fa-solid fa-circle-user"></i></a>
+        </li>
+        <li>
+          <a href="/carrito.html">
+            <i class="fa-solid fa-cart-shopping"></i><span id="number">0</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     <div class="container">
       <div class="form-content">
         <h1 id="title">Registro</h1>
@@ -42,11 +87,53 @@
           </div>
           <div class="btn-wrapper">
             <button id="signUp" type="button">Registro</button>
-            <button id="signIn" type="button" class="disable">Login</button>
+            <button id="signIn" type="submit" class="button-login">
+              Login
+            </button>
           </div>
         </form>
       </div>
     </div>
-    <script src="index.js"></script>
+    <footer>
+      <div id="logo-top">
+        <img src="/Images/workout507.ico" />
+      </div>
+      <ul>
+        <li><a href="#">Contactanos</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Nosotros</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Terminos y condiciones</a></li>
+      </ul>
+      <div id="logo-medium">
+        <img src="/Images/workout507.ico" />
+      </div>
+      <ul>
+        <li><a href="#">ALL rights reserved | 2024</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">soporte</a></li>
+      </ul>
+      <ul>
+        <li><a href="#" id="redes">Redes Sociales </a></li>
+        <div class="box-redes">
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+          </li>
+        </div>
+      </ul>
+    </footer>
+    <script src="/js/index.js"></script>
   </body>
 </html>
