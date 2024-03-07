@@ -33,7 +33,7 @@
 
 .form-content {
     min-width: 70%;
-    background-color: #2C2F35;
+    background-color: #515966;
     padding: 10px 20px 40px;
     text-align: center;
     border-radius: 25px;
@@ -59,7 +59,7 @@
 }
 
 .input-box {
-    background-color: #515966;
+    background-color: #EAEAEA;
     margin: 15px 0;
     border-radius: 3px;
     display: flex;
@@ -68,7 +68,7 @@
     overflow: hidden;
 }
 
-input {
+.input-login-register {
     width: 100%;
     background: transparent;
     border: 0;
@@ -77,8 +77,8 @@ input {
     color: #fff;
 }
 
-input::placeholder {
-    color: #fff;
+.input-login-register::placeholder {
+    color: #515966;
 }
 
 .input-box i {
@@ -127,6 +127,10 @@ form p a {
 .btn-wrapper button.button-login {
     background-color: #EAEAEA;
     color: #2C2F35;
+}
+
+#signUp{
+    margin: 0 auto;
 }
 
 @media(min-width: 481px){

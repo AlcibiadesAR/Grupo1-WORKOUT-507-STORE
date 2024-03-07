@@ -17,14 +17,7 @@ icon.addEventListener("click", function () {
   }
 });
 
-/*rutas de botones*/
-let botonCar = document.querySelector('#myButton');
-botonCar.addEventListener('click', function() {
-    window.location.href = '/carrito.html';
-})
-
-
-function lightMode(body, header, footer, icon) {
+function lightMode(body, header, footer, icon, register) {
   body.style.backgroundImage =
     "url(https://png.pngtree.com/background/20230519/original/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg)";
   body.style.backgroundRepeat = "no repeat";
@@ -35,7 +28,7 @@ function lightMode(body, header, footer, icon) {
   icon.classList.add("fa-sun");
 }
 
-function darkMode(body, header, footer, icon, h1, shoppingIcon) {
+function darkMode(body, header, footer, icon, h1, shoppingIcon, register) {
   body.style.backgroundImage = "none";
   body.style.backgroundColor = "#000";
   header.style.backgroundColor = "#00e1ff";
@@ -48,23 +41,28 @@ function darkMode(body, header, footer, icon, h1, shoppingIcon) {
   shoppingIcon.style.color = "#fff";
 }
 
+/*rutas de botones*/
+let botonCar = document.querySelector("#myButton");
+botonCar.addEventListener("click", function () {
+  window.location.href = "/carrito.html";
+});
+
 /* Carrito */
-let carrito = document.querySelector('.fa-cart-shopping');
-let boxCarrito = document.querySelector('.box-car');
+let carrito = document.querySelector(".fa-cart-shopping");
+let boxCarrito = document.querySelector(".box-car");
 
 let carritoVisible = false;
 
-carrito.addEventListener('click', function() {
-    if (carritoVisible) {
-        boxCarrito.style.opacity = '0';
-        boxCarrito.style.visibility = 'hidden';
-    } else {
-        boxCarrito.style.opacity = '1';
-        boxCarrito.style.visibility = 'visible';
-    }
-    carritoVisible = !carritoVisible;
+carrito.addEventListener("click", function () {
+  if (carritoVisible) {
+    boxCarrito.style.opacity = "0";
+    boxCarrito.style.visibility = "hidden";
+  } else {
+    boxCarrito.style.opacity = "1";
+    boxCarrito.style.visibility = "visible";
+  }
+  carritoVisible = !carritoVisible;
 });
-
 
 /*localStorage*/
 function guardarLocalStorage() {
@@ -175,6 +173,3 @@ function obtenerLocalStorage(productId) {
 obtenerLocalStorage("2");
 
 /*aumentar, disminuir y eliminar */
-
-
-

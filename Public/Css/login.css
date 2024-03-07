@@ -20,3 +20,17 @@
   background-size: cover;
   margin: 0;
 }
+
+
+.input-container-login {
+  height: 200px;
+}
+
+#olvidar{
+  color: #fff;
+  cursor: pointer;
+}
+
+.Iniciar{
+  margin: 0 auto
+}
