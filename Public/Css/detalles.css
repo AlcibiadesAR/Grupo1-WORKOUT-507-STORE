@@ -26,7 +26,7 @@ main {
 
 .box-main {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   width: 100%;
@@ -53,6 +53,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 15px #bbc3a4;
   transition: 0.3s;
+  
 }
 .description-article0 p{
   font-size: 18px;
@@ -185,7 +186,8 @@ main {
 #img-2,
 #img-3,
 #img-4 {
-  width: 170px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .products {
@@ -206,7 +208,7 @@ main {
   background-color: #2C2F35;
   font-size: 12px;
   color: #fff;
-  max-width: 170px;
+  max-width: 90%;
   padding: 18px;
   margin: 10px auto;
   text-align: center;
@@ -217,13 +219,12 @@ main {
 }
 
 .products .products-item .description-article img {
-  margin-top: 15px;
   width: 100%;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #6c22a6;
   flex-direction: column;
-  height: 100px;
+  height: 100%;
 }
 
 #payment {
