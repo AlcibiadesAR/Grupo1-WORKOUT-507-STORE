@@ -63,7 +63,7 @@
       </ul>
     </nav>
     <main>
-      <h1>DETALLES DEL PRODUCTO<i class="fa-solid fa-cart-shopping"></i></h1>
+    <h1>DETALLES DEL PRODUCTO <i class="fas fa-tag"></i></h1>
       <div class="box-main">
         <section class="product0">
           <article class="description-article0">
@@ -71,44 +71,36 @@
             <img src="/Images/pesas_25kg.jpg" />
             <p id="precio">Precio c/u:<span> $120.00</span></p>
             <div class="box-quantity">
-              <i class="fa-solid fa-minus fa-xs"></i>
-              <input
-                type="text"
-                value="1"
-                class="quantity-item"
-                button-logind
-              />
-              <i class="fa-light fa-plus"></i>
+              <div class="quantity-control">
+                <button class="decrement">-</button>
+                <input type="number" class="quantity-input" value="1">
+                <button class="increment">+</button>
+              </div>              
               <button class="button-delete" type="submit">
                 AÑADIR AL CARRITO <i class="fa-solid fa-trash"></i>
               </button>
             </div>
           </article>
         </section>
-        <section class="products-payment">
-          <h3>ESPECIFICACIONES TÉCNICAS</h3>
-          <h3>Marca: Singular WOD</h3>
-          <h3>Color: Negro</h3>
-          <h3>Material: Mango de Acero con laterales de caucho.</h3>
-          <h3>Diámetro del mango: 3,3 cm</h3>
-          <h3>Peso: 25 kg</h3>
-          <h3 id="payment">
-            ELIGA SU FORMA DE PAGO <i class="fa-solid fa-pager"></i>
-          </h3>
-          <div class="box-card">
-            <a href="#">
+        <section class="technical-specs">
+          <h3 id="title-detalle">ESPECIFICACIONES TÉCNICAS</h3>
+          <div class="spec-item"><h3><span>Marca:</span> Singular WOD</h3></div>
+          <div class="spec-item"><h3><span>Color:</span> Negro</h3></div>
+          <div class="spec-item"><h3><span>Material:</span> Mango de Acero con laterales de caucho.</h3></div>
+          <div class="spec-item"><h3><span>Diámetro del mango:</span> 3,3 cm</h3></div>
+          <div class="spec-item"><h3><span>Peso:</span> 25 kg</h3></div>
+          <div class="box-payment">
+          <h3 id="payment">ELIGA SU FORMA DE PAGO <i class="fa-solid fa-pager"></i></h3>
+        </div>
+          <div class="box-card-detalles">
+            <div class="logo-card">
               <img id="visa" src="/Images/visa.png" />
-            </a>
-            <a href="#">
               <img id="MasterCard" src="/Images/MasterCard.png" />
-            </a>
-            <a href="#">
-              <img id="PayPal" src="/Images/PayPal.png" />
-            </a>
-            <a href="#">
+            </div>
+            <div class="logo-card">
+              <img id="PayPal" src="/Images/PayPal2.png" />
               <img id="yappy" src="/Images/yappy.png" />
-            </a>
-          </div>
+            </div>
         </section>
       </div>
       <section class="products">
@@ -127,6 +119,8 @@
               height="120px"
             />
           </article>
+          </div>
+          <div class="products-item">
           <article class="description-article" id="img-3">
             <img src="/Images/2-pesas.jpg" width="100px" height="120px" />
           </article>
@@ -157,8 +151,8 @@
             ejercicios a varios niveles manteniendo el mismo estímulo muscular y
             aumentando la coordinación.
           </p>
-          <h2>PRODUCTOS RELACIONADOS</h2>
         </div>
+        <h2>PRODUCTOS RELACIONADOS</h2>
       </section>
       <section class="products1">
         <div class="products-item1">
