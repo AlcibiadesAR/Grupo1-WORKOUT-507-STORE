@@ -3,32 +3,193 @@
   margin: 0;
   box-sizing: border-box;
 }
+/*header*/
+header {
+  background-color: #00e1ff;
+  min-width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+.search-box {
+  position: relative;
+  width: 89%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.search-box input {
+  width: 100%;
+  height: 39px;
+  border: none;
+  border-radius: 5px;
+  padding: 1%;
+  text-indent: 10px;
+  font-size: 18px;
+  outline: none;
+  margin-top: 10px;
+}
+
+#search-icon {
+  position: relative;
+  left: -40px;
+  top: 5px;
+  font-size: 18px;
+  color: #000;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.truck-box i,
+.truck-box span,
+nav #categoria {
+  display: none;
+}
+
+.box-menu {
+  display: none;
+}
+
+/*nav*/
+nav {
+  background-color: #a9a9a9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  min-width: 100%;
+}
+
+nav .nav2 {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.fa-sun{
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.fa-moon{
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.nav2 #number {
+  margin-left: 10px;
+}
+
+nav ul,
+nav ul li a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a i:hover {
+  scale: 1.3;
+}
+
+.box-car{
+  display: none;
+  position: absolute;
+  top: 220px;
+  right: 0;
+  width: 80%;
+  height: 60%;
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+.title-car{
+  width: 100%;
+  height: 14%;
+  background-color: #000;
+  padding-top: 10px;
+}
+
+.box-car h2{
+  text-align: center;
+  color: #fff;
+}
+
+.descriptions-car{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+.descriptions-car img{
+  width: 50px;
+}
+
+.box-total-car{
+  background-color: #a9a9a9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+}
+
+#button {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 2rem;
+  height: 2rem;
+  border: 0;
+  background-color: #a9a9a9;
+  gap: 0.6rem;
+}
+
+button > div {
+  background: #fff;
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all 0.5s;
+  transform-origin: left;
+}
+  /*main section*/
 
 .body-raleway {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
   font-weight: bold;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 12px;
   background-image: url('https://png.pngtree.com/background/20230519/original/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
-}
 
-  /*main section*/
-  main {
-    width: 80%;
-    margin: 0 auto;
-  }
-
+} 
   /*slider*/
   #gallery {
-    width: 80%;
+    width: 25%;
     margin: auto;
     overflow: hidden;
  }
@@ -40,7 +201,6 @@
  
  .gallery-item {
     min-width: 100%;
-    box-sizing: border-box;
  }
  
  .gallery-item img {
@@ -54,19 +214,17 @@
     justify-content: space-between;
     position: relative;
     top: -50px;
+    background-color: #2C2F35;
  }
  
  .nav-button {
-    background-color: #008CBA;
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    background-color: #2C2F35;
+    color: #00e1ff;
+    border: solid #00e1ff;
+    text-align: center;
     cursor: pointer;
     border-radius: 5px;
- }
- 
- .nav-button:hover {
- background-color: #005f5f;
+    width: 20%;
  }
   @keyframes slide {
     0% {margin-left: 0;}
@@ -94,19 +252,20 @@
   }
   
   .products .products-item .description-article{
-    background-color: #00E1FF;
+    background-color: #2C2F35;
     color: #fff;
     max-width: 200px;
     padding: 10px;
     margin: auto;
     text-align: center;
     border-radius: 10px;
-    transition: .3s;
+    border: solid #00e1ff;
   }
   
   .products .products-item .description-article img{
     margin-top: 15px;
     background-color: #fff;
+    
     border-radius: 10px;
     border: 1px solid #6C22A6;
   }
@@ -125,7 +284,7 @@
   }
   
   .description-article span{
-    color: #6A2C70;
+    color: #00e1ff;
   }
   
   .description-article form{
@@ -143,19 +302,28 @@
     cursor: pointer;
     padding: 0 12px;
   }
+  
+  .bottons {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
   .button-carrito{
-    background-color: #434242;
+    background-color: #2C2F35;
     padding: 10px 10px ;
     border-radius: 6px;
-    color: #ffff;
+    color: #00e1ff;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: none;
     font-size: 12px;
-    cursor: pointer;
-    margin-top: 10px;
+    border: none;
+    white-space: nowrap;
+    border: solid #00e1ff;
+    
   }
+
   .button-carrito span{
     display: none;
+    
   }
 .button-carrito:hover span{
     display: block;
@@ -164,4 +332,187 @@
   .button-carrito:hover i {
     display: none;
   }
- 
+ /*footer*/
+
+footer {
+  margin: auto 0;
+  padding: 5px;
+  background-color: #00e1ff ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+footer ul li,
+ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+footer li:hover {
+  scale: 1.10;
+  border-radius: 5px;
+}
+
+footer i {
+  color: #fff;
+}
+
+#logo-medium {
+  display: none;
+}
+
+.box-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  gap: 14px;
+}
+
+#redes {
+  display: none;
+}
+@media (min-width: 481px){
+
+  header {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 103px;
+  }
+
+  .search-box {
+    width: 63%;
+  }
+
+  .search-box input {
+    width: 112%;
+    height: 36px;
+  }
+
+  #search-icon {
+    padding: 8px;
+    border-radius: 50%;
+    left: -38px;
+    top: 5px
+  }
+
+  .nav1{
+     display: flex;
+     gap: 30px;
+  }
+  .nav1 #categoria{
+    display: block;
+    font-size: 18px;
+    margin-top: 8px;
+  }
+
+  nav .nav2 {
+    width: 25%;
+  }
+
+
+}
+
+
+/*media query 1024px*/
+
+@media (min-width: 1024px) {
+
+  .truck-box i,
+  .truck-box span,
+  header .fa-sun {
+    display: block;
+    font-size: 18px;
+  }
+
+  .fa-sun{
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  .fa-moon{
+    margin-top: 5px;
+  }
+
+  .truck-box {
+    display: inline-flex;
+    gap: 10px;
+  }
+
+  .box-menu {
+    display: none;
+  }
+
+  main {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .box-main {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .search-box {
+    width: 43%;
+  }
+
+  .search-box input {
+    width: 92%;
+    height: 43px;
+  }
+
+  #search-icon {
+    padding: 10px; 
+    left: -40px;
+    top: 4px
+  }
+
+  nav .nav2 {
+    width: 20%;
+  }
+
+  .box-menu,
+  #logo-top {
+    display: none;
+  }
+
+  .box-menu ul li {
+    margin: 30px;
+  }
+
+  .box-menu ul li:hover {
+    background-color: #a9a9a9;
+    border-radius: 5px;
+    padding: 4px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  footer div {
+    font-size: 10px;
+  }
+
+  #logo-medium {
+    display: block;
+  }
+
+  .box-redes {
+    display: none;
+  }
+
+  #redes{
+    display: block;
+  }
+}
