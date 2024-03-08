@@ -133,6 +133,7 @@ nav ul li a i:hover {
   border: 1px solid #fff;
   opacity: 0;
   visibility: hidden;
+  z-index: 1;
 }
 
 .title-car {
@@ -265,7 +266,7 @@ main {
 }
 
 .product .product-item .descriptions-article {
-  background-color: #00e1ff;
+  background-color: #2C2F35;
   color: #fff;
   max-width: 250px;
   padding: 18px;
@@ -302,7 +303,7 @@ main {
 }
 
 .descriptions-article span {
-  color: #000;
+  color: #00e1ff;
 }
 
 .descriptions-article form {
@@ -324,6 +325,7 @@ main {
 .box-quantitys .fa-minus {
   font-size: 18px;
   padding: 15px 14px 0 14px;
+  cursor: pointer;
 }
 
 .box-quantitys .quantitys-item {
@@ -356,7 +358,7 @@ main {
 }
 
 .product-payment {
-  background-color: #00e1ff;
+  background-color: #2C2F35;
   width: 90%;
   height: 50%;
   padding-bottom: 30px;
@@ -391,7 +393,7 @@ main {
 }
 
 .box-total p {
-  color: #000;
+  color: #00e1ff;
   font-size: 16px;
 }
 
@@ -403,7 +405,7 @@ main {
 }
 
 .box-Subtotal p {
-  color: #000;
+  color: #00e1ff;
   font-size: 16px;
 }
 
@@ -662,7 +664,6 @@ footer i {
     display: flex;
     flex-direction: column;
     margin: 40px 30px;
-    box-shadow: 0 0 15px 2px #bbc3a4;
   }
 
   .box-card {
@@ -682,6 +683,10 @@ footer i {
   }
 
   #yappy {
+    margin-left: 60px;
+  }
+
+  #PayPal{
     margin-left: 60px;
   }
 

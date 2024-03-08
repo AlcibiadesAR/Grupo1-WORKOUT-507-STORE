@@ -70,6 +70,7 @@ main {
 .nav-button:hover {
   background-color: #005f5f;
 }
+
 @keyframes slide {
   0% {
     margin-left: 0;
@@ -162,6 +163,7 @@ main {
   cursor: pointer;
   padding: 0 12px;
 }
+
 .button-carrito {
   background-color: #434242;
   padding: 10px 10px;
@@ -173,6 +175,7 @@ main {
   cursor: pointer;
   margin-top: 10px;
 }
+
 .button-carrito span {
   display: none;
 }

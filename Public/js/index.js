@@ -17,7 +17,7 @@ icon.addEventListener("click", function () {
   }
 });
 
-function lightMode(body, header, footer, icon, register) {
+function lightMode(body, header, footer, icon) {
   body.style.backgroundImage =
     "url(https://png.pngtree.com/background/20230519/original/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg)";
   body.style.backgroundRepeat = "no repeat";
@@ -28,7 +28,7 @@ function lightMode(body, header, footer, icon, register) {
   icon.classList.add("fa-sun");
 }
 
-function darkMode(body, header, footer, icon, h1, shoppingIcon, register) {
+function darkMode(body, header, footer, icon, h1, shoppingIcon) {
   body.style.backgroundImage = "none";
   body.style.backgroundColor = "#000";
   header.style.backgroundColor = "#00e1ff";
@@ -170,6 +170,6 @@ function obtenerLocalStorage(productId) {
   }
 }
 
-obtenerLocalStorage("2");
+obtenerLocalStorage("1");
 
 /*aumentar, disminuir y eliminar */
