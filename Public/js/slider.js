@@ -10,9 +10,9 @@ document.querySelector('.next-button').addEventListener('click', () => {
 
 function navigate(direction) {
    const galleryContainer = document.querySelector('.gallery-container');
-   const totalImages = document.querySelectorAll('.gallery-item').length;
+   const tImages = document.querySelectorAll('.gallery-item').length;
 
-   currentIndex = (currentIndex + direction + totalImages) % totalImages;
+   currentIndex = (currentIndex + direction + tImages) % tImages;
    const offset = -currentIndex * 100;
 
    galleryContainer.style.transform = `translateX(${offset}%)`;
@@ -28,9 +28,9 @@ document.querySelector('.next-button').addEventListener('click', () => {
 
 function navigate(direction) {
    const galleryContainer = document.querySelector('.gallery-container');
-   const totalImages = document.querySelectorAll('.gallery-item').length;
+   const tImages = document.querySelectorAll('.gallery-item').length;
 
-   currentIndex = (currentIndex + direction + totalImages) % totalImages;
+   currentIndex = (currentIndex + direction + tImages) % tImages;
    const offset = -currentIndex * 100;
 
    galleryContainer.style.transform = `translateX(${offset}%)`;

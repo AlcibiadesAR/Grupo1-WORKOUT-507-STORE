@@ -128,7 +128,7 @@ nav ul li a i:hover {
   top: 220px;
   right: 0;
   width: 70%;
-  height: 70%;
+  height: 228px;
   background-color: #fff;
   border: 1px solid #fff;
   opacity: 0;
@@ -138,7 +138,7 @@ nav ul li a i:hover {
 
 .title-car {
   width: 100%;
-  height: 14%;
+  height: 20%;
   background-color: #00e1ff;
   padding-top: 10px;
 }
@@ -273,11 +273,6 @@ main {
   margin: auto;
   text-align: center;
   border-radius: 10px;
-  transition: 0.3s;
-}
-
-.product .product-item .descriptions-article:hover {
-  box-shadow: 0 0 10px #000;
 }
 
 .product .product-item .descriptions-article img {
@@ -286,10 +281,6 @@ main {
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #000;
-}
-
-.product-item .descriptions-article:hover {
-  scale: 1.05;
   box-shadow: 0 0 15px #000;
 }
 
@@ -508,7 +499,14 @@ footer i {
   border: none;
   font-size: 14px;
   cursor: pointer;
+  white-space: nowrap;
 }
+
+.button-delete-pague{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /*media query 481px*/
 @media (min-width: 481px) {
@@ -606,7 +604,6 @@ footer i {
   .box-car {
     width: 24%;
     top: 153px;
-    height: 68%;
   }
 
   main {
@@ -711,7 +708,12 @@ footer i {
   #redes {
     display: block;
   }
+
   .button-pague {
     width: 30%;
+  }
+
+  #button-vaciar{
+    width: 100px;
   }
 }
