@@ -25,6 +25,7 @@ function lightMode(body, header, footer, icon) {
   body.style.backgroundSize = "cover";
   header.style.backgroundColor = "#00e1ff";
   footer.style.backgroundColor = "#00e1ff";
+  footer.style.hover = "red";
   icon.classList.remove("fa-moon");
   icon.classList.add("fa-sun");
 }
@@ -33,8 +34,8 @@ function lightMode(body, header, footer, icon) {
 function darkMode(body, header, footer, icon, h1, shoppingIcon) {
   body.style.backgroundImage = "none";
   body.style.backgroundColor = "#000";
-  header.style.backgroundColor = "#00e1ff";
-  footer.style.backgroundColor = "#00e1ff";
+  header.style.backgroundColor = "#2C2F35";
+  footer.style.backgroundColor = "#2C2F35";
   footer.style.borderTop = "2px solid #a9a9a9";
   icon.classList.remove("fa-sun");
   icon.classList.add("fa-moon");
@@ -42,6 +43,34 @@ function darkMode(body, header, footer, icon, h1, shoppingIcon) {
   h1.style.borderBottom = "2px solid #fff";
   shoppingIcon.style.color = "#fff";
 }
+
+//=========menu==============
+//animacion del boton de menu
+let buttonMenu = document.querySelector("#menu");
+let menuDivs = document.querySelectorAll("#menu div");
+let menu = document.querySelector(".box-menu");
+
+let menuOpen = false; 
+
+buttonMenu.addEventListener("click", function () {
+  if (!menuOpen) {
+    menu.style.display = "block";
+    menuDivs[0].style.transform = "rotate(45deg)";
+    menuDivs[1].style.opacity = "0";
+    menuDivs[2].style.transform = "rotate(-45deg)";
+  } else {
+    setTimeout(function () {
+      menu.style.display = "none";
+    }, 500);
+    menuDivs[0].style.transform = "rotate(0)";
+    menuDivs[1].style.opacity = "1";
+    menuDivs[2].style.transform = "rotate(0)";
+  }
+
+  menuOpen = !menuOpen;
+});
+
+
 
 //=========rutas de botones===========
 //boton para ir al carrito de compras
