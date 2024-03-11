@@ -1,37 +1,32 @@
-// Importar Express para crear un servidor web
-const express = require("express");
+const express = require('express');
+const path = require('path');
 
-// Importar 'path' para manejar rutas de archivos
-const path = require("path");
-
-// Crear una aplicación Express
 const app = express();
+const publicPath = path.resolve(__dirname, '../public');
+app.use(express.static(publicPath));
 
-// Directorio para archivos como imágenes y estilos
-const publicpath = path.resolve(__dirname, "../public");
-app.use(express.static(publicpath));
-
-// Iniciar servidor en el puerto 3001
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3004;
 app.listen(port, function () {
-  console.log('Servidor Levantado');
+    console.log('Servidor Levantado en el puerto ' + port);
 });
 
-// creacion de las rutas
-
-app.get("/", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./views/home.html"));
+app.get('/', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/index.html'));
 });
 
-app.get("/carrito.html", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./views/carrito.html"));
+app.get('/carrito.html', (req, res) => {
+  res.sendFile(path.resolve(__dirname, './views/carrito.html'));
 });
 
-app.get("/registro.html", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./views/registro.html"));
+app.get('/registro.html', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/registro.html'));
 });
 
-app.get("/detallesDelProducto.html", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./views/detallesDelProducto.html"));
+app.get('/login.html', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/login.html'));
+});
+
+app.get('/detalles.html', (req, res) => {
+    res.sendFile(path.resolve(__dirname, './views/detalles.html'));
 });
 

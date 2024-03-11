@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body-raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 12px;
+  background-image: url(imagen/This\ is\ How\ I\ Train.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+
+.input-container-login {
+  height: 200px;
+}
+
+#olvidar{
+  color: #fff;
+  cursor: pointer;
+}
+
+.Iniciar{
+  margin: 0 auto
+}

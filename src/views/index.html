@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+<<<<<<< HEAD:src/views/home.html
     <link rel="stylesheet" type="text/css"  href="/Css/home.css" />
+=======
+>>>>>>> 93546bb7393bc7daebc07ea56f53376862bd09fc:src/views/index.html
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -11,9 +14,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Charis+SIL:ital@1&family=Francois+One&family=Gabriela&family=Literata:opsz,wght@7..72,500&family=Montserrat:ital,wght@0,900;1,100&family=Open+Sans:wght@500&family=Roboto:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@500&family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="/Css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/Css/carrito.css" />
     <title>Workouts Store 507</title>
   </head>
   <body class="body-raleway">
@@ -52,7 +57,7 @@
           <a href="/"><i class="fa-solid fa-house"></i></a>
         </li>
         <li>
-          <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+          <a href="/login.html"><i class="fa-solid fa-circle-user"></i></a>
         </li>
         <li>
           <a href="#">
@@ -65,17 +70,17 @@
           <h2>Tu Carrito</h2>
         </div>
         <div class="descriptions-car">
-          <img src="//Images/1708085109952.jpg" alt="" />
+          <img src="/Images/1708085109952.jpg" alt="" />
           <span>$0.00</span>
           <i class="fa-solid fa-trash"></i>
         </div>
         <div class="descriptions-car">
-          <img src="//Images/1708085110068.png" alt="" />
+          <img src="/Images/1708085110068.png" alt="" />
           <span>$0.00</span>
           <i class="fa-solid fa-trash"></i>
         </div>
         <div class="descriptions-car">
-          <img src="//Images/1708085110086.jpg" alt="" />
+          <img src="/Images/1708085110086.jpg" alt="" />
           <span>$0.00</span>
           <i class="fa-solid fa-trash"></i>
         </div>
@@ -84,41 +89,55 @@
           <span>$0.00</span>
         </div>
         <div class="box-button-cars">
-          <button class="button-cars" type="submit">Ir al carrito</button>
-          <button class="button-cars" type="submit">Pagar</button>
+          <button class="button-cars" type="submit" id="myButton">
+            Ir al carrito >>
+          </button>
+          <button class="button-cars" type="submit">
+            Pagar <i class="fas fa-lock"></i>
+          </button>
         </div>
       </div>
     </nav>
     <main>
       <section id="gallery">
         <div class="gallery-container">
-            <figure class="gallery-item">
-                <img src="/Images/banco_de_mancuernas.jpg" alt="Imagen 1">
-                <figcaption>Descripción de la imagen 1</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="/Images/bici_estatica_rali.jpg" alt="Imagen 2">
-                <figcaption>Descripción de la imagen 2</figcaption>
-            </figure>
-            <figure class="gallery-item">
-                <img src="/Images/MasterCard.png" alt="Imagen 3">
-                <figcaption>Descripción de la imagen 3</figcaption>
-            </figure>
-            <!-- ... otras imágenes ... -->
+          <figure class="gallery-item">
+            <img src="/Images/banco_de_mancuernas.jpg" alt="Imagen 1" />
+            <figcaption>Descripción de la imagen 1</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/Images/bici_estatica_rali.jpg" alt="Imagen 2" />
+            <figcaption>Descripción de la imagen 2</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/Images/MasterCard.png" alt="Imagen 3" />
+            <figcaption>Descripción de la imagen 3</figcaption>
+          </figure>
+          <!-- ... otras imágenes ... -->
         </div>
         <nav class="gallery-navigation">
-            <button class="nav-button prev-button">Anterior</button>
-            <button class="nav-button next-button">Siguiente</button>
+          <button class="nav-button prev-button">Anterior</button>
+          <button class="nav-button next-button">Siguiente</button>
         </nav>
-    </section>
+      </section>
       <section class="products">
         <div class="products-item">
           <article class="description-article">
             <h3>Juego De Mancuernas</h3>
-            <img src="/Images/juego_de_mancuernas.webp" width="150px" height="150px" />
+            <img
+              src="/Images/juego_de_mancuernas.webp"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
+<<<<<<< HEAD:src/views/home.html
             <div class="bottons"><button class="button-carrito" type="submit">
               <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+=======
+            <button class="button-carrito" type="submit">
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
+>>>>>>> 93546bb7393bc7daebc07ea56f53376862bd09fc:src/views/index.html
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -127,22 +146,32 @@
           </article>
           <article class="description-article">
             <h3>Mancuernas par De 5Lbs</h3>
-            <img src="/Images/par_de_mancuernas.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/par_de_mancuernas.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
-            <button class="button-carrito" type="submit">
+            <button  id="Button-carrito" class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
               <i class="fa-solid fa-file-lines"></i>
             </button>
           </article>
           <article class="description-article">
             <h3>Bicicleta estatica RALI</h3>
-            <img src="/Images/bici_estatica_rali.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/bici_estatica_rali.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -151,10 +180,15 @@
           </article>
           <article class="description-article">
             <h3>Banco De Mancuernas</h3>
-            <img src="/Images/banco_de_mancuernas.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/banco_de_mancuernas.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -166,7 +200,13 @@
             <img src="/Images/barra_recta.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
+<<<<<<< HEAD:src/views/home.html
             <span>ñadir al carrito</span>
+=======
+              <span
+                ><span><span>Añadir al carrito</span></span></span
+              >
+>>>>>>> 93546bb7393bc7daebc07ea56f53376862bd09fc:src/views/index.html
               <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
@@ -176,10 +216,15 @@
           </article>
           <article class="description-article">
             <h3>Guantes De Boexeo Everlast Classic</h3>
-            <img src="/Images/guantes_everlast.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/guantes_everlast.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -188,10 +233,15 @@
           </article>
           <article class="description-article">
             <h3>Cuerda Para Saltar Everlast</h3>
-            <img src="/Images/cuerda_para_saltar.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/cuerda_para_saltar.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -203,7 +253,8 @@
             <img src="/Images/saco_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -215,7 +266,8 @@
             <img src="/Images/pera_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -224,10 +276,15 @@
           </article>
           <article class="description-article">
             <h3>Maquinaria De Abdominales</h3>
-            <img src="/Images/maquina_abdominales.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/maquina_abdominales.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -236,10 +293,15 @@
           </article>
           <article class="description-article">
             <h3>Maquina Prensa De Hombro</h3>
-            <img src="/Images/prensa_de_hombro.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/prensa_de_hombro.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>
@@ -248,10 +310,15 @@
           </article>
           <article class="description-article">
             <h3>Banco De Pesas Negro</h3>
-            <img src="/Images/banco_de_pesas.jpg" width="150px" height="150px" />
+            <img
+              src="/Images/banco_de_pesas.jpg"
+              width="150px"
+              height="150px"
+            />
             <p>Precio c/u: <span>$0.00</span></p>
             <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span> <i class="fa-solid fa-cart-plus"></i>
+              <span>Añadir al carrito</span>
+              <i class="fa-solid fa-cart-plus"></i>
             </button>
             <button class="button-carrito" type="submit">
               <span>Ver mas acerca de esto</span>

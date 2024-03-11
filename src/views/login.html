@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@500&family=Raleway:wght@500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/Css/carrito.css">
+    <link rel="stylesheet" href="/Css/login.css" />
+    <link rel="stylesheet" href="/Css/carrito.css" />
     <link rel="stylesheet" href="/Css/registro.css" />
-    <title>Registro</title>
+    <title>Login</title>
   </head>
   <body class="body-raleway">
     <header>
@@ -56,44 +57,64 @@
           <a href="/login.html"><i class="fa-solid fa-circle-user"></i></a>
         </li>
         <li>
-          <a href="/carrito.html">
+          <a href="#">
             <i class="fa-solid fa-cart-shopping"></i><span id="number">0</span>
           </a>
         </li>
       </ul>
+      <div class="box-car">
+        <div class="title-car">
+          <h2>Tu Carrito</h2>
+        </div>
+        <div class="descriptions-car">
+          <img src="/Images/1708085109952.jpg" alt="" />
+          <span>$0.00</span>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="descriptions-car">
+          <img src="/Images/1708085110068.png" alt="" />
+          <span>$0.00</span>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="descriptions-car">
+          <img src="/Images/1708085110086.jpg" alt="" />
+          <span>$0.00</span>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+        <div class="box-total-car">
+          <p>Total</p>
+          <span>$0.00</span>
+        </div>
+        <div class="box-button-cars">
+          <button class="button-cars" type="submit" id="myButton">
+            Ir al carrito >>
+          </button>
+          <button class="button-cars" type="submit">
+            Pagar <i class="fas fa-lock"></i>
+          </button>
+        </div>
+      </div>
     </nav>
     <div class="container">
       <div class="form-content">
-        <h1 id="title">Registro</h1>
+        <h1 id="title">Iniciar Sesión</h1>
         <form>
-          <div class="input-container">
-            <div class="input-box" id="nameInput">
-              <i class="fa-solid fa-user"></i>
-              <input class="input-login-register" type="text" placeholder="Nombre" />
-            </div>
-            <div class="input-box">
-              <i class="fa-solid fa-user"></i>
-              <input class="input-login-register"  type="text" placeholder="Apellido" />
-            </div>
+          <div class="input-container-login">
             <div class="input-box">
               <i class="fa-solid fa-envelope"></i>
-              <input class="input-login-register"  type="email" placeholder="Correo" />
+              <input class="input-login-register" type="email" placeholder="Correo" />
             </div>
             <div class="input-box">
               <i class="fa-solid fa-lock"></i>
-              <input class="input-login-register"  type="password" placeholder="Contraseña" />
+              <input class="input-login-register" type="password" placeholder="Contraseña" />
             </div>
-            <div class="input-box">
-              <i class="fa-solid fa-lock"></i>
-              <input class="input-login-register"  type="Confpassword" placeholder="Confirmar Contraseña" />
-            </div>
-            <p>¿Ya tienes cuenta? <a href="#">click aqui</a></p>
+            <p id="olvidar">Olvidaste tu contraseña <a href="#">Click aqui</a></p>
           </div>
           <div class="btn-wrapper">
-            <button id="signUp" type="button">Registro</button>
+            <button class="Iniciar" type="button">Iniciar</button>
           </div>
         </form>
-      </div>
+    </div>
     </div>
     <footer>
       <div id="logo-top">
