@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +15,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 12px;
-  background-image: url("https://png.pngtree.com/background/20230519/original/pngtree-an-old-gym-setting-with-dumbbells-picture-image_2667256.jpg");
+  background-image: url("https://img.freepik.com/fotos-premium/fondo-equipos-fitness-gimnasio-entrenamiento-espacio-copia-texto_916191-122007.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0;
@@ -74,6 +74,13 @@ nav #categoria {
 
 .box-menu {
   display: none;
+  width: 20%;
+  height: 300px;
+  position: absolute;
+  top: 153px;
+  z-index: 1;
+  background-color: #2C2F35;
+  transition: opacity 0.5s ease-in-out;
 }
 
 /*nav*/
@@ -108,6 +115,10 @@ nav .nav2 {
   margin-top: 3px;
 }
 
+.fa-sun:hover,.fa-moon:hover{
+  color: #2C2F35;
+}
+
 .nav2 #number {
   margin-left: 10px;
 }
@@ -120,7 +131,7 @@ nav ul li a {
 }
 
 nav ul li a i:hover {
-  scale: 1.3;
+  color: #2C2F35;
 }
 
 .box-car {
@@ -128,7 +139,7 @@ nav ul li a i:hover {
   top: 220px;
   right: 0;
   width: 70%;
-  height: 70%;
+  height: 240px;
   background-color: #fff;
   border: 1px solid #fff;
   opacity: 0;
@@ -138,7 +149,7 @@ nav ul li a i:hover {
 
 .title-car {
   width: 100%;
-  height: 14%;
+  height: 20%;
   background-color: #00e1ff;
   padding-top: 10px;
 }
@@ -148,22 +159,34 @@ nav ul li a i:hover {
   color: #fff;
 }
 
-.descriptions-car {
+.cart-product {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 5px;
   background-color: #eaeaea;
-  color: #000;
   font-size: 14px;
   font-weight: bold;
   padding: 10px;
   margin-top: 2px;
 }
 
-.descriptions-car img {
+.cart-product img {
   width: 50px;
+}
+
+.descriptions-car {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 65px;
+  background-color: #eaeaea;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 2px;
 }
 
 .box-total-car {
@@ -201,8 +224,11 @@ nav ul li a i:hover {
   font-size: 12px;
   cursor: pointer;
 }
+.car-message{
+  display: none;
+}
 
-button {
+#menu {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
@@ -211,9 +237,10 @@ button {
   border: 0;
   background-color: #a9a9a9;
   gap: 0.6rem;
+  cursor: pointer;
 }
 
-button > div {
+#menu > div {
   background: #fff;
   height: 2px;
   width: 100%;
@@ -273,11 +300,6 @@ main {
   margin: auto;
   text-align: center;
   border-radius: 10px;
-  transition: 0.3s;
-}
-
-.product .product-item .descriptions-article:hover {
-  box-shadow: 0 0 10px #000;
 }
 
 .product .product-item .descriptions-article img {
@@ -286,10 +308,6 @@ main {
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #000;
-}
-
-.product-item .descriptions-article:hover {
-  scale: 1.05;
   box-shadow: 0 0 15px #000;
 }
 
@@ -461,9 +479,8 @@ ul li a {
   font-size: 16px;
 }
 
-footer li:hover {
-  scale: 1.1;
-  border-radius: 5px;
+footer li a:hover {
+  color: #000;
 }
 
 footer i {
@@ -508,7 +525,14 @@ footer i {
   border: none;
   font-size: 14px;
   cursor: pointer;
+  white-space: nowrap;
 }
+
+.button-delete-pague{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /*media query 481px*/
 @media (min-width: 481px) {
@@ -606,7 +630,6 @@ footer i {
   .box-car {
     width: 24%;
     top: 153px;
-    height: 68%;
   }
 
   main {
@@ -647,10 +670,8 @@ footer i {
     margin: 30px;
   }
 
-  .box-menu ul li:hover {
-    background-color: #a9a9a9;
-    border-radius: 5px;
-    padding: 4px;
+  .box-menu ul li a:hover {
+    color: #00e1ff
   }
 
   .product {
@@ -711,7 +732,12 @@ footer i {
   #redes {
     display: block;
   }
+
   .button-pague {
     width: 30%;
+  }
+
+  #button-vaciar{
+    width: 100px;
   }
 }

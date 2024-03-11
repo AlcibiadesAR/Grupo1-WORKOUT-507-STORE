@@ -27,16 +27,24 @@ main {
   margin: 0 auto;
 }
 
+.banner{
+  display: flex;
+  border: 2px solid #6a2c70;
+  width: 100%;
+  height: 90px;
+  background-color: #005f5f;
+}
+
 /*slider*/
 #gallery {
-  width: 95%;
-  height: 400px;
+  width: 70%;
+  height: 500px;
   margin: 10px auto;
   overflow: hidden;
 }
 
 .gallery-container {
-  width: 95%;
+  width: 70%;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
@@ -186,3 +194,4 @@ main {
 .button-carrito:hover i {
   display: none;
 }
+
