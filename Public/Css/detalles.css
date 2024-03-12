@@ -18,7 +18,7 @@ h1 {
 }
 
 main {
-  width: 100%;
+  width: 90%;
   color: white;
   text-align: center;
   font-size: 24px;
@@ -47,8 +47,8 @@ main {
 
 .description-article0 img {
   margin: 0;
-  width: 90%;
-  height: 50%;
+  width: 95%;
+  height: 90%;
   border: 5px solid #465b16;
   border-radius: 10px;
   box-shadow: 0 0 15px #bbc3a4;
@@ -117,16 +117,23 @@ main {
 }
 
 .technical-specs {
-  background-color: #2C2F35;
+  background-color: #2c352c;
   margin: 20px auto;
-  width: 90%;
+  width: 60%;
   padding: 5px;
+  text-align: center;
   border-radius: 5px;
+  background-color: #2C2F35;
+  border: 5px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #bbc3a4;
+  transition: 0.3s;
+  width: 95%;
 }
 
 #title-detalle{
-  font-size: 18px;
-  margin: 10px 0;
+  font-size: 24px;
+  margin-left: 10px 0;
 }
 
 .spec-item {
@@ -145,8 +152,8 @@ main {
 
 .box-payment{
  display: flex;
- justify-content: center;
- align-items: center;
+ justify-content: justify;
+ align-items: justify;
  margin: 0 auto ;
 }
 
@@ -186,34 +193,26 @@ main {
 #img-2,
 #img-3,
 #img-4 {
-  width: 100%;
+  width: 90%;
   object-fit: cover;
- justify-content: space-around;
 }
 
 .products {
-  padding: 10px;
-  margin: 10px auto;
-  display: flex;
-  gap: 10px;
+display: flex;
+flex-direction: row;
+justify-content: center;
 }
 
 .products .products-item {
-  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
-  width: 118px;
-  
+  width:90%;
 }
 .products .products-item .description-article {
   background-color: #2C2F35;
-  font-size: 12px;
   color: #fff;
-  max-width: 90%;
-  padding: 18px;
-  margin: 10px auto;
-  text-align: center;
-  border-radius: 10px;
+  padding: 5px;
+  border-radius: 5px;
   border: 2px solid #165b32;
   box-shadow: 0 0 15px #bbc3a4;
   transition: 0.3s;
@@ -224,8 +223,9 @@ main {
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #6c22a6;
-  flex-direction: column;
-  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+ 
 }
 
 #payment {
@@ -302,13 +302,28 @@ p {
 
 @media (min-width: 1024px) {
   .products {
-    width: 60%;
+    width: 40%;
     display: flex;
-    float: left;
+    flex-wrap: nowrap;
+    gap: 40px;
   }
 
+  .products .products-item {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 60%;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+ 
+  .description-article img{
+  height: 140px;
+}
+
+
+
   .products-payment {
-    width: 35%;
+    width: 50%;
     display: flex;
     float: left;
     flex-direction: column;
@@ -331,9 +346,6 @@ p {
     width: 65%;
   }
 
-  #yappy {
-    width: 35%;
-  }
 
   .box-card img:hover {
     scale: 1.05;
