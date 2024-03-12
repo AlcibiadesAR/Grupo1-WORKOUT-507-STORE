@@ -29,8 +29,15 @@
 #olvidar{
   color: #fff;
   cursor: pointer;
+  margin-top: 30px;
+}
+
+#cuenta{
+  margin-top: 20px;
 }
 
 .Iniciar{
   margin: 0 auto
 }
+
+
