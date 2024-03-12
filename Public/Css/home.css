@@ -97,7 +97,7 @@
   }
   
   .description-article p{
-    margin-top: 10px;
+    margin: 10px 0;
     font-size: 16px;
   }
   
@@ -123,8 +123,7 @@
   
   .bottons {
     display: flex;
-    justify-content: center;
-    padding-top: 10px;
+    justify-content: space-around;
   }
   .button-carrito{
     background-color: #2C2F35;
@@ -136,7 +135,7 @@
     border: none;
     white-space: nowrap;
     border: solid #00e1ff;
-    
+
   }
 
   .button-carrito span{
