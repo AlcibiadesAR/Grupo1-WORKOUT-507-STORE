@@ -66,16 +66,18 @@
     </nav>
     <div class="container">
       <div class="form-content">
-        <h1 id="title">Iniciar Sesión</h1>
+        <h1 id="titleCgit ">Iniciar Sesión</h1>
         <form>
           <div class="input-container-login">
             <div class="input-box">
               <i class="fa-solid fa-envelope"></i>
-              <input class="input-login-register" type="email" placeholder="Correo" />
+              <input class="input-login-register" id="emailValidar" type="email" placeholder="Correo" />
+              <div id="emailError"></div>
             </div>
             <div class="input-box">
               <i class="fa-solid fa-lock"></i>
-              <input class="input-login-register" type="password" placeholder="Contraseña" />
+              <input class="input-login-register" id="passwordValidar" type="password" placeholder="Contraseña" />
+              <div id="passwordError"></div>
             </div>
             <p id="olvidar">¿ Olvidaste tu contraseña ? <a href="#">Click aquí</a></p>
             <p id="cuenta">No tienes cuenta <a href="/registro.html">Registrate</a></p>
