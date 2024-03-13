@@ -1,3 +1,5 @@
+/*=======registro validacion=======*/
+
 let formulario = document.querySelector('form');
 let nombre = document.querySelector('#Nombre')
 let apellido = document.querySelector('#Apellido')

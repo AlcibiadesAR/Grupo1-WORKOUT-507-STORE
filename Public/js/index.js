@@ -20,7 +20,7 @@ icon.addEventListener("click", function () {
 //modo lightMode
 function lightMode(body, header, footer, icon) {
   body.style.backgroundImage =
-    "url(https://img.freepik.com/fotos-premium/fondo-equipos-fitness-gimnasio-entrenamiento-espacio-copia-texto_916191-122007.jpg)";
+    "url(https://hips.hearstapps.com/hmg-prod/images/01-1552045339.jpg)";
   body.style.backgroundRepeat = "no repeat";
   body.style.backgroundSize = "cover";
   header.style.backgroundColor = "#00e1ff";
@@ -32,7 +32,7 @@ function lightMode(body, header, footer, icon) {
 
 //modo darkMode
 function darkMode(body, header, footer, icon, h1, shoppingIcon) {
-  body.style.backgroundImage = "url(https://png.pngtree.com/thumb_back/fw800/background/20230630/pngtree-dark-fitness-room-with-training-equipment-and-black-dumbbells-on-the-image_3698810.jpg)";
+  body.style.backgroundImage = "url(https://images.pexels.com/photos/949131/pexels-photo-949131.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)";
   body.style.backgroundColor = "none";
   header.style.backgroundColor = "#2C2F35";
   footer.style.backgroundColor = "#2C2F35";
