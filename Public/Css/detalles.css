@@ -53,8 +53,15 @@ main {
   border-radius: 10px;
   box-shadow: 0 0 15px #bbc3a4;
   transition: 0.3s;
-  
 }
+.product0 .description-article:hover{
+  scale: 1.05;
+  box-shadow: 0 0 15px #fff;
+}
+.product0 .description-article0{
+  border-radius: 20px;
+}
+
 .description-article0 p{
   font-size: 18px;
 }
@@ -198,7 +205,10 @@ justify-content: center;
   transition: 0.3s;
 
 }
-
+.products-item .description-article:hover{
+  scale: 1.05;
+  box-shadow: 0 0 15px #fff;
+}
 .products .products-item .description-article img {
   width: 100%;
   background-color: #fff;
@@ -210,6 +220,7 @@ justify-content: center;
   border-radius: 10px;
  
 }
+
 
 #payment {
   margin: 3rem;
@@ -279,15 +290,19 @@ p {
   border: 5px solid white;
   border-radius: 10px;
 }
+.products-item1 .description-article1:hover{
+  scale: 1.05;
+  box-shadow: 0 0 15px #fff;
+}
 .button-delete{
   font-size: 14px;
   justify-content: center;
   border: 5px solid white;
 }
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .products {
-    width: 100%;
-    flex-direction: row;
+    width: 70%;
+    flex-direction: column;
   }
 }
 
@@ -297,6 +312,7 @@ p {
     display: flex;
     flex-wrap: nowrap;
     gap: 40px;
+    
   }
 
   .products .products-item {
@@ -305,6 +321,11 @@ p {
     width: 60%;
     gap: 40px;
     margin-bottom: 30px;
+    
+  }
+  .products-item .description-article:hover{
+    scale: 1.05;
+    box-shadow: 0 0 15px #fff;
   }
  
   .description-article img{
@@ -317,9 +338,11 @@ p {
     padding: 0 40px 25px 40px;
 
   }
+  
   .box-card a img {
     margin: 0 2em;
     width: 65%;
+    
   }
   .box-card img:hover {
     scale: 1.05;
