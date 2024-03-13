@@ -1,5 +1,4 @@
 /*=======registro validacion=======*/
-
 let formulario = document.querySelector('form');
 let nombre = document.querySelector('#Nombre')
 let apellido = document.querySelector('#Apellido')
@@ -24,3 +23,12 @@ formulario.addEventListener("submit",function(e){
         alert('formulario enviado')
     }
 })
+
+
+
+
+
+
+
+
+
