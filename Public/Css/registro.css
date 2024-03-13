@@ -101,9 +101,8 @@ form p a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    height: 50px;
 }
+
 
 .btn-wrapper button {
     flex-basis: 48%;
@@ -121,8 +120,9 @@ form p a {
     align-items: center;
 }
 
-.input-container {
-    height: 300px;
+#errores {
+    color: red;
+    padding-top: 10px;
 }
 
 .btn-wrapper button.button-login {
