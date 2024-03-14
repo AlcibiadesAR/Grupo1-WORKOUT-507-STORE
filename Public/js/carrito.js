@@ -44,33 +44,6 @@ function darkMode(body, header, footer, icon, h1, shoppingIcon) {
   shoppingIcon.style.color = "#fff";
 }
 
-//=========menu==============
-//animacion del boton de menu
-let buttonMenu = document.querySelector("#menu");
-let menuDivs = document.querySelectorAll("#menu div");
-let menu = document.querySelector(".box-menu");
-
-let menuOpen = false; 
-
-buttonMenu.addEventListener("click", function () {
-  if (!menuOpen) {
-    menu.style.display = "block";
-    menuDivs[0].style.transform = "rotate(45deg)";
-    menuDivs[1].style.opacity = "0";
-    menuDivs[2].style.transform = "rotate(-45deg)";
-  } else {
-    setTimeout(function () {
-      menu.style.display = "none";
-    }, 500);
-    menuDivs[0].style.transform = "rotate(0)";
-    menuDivs[1].style.opacity = "1";
-    menuDivs[2].style.transform = "rotate(0)";
-  }
-
-  menuOpen = !menuOpen;
-});
-
-
 
 //=========rutas de botones===========
 //boton para ir al carrito de compras
@@ -84,16 +57,25 @@ botonCar.addEventListener("click", function () {
 //visibilidad del carrito
 let carrito = document.querySelector(".fa-cart-shopping");
 let boxCarrito = document.querySelector(".box-car");
+let overlay = document.querySelector('.overlay');
+let iconclose = document.querySelector('.fa-xmark');
+let searchIcon = document.querySelector('#search-icon')
 
 let carritoVisible = false;
 
-carrito.addEventListener("click", function () {
+function miCarrito() {
+  carritoVisible = !carritoVisible;
   if (carritoVisible) {
-    boxCarrito.style.opacity = "0";
-    boxCarrito.style.visibility = "hidden";
-  } else {
     boxCarrito.style.opacity = "1";
     boxCarrito.style.visibility = "visible";
+    overlay.style.display = "block";
+    searchIcon.style.zIndex = '0'
+  } else {
+    boxCarrito.style.opacity = "0";
+    boxCarrito.style.visibility = "hidden";
+    overlay.style.display = "none";
   }
-  carritoVisible = !carritoVisible;
-});
+}
+
+carrito.addEventListener("click", miCarrito);
+iconclose.addEventListener("click", miCarrito);

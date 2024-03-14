@@ -180,37 +180,40 @@ main {
 #img-2,
 #img-3,
 #img-4 {
-  width: 90%;
-  object-fit: cover;
-}
-
-.products {
-display: flex;
-flex-direction: row;
-justify-content: center;
-}
-
-.products .products-item {
   display: flex;
-  flex-wrap: wrap;
-  width:90%;
-}
-.products .products-item .description-article {
   background-color: #2C2F35;
   color: #fff;
-  padding: 5px;
   border-radius: 5px;
   border: 2px solid black;
   box-shadow: 0 0 15px #bbc3a4;
   transition: 0.3s;
-
 }
+
+.products {
+display: flex;
+flex-direction: column;
+text-align: center;
+width: 30%;
+margin: 10px auto;
+}
+
+.products-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 40%;
+  margin: 10px 10px;
+}
+
+
 .products-item .description-article:hover{
   scale: 1.05;
   box-shadow: 0 0 15px #fff;
 }
 .products .products-item .description-article img {
-  width: 100%;
+  width: 90px;
+  height: 90px;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #6c22a6;
@@ -218,7 +221,6 @@ justify-content: center;
   justify-content: space-between;
   border: 5px solid white;
   border-radius: 10px;
- 
 }
 
 
@@ -237,6 +239,7 @@ justify-content: center;
   flex-direction: column;
   gap: 10px;
   margin: 0 auto;
+  padding: 0 4px;
 }
 
 .contenido-inter {
@@ -299,11 +302,40 @@ p {
   justify-content: center;
   border: 5px solid white;
 }
-@media (max-width: 768px) {
+
+
+@media (min-width: 481px) {
   .products {
-    width: 70%;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 150px;
+    width: 320px;
   }
+  .products-item{
+    width: 20%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .products {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    gap: 150px;
+    width: 550px;
+  }
+  .products-item{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }
 
 @media (min-width: 1024px) {

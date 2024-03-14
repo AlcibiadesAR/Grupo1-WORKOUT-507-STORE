@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,6 +21,17 @@
   margin: 0;
 }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Puedes ajustar el nivel de opacidad aquí */
+  z-index: 1; /* Asegúrate de que la capa esté encima del resto de los elementos */
+  display: none; /* Inicialmente oculta la capa */
+}
+
 /*header*/
 header {
   background-color: #00e1ff;
@@ -30,6 +41,10 @@ header {
   flex-direction: column;
   align-items: center;
   color: #fff;
+}
+
+header img{
+  margin-top: 5px;
 }
 
 .search-box {
@@ -74,13 +89,27 @@ nav #categoria {
 
 .box-menu {
   display: none;
-  width: 20%;
-  height: 300px;
+  width: 190px;
+  height: 260px;
   position: absolute;
-  top: 153px;
+  top: 220px;
   z-index: 1;
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   transition: opacity 0.5s ease-in-out;
+}
+
+#fa-cart{
+  color: #fff;
+  background-color: #00e1ff;
+
+}
+
+.box-menu ul li {
+  margin: 25px;
+}
+
+.box-menu ul li a:hover {
+  color: #00e1ff;
 }
 
 /*nav*/
@@ -115,8 +144,9 @@ nav .nav2 {
   margin-top: 3px;
 }
 
-.fa-sun:hover,.fa-moon:hover{
-  color: #2C2F35;
+.fa-sun:hover,
+.fa-moon:hover {
+  color: #2c2f35;
 }
 
 .nav2 #number {
@@ -131,14 +161,14 @@ nav ul li a {
 }
 
 nav ul li a i:hover {
-  color: #2C2F35;
+  color: #2c2f35;
 }
 
 .box-car {
   position: absolute;
   top: 220px;
   right: 0;
-  width: 70%;
+  width: 250px;
   height: 240px;
   background-color: #fff;
   border: 1px solid #fff;
@@ -151,12 +181,22 @@ nav ul li a i:hover {
   width: 100%;
   height: 20%;
   background-color: #00e1ff;
-  padding-top: 10px;
+  padding: 10px 0;
+
 }
 
 .box-car h2 {
   text-align: center;
   color: #fff;
+}
+
+.fa-xmark{
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 
 .cart-product {
@@ -180,7 +220,7 @@ nav ul li a i:hover {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 65px;
+  gap: 30px;
   background-color: #eaeaea;
   color: #000;
   font-size: 14px;
@@ -224,7 +264,7 @@ nav ul li a i:hover {
   font-size: 12px;
   cursor: pointer;
 }
-.car-message{
+.car-message {
   display: none;
 }
 
@@ -293,7 +333,7 @@ main {
 }
 
 .product .product-item .descriptions-article {
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   color: #fff;
   max-width: 250px;
   padding: 18px;
@@ -376,7 +416,7 @@ main {
 }
 
 .product-payment {
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   width: 90%;
   height: 50%;
   padding-bottom: 30px;
@@ -528,11 +568,10 @@ footer i {
   white-space: nowrap;
 }
 
-.button-delete-pague{
+.button-delete-pague {
   display: flex;
   flex-direction: row;
 }
-
 
 /*media query 481px*/
 @media (min-width: 481px) {
@@ -568,13 +607,22 @@ footer i {
     margin-top: 8px;
   }
 
+  .box-menu {
+    height: 270px;
+    top: 153px;
+  }
+
   nav .nav2 {
-    width: 25%;
+    width: 40%;
+    gap: 5px;
   }
 
   .box-car {
     top: 153px;
-    width: 60%;
+  }
+
+  .descriptions-car {
+    gap: 40px;
   }
 
   .logo-card {
@@ -594,14 +642,15 @@ footer i {
     width: 18%;
   }
 
-  .box-car {
-    width: 40%;
+  nav .nav2 {
+    width: 30%;
   }
 }
 
 /*media query 1024px*/
 
 @media (min-width: 1024px) {
+
   .truck-box i,
   .truck-box span,
   header .fa-sun {
@@ -627,8 +676,12 @@ footer i {
     display: none;
   }
 
+  nav .nav2 {
+    width: 22%;
+  }
+
   .box-car {
-    width: 24%;
+    width: 280px;
     top: 153px;
   }
 
@@ -657,21 +710,16 @@ footer i {
     top: 4px;
   }
 
-  nav .nav2 {
-    width: 20%;
-  }
-
-  .box-menu,
   #logo-top {
     display: none;
   }
-
+  
   .box-menu ul li {
     margin: 30px;
   }
 
   .box-menu ul li a:hover {
-    color: #00e1ff
+    color: #00e1ff;
   }
 
   .product {
@@ -707,7 +755,7 @@ footer i {
     margin-left: 60px;
   }
 
-  #PayPal{
+  #PayPal {
     margin-left: 60px;
   }
 
@@ -737,7 +785,7 @@ footer i {
     width: 30%;
   }
 
-  #button-vaciar{
+  #button-vaciar {
     width: 100px;
   }
 }
