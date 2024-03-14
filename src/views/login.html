@@ -65,25 +65,25 @@
       </div>
     </nav>
     <div class="container" id="container">
-      <div class="form-content">
+      <div class="form-content" id="form-content">
         <h1 id="titleLogin">Iniciar Sesión</h1>
-        <form id="#formulario">
+        <form id="formulario">
           <div class="input-container-login">
             <div class="input-box">
               <i class="fa-solid fa-envelope"></i>
               <input class="input-login-register" id="emailValidar" type="email" placeholder="Correo" />
-              <div id="emailError"></div>
+              <span id="errorEmail"></span>
             </div>
             <div class="input-box">
               <i class="fa-solid fa-lock"></i>
               <input class="input-login-register" id="passwordValidar" type="password" placeholder="Contraseña" />
-              <div id="passwordError"></div>
+              <span id="errorPassword"></span>
             </div>
             <p id="olvidar">¿ Olvidaste tu contraseña ? <a href="#">Click aquí</a></p>
             <p id="cuenta">No tienes cuenta <a href="/registro.html">Registrate</a></p>
           </div>
           <div class="btn-wrapper">
-            <button class="Iniciar" id="iniciarButton" type="button">Iniciar</button>
+            <button class="Iniciar" id="iniciarButton">Iniciar</button>
           </div>
         </form>
     </div>
@@ -129,6 +129,6 @@
       </ul>
     </footer>
     <script src="/js/login.js"></script>
-    <script src="/js/index.js"></script>
+    <script src="/js/home.js"></script>
   </body>
 </html>

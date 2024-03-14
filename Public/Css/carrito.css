@@ -27,7 +27,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Puedes ajustar el nivel de opacidad aquí */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Puedes ajustar el nivel de opacidad aquí */
   z-index: 1; /* Asegúrate de que la capa esté encima del resto de los elementos */
   display: none; /* Inicialmente oculta la capa */
 }
@@ -43,7 +48,7 @@ header {
   color: #fff;
 }
 
-header img{
+header img {
   margin-top: 5px;
 }
 
@@ -81,6 +86,10 @@ header img{
   padding: 10px;
 }
 
+#search-icon:hover {
+  color: #00e1ff;
+}
+
 .truck-box i,
 .truck-box span,
 nav #categoria {
@@ -98,10 +107,9 @@ nav #categoria {
   transition: opacity 0.5s ease-in-out;
 }
 
-#fa-cart{
+#fa-cart {
   color: #fff;
   background-color: #00e1ff;
-
 }
 
 .box-menu ul li {
@@ -182,7 +190,6 @@ nav ul li a i:hover {
   height: 20%;
   background-color: #00e1ff;
   padding: 10px 0;
-
 }
 
 .box-car h2 {
@@ -190,7 +197,7 @@ nav ul li a i:hover {
   color: #fff;
 }
 
-.fa-xmark{
+.fa-xmark {
   position: absolute;
   top: 13px;
   left: 10px;
@@ -648,10 +655,46 @@ footer i {
   }
 }
 
+@media (min-width: 768px) {
+  #logo-top {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  footer ul li,
+  ul li a {
+    font-size: 11px;
+  }
+
+  footer div {
+    font-size: 10px;
+  }
+
+  #logo-medium {
+    display: block;
+  }
+
+  #logo-medium img {
+    width: 180px;
+  }
+
+  .box-redes {
+    display: none;
+  }
+
+  #redes {
+    display: block;
+  }
+}
+
 /*media query 1024px*/
 
 @media (min-width: 1024px) {
-
   .truck-box i,
   .truck-box span,
   header .fa-sun {
@@ -714,7 +757,7 @@ footer i {
   #logo-top {
     display: none;
   }
-  
+
   .box-menu ul li {
     margin: 30px;
   }
@@ -770,8 +813,17 @@ footer i {
     font-size: 10px;
   }
 
+  footer ul li,
+  ul li a {
+    font-size: 14px;
+  }
+
   #logo-medium {
     display: block;
+  }
+
+  #logo-medium img {
+    width: 200px;
   }
 
   .box-redes {
@@ -788,5 +840,16 @@ footer i {
 
   #button-vaciar {
     width: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer ul li,
+  ul li a {
+    font-size: 16px;
+  }
+
+  #logo-medium img {
+    width: 250px;
   }
 }
