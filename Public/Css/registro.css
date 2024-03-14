@@ -23,16 +23,16 @@
   
 
 .container {
-    min-width: 50%;
+    min-width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:  100px auto;
+    margin: 10px auto;
 }
 
 .form-content {
-    min-width: 70%;
+    min-width: 90%;
     background-color: #2C2F35;
     padding: 10px 20px 40px;
     text-align: center;
@@ -74,7 +74,11 @@
     border: 0;
     outline: none;
     padding: 18px 15px;
+<<<<<<< HEAD
     color: #000;
+=======
+    color: #515966;
+>>>>>>> bc704c69407be54de681d2ec948d8c31595d0993
 }
 
 .input-login-register::placeholder {
@@ -138,7 +142,7 @@ form p a {
 
 @media(min-width: 481px){
     .form-content {
-        min-width: 80%;
+        min-width: 50%;
         padding: 10px 60px 40px;
 }
 }
@@ -146,7 +150,7 @@ form p a {
 
 @media(min-width: 768px){
     .form-content {
-        min-width: 66%;
+        min-width: 56%;
         padding: 10px 60px 40px;
 }
 }

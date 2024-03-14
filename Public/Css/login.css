@@ -21,9 +21,16 @@
   margin: 0;
 }
 
+#container{
+  margin: 10px 0;
+}
 
 .input-container-login {
-  height: 200px;
+  height: 195px;
+}
+
+#titleLogin{
+  font-size: 24px;
 }
 
 #olvidar{
@@ -37,7 +44,7 @@
 }
 
 .Iniciar{
-  margin: 0 auto
+  margin: 20px auto
 }
 
 
