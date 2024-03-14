@@ -68,12 +68,25 @@
 }
 
 .input-login-register {
+<<<<<<< HEAD
   width: 100%;
   background: transparent;
   border: 0;
   outline: none;
   padding: 18px 15px;
   color: #515966;
+=======
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+<<<<<<< HEAD
+    color: #000;
+=======
+    color: #515966;
+>>>>>>> bc704c69407be54de681d2ec948d8c31595d0993
+>>>>>>> 2581df334f2d5720e3caab2655e90273aba3ae3a
 }
 
 .input-login-register::placeholder {
@@ -119,8 +132,15 @@ form p a {
 }
 
 #errores {
+<<<<<<< HEAD
   color: red;
   padding-top: 10px;
+=======
+    color: red;
+    padding-top: 10px;
+    text-align: left;
+    list-style: none;
+>>>>>>> 2581df334f2d5720e3caab2655e90273aba3ae3a
 }
 
 .btn-wrapper button.button-login {

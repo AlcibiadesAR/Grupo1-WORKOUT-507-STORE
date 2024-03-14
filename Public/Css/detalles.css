@@ -38,6 +38,7 @@ main {
   margin: 10px auto;
   display: flex;
   flex-direction: row;
+  
 }
 
 .description-article0 h3{
@@ -108,11 +109,11 @@ main {
 }
 
 .button-delete {
-  background-color: #a9a9a9;
   padding: 10px;
   margin: 10px auto;
-  border-radius: 6px;
-  color: #ffff;
+  background-color: #0e0e14;
+  color: white;
+  border: 5px solid #00e1ff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   border: none;
   font-size: 15px;
@@ -124,17 +125,14 @@ main {
 }
 
 .technical-specs {
-  background-color: #2c352c;
+  background-color: black;
   margin: 20px auto;
   width: 60%;
   padding: 5px;
   text-align: center;
   border-radius: 5px;
-  background-color: #2C2F35;
-  border: 5px solid white;
-  border-radius: 10px;
-  box-shadow: 0 0 15px #bbc3a4;
-  transition: 0.3s;
+  background-color: black;
+  border: 5px solid #00e1ff;
   width: 100%;
 }
 
@@ -195,6 +193,7 @@ flex-direction: column;
 text-align: center;
 width: 30%;
 margin: 10px auto;
+
 }
 
 .products-item {
@@ -205,8 +204,6 @@ margin: 10px auto;
   gap: 40%;
   margin: 10px 10px;
 }
-
-
 .products-item .description-article:hover{
   scale: 1.05;
   box-shadow: 0 0 15px #fff;
@@ -243,11 +240,10 @@ margin: 10px auto;
 }
 
 .contenido-inter {
-  background-color: #2C2F35;
-  border: 5px solid white;
+  background-color: black;
+  border: 5px solid #00e1ff;
   border-radius: 10px;
-  box-shadow: 0 0 15px #bbc3a4;
-  transition: 0.3s;
+
   width: 95%;
 }
 
@@ -256,14 +252,14 @@ h2 {
   text-align: center;
   margin-top: 20px;
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 p {
   color: white;
   text-align: justify;
   margin: 30px 20px 30px 30px;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .products1 {
@@ -286,11 +282,11 @@ p {
 }
 
 .products1 .products-item1 .description-article1 {
-  background-color: #2C2F35;
+  background-color: black;
   color: #fff;
   max-width: 250px;
   padding: 18px;
-  border: 5px solid white;
+  border: 5px solid #00e1ff;
   border-radius: 10px;
 }
 .products-item1 .description-article1:hover{
@@ -300,7 +296,7 @@ p {
 .button-delete{
   font-size: 14px;
   justify-content: center;
-  border: 5px solid white;
+  border: 5px solid #00e1ff;
 }
 
 
@@ -318,7 +314,11 @@ p {
     justify-content: center;
     align-items: center;
   }
-  
+  .button-delete:hover{
+    background-color: #0e0e14;
+    color: white;
+    border: 5px solid #00e1ff;
+      }
 }
 
 @media (min-width: 768px) {
@@ -335,25 +335,30 @@ p {
     justify-content: center;
     align-items: center;
   }
-  
+  .button-delete:hover{
+    background-color: #0e0e14;
+    color: white;
+    border: 5px solid #00e1ff;
+      }
 }
 
 @media (min-width: 1024px) {
   .products {
-    width: 47%;
+    width:28%;
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    gap: 40px;
-    
+    position: absolute;
+    gap: 20%;
   }
-
+  
   .products .products-item {
     display: flex;
     flex-wrap: nowrap;
     width: 60%;
     gap: 40px;
     margin-bottom: 30px;
-    
+    align-items: center;
   }
   .products-item .description-article:hover{
     scale: 1.05;
@@ -368,16 +373,33 @@ p {
     display: flex;
     justify-content: space-between;
     padding: 0 40px 25px 40px;
-
   }
-  
   .box-card a img {
     margin: 0 2em;
     width: 65%;
-    
   }
   .box-card img:hover {
     scale: 1.05;
+  }
+  .contenido-inter{
+    margin: 15%;
+  }
+  .products1 {
+    padding: 10%;
+    margin: 1%;
+    display: flex;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+.description-article1{
+  flex-direction: row;
+  align-items: center;
+}
+  .button-delete:hover{
+    background-color: #0e0e14;
+    color: white;
+    border: 5px solid #00e1ff;
   }
 }
 

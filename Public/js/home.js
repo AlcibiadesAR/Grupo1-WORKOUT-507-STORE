@@ -38,7 +38,7 @@ document.querySelector('.next-button').addEventListener('click', () => {
 });
 
 function navigate(direction) {
-   const galleryContainer = document.querySelector('.gallery-container');
+   const galleryContainer = document.querySelector('#gallery');
    const tImages = document.querySelectorAll('.gallery-item').length;
 
    currentIndex = (currentIndex + direction + tImages) % tImages;
@@ -47,20 +47,4 @@ function navigate(direction) {
    galleryContainer.style.transform = `translateX(${offset}%)`;
 }
 
-document.querySelector('.prev-button').addEventListener('click', () => {
-   navigate(-1);
-});
 
-document.querySelector('.next-button').addEventListener('click', () => {
-   navigate(1);
-});
-
-function navigate(direction) {
-   const galleryContainer = document.querySelector('.gallery-container');
-   const tImages = document.querySelectorAll('.gallery-item').length;
-
-   currentIndex = (currentIndex + direction + tImages) % tImages;
-   const offset = -currentIndex * 100;
-
-   galleryContainer.style.transform = `translateX(${offset}%)`;
-}
