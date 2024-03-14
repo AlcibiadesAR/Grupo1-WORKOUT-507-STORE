@@ -74,7 +74,7 @@
     border: 0;
     outline: none;
     padding: 18px 15px;
-    color: #fff;
+    color: #000;
 }
 
 .input-login-register::placeholder {
@@ -123,6 +123,8 @@ form p a {
 #errores {
     color: red;
     padding-top: 10px;
+    text-align: left;
+    list-style: none;
 }
 
 .btn-wrapper button.button-login {
