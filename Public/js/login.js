@@ -1,7 +1,8 @@
 /*=======login validacion=======*/
+let form = document.querySelector('#formulario');
 let Email = document.querySelector('#emailValidar');
 let Password = document.querySelector('#passwordValidar');
-let form = document.querySelector('#formulario');
+let botonForm = document.querySelector("#iniciarButton");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -14,6 +15,8 @@ form.addEventListener("submit", function (e) {
         Password.value = ''
     }
 });
+
+
 
 Email.addEventListener("focus", function () {
     validacionEmail();
