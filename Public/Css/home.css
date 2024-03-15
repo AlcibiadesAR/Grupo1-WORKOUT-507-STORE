@@ -102,6 +102,7 @@ main {
     70% {margin-left: -200%;}
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
+<<<<<<< HEAD
   }*/
 /*articulos*/
 .subtitle-seccion {
@@ -135,6 +136,115 @@ main {
   border-radius: 10px;
   border: solid #00e1ff;
 }
+=======
+  }
+  /*articulos*/
+  .subtitle-seccion {
+    color: #fff;
+    font-size: 30px;
+    border-bottom: 2px solid #6C22A6;
+    width: 100%;
+  }
+
+  .products{
+    padding: 10px;
+    margin: auto;
+    display: flex;
+  }
+  
+  .products .products-item{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-grow: 1;
+  }
+  
+  .products .products-item .description-article{
+    background-color: #2C2F35;
+    color: #fff;
+    max-width: 200px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    border: solid #00e1ff;
+  }
+  
+  .products .products-item .description-article img{
+    margin-top: 15px;
+    background-color: #fff;
+    
+    border-radius: 10px;
+    border: 1px solid #6C22A6;
+  }
+  .products-item .description-article:hover{
+    scale: 1.05;
+    box-shadow: 0 0 15px #fff;
+  }
+  
+  .description-article h3{
+    text-transform: uppercase;
+  }
+  
+  .description-article p{
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  .description-article span{
+    color: #00e1ff;
+  }
+  
+  .description-article form{
+    margin-top: 10px ;
+  }
+  
+  .box-quantity{
+    display: flex;
+    padding: 5px;
+    margin: 10px 0;
+  }
+  
+  .box-quantity .fa-plus, .fa-minus{
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 12px;
+  }
+  
+  .bottons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .button-carrito{
+    background-color: #2C2F35;
+    padding: 10px 10px ;
+    border-radius: 6px;
+    color: #00e1ff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    border: none;
+    white-space: nowrap;
+    border: solid #00e1ff;
+    transition-property: all;
+    transition-duration: 3s;
+  }
+
+  .button-carrito span{
+    display: none;
+  }
+
+.button-carrito:hover span{
+    display: block;
+    color: #fff;
+    
+  }
+
+  .button-carrito:hover i {
+    display: none;
+  }
+>>>>>>> cb546985059cfb4b973e7c3a0103443df709e46a
 
 .products .products-item .description-article img {
   margin-top: 15px;
