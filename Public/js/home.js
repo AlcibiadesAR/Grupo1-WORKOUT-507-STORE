@@ -25,7 +25,6 @@ buttonMenu.addEventListener("click", function () {
   menuOpen = !menuOpen;
 });
 
-
 /*========slider========*/
 let currentIndex = 0;
 

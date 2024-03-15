@@ -5,35 +5,52 @@ let form = document.querySelector('#formulario');
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-    if (Email.value.length == 0) {
-            validacion(Email);
+    if (Email.value.length == 0 || Password.value.length == 0) {
+            validacionEmail();
+            validacionPassword();
     } else {
         alert('Formulario enviado con exito')
+        Email.value = ''
+        Password.value = ''
     }
 });
 
 Email.addEventListener("focus", function () {
-    validacion(Email);
-  });
+    validacionEmail();
+});
 
-  Password.addEventListener("input", function () {
-    validacion(Password);
-  });
+Email.addEventListener("input", function () {
+  validacionEmail();
+});
+
+Password.addEventListener("focus", function () {
+    validacionPassword();
+});
+
+Password.addEventListener("input", function () {
+  validacionPassword();
+});
   
-function validacion(Email) {
+function validacionEmail() {
   let LoginError = document.querySelector("#errorEmail");
-  if (Email.value.length == 0)
+  let inputEmail = document.querySelector('#input-box-login');
+  if (Email.value.length == 0){
     LoginError.innerHTML = "Debe ingresar su correo electronico";
-  else {
+    inputEmail.style.marginBottom = '30px';
+  } else {
     LoginError.innerHTML = "";
+    inputEmail.style.marginBottom = '';
   }
 }
 
-function validacion(Password) {
-    let LoginError2 = document.querySelector("#errorPassword");
-    if (Password.value.length == 0)
-      LoginError2.innerHTML = "Debe ingresar su contraseña";
-    else {
-      LoginError2.innerHTML = "";
+function validacionPassword() {
+    let LoginError = document.querySelector("#errorPassword");
+    let  botonInciar = document.querySelector('#iniciarButton')
+    if (Password.value.length == 0){
+      LoginError.innerHTML = "Debe ingresar su contraseña";
+      botonInciar.style.marginTop = '40px'
+    } else {
+      LoginError.innerHTML = "";
+      botonInciar.style.marginTop = ''
     }
   }
