@@ -59,7 +59,7 @@
   .subtitle-seccion {
     color: #fff;
     font-size: 30px;
-    border-bottom: 2px solid #00e1ff;
+    border-bottom: 2px solid #6C22A6;
     width: 100%;
   }
 
@@ -133,6 +133,7 @@
     display: flex;
     justify-content: space-around;
   }
+
   .button-carrito{
     background-color: #2C2F35;
     padding: 10px 10px ;
@@ -143,17 +144,20 @@
     border: none;
     white-space: nowrap;
     border: solid #00e1ff;
-
+    transition-property: all;
+    transition-duration: 3s;
   }
 
   .button-carrito span{
     display: none;
-    
   }
+
 .button-carrito:hover span{
     display: block;
     color: #fff;
+    
   }
+
   .button-carrito:hover i {
     display: none;
   }
