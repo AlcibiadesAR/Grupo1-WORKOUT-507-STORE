@@ -41,7 +41,7 @@ botonLeft.addEventListener("click", function(){
 
 setInterval(() => {
   MoveRigth();
-}, 2000);
+}, 4000);
 
 let contador = 0;
 let calculo = 0;
