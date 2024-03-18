@@ -280,7 +280,7 @@ h2 {
 .products1 .products-item1 .description-article1 {
   background-color: #2c2f35;
   color: #fff;
-  max-width: 250px;
+  max-width: 200px;
   padding: 18px;
   border: 3px solid #00e1ff;
   border-radius: 10px;
@@ -298,6 +298,12 @@ h2 {
     margin: 0 auto;
     gap: 150px;
     width: 320px;
+  }
+  .products1 .products-item1 .description-article1 {
+    background-color: #2c2f35;
+    color: #fff;
+    max-width: 200px;
+    font-size: 18px;
   }
   .products-item {
     width: 20%;
@@ -334,6 +340,12 @@ h2 {
     background-color: #0e0e14;
     color: white;
     border: 5px solid #00e1ff;
+  }
+  .products1 .products-item1 .description-article1 {
+    background-color: #2c2f35;
+    color: #fff;
+    max-width: 200px;
+    padding: 14px;
   }
 }
 
