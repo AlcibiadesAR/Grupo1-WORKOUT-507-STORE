@@ -17,8 +17,6 @@ form.addEventListener("submit", function (e) {
     }
 });
 
-
-
 Email.addEventListener("focus", function () {
     validacionEmail();
 });
@@ -39,7 +37,7 @@ function validacionEmail() {
   let LoginError = document.querySelector("#errorEmail");
   let inputEmail = document.querySelector('#input-box-login');
   if (Email.value.length == 0){
-    LoginError.innerHTML = "Debe ingresar su correo electronico";
+    LoginError.innerHTML = `<li><i class="fa-solid fa-circle-exclamation" id="fa-exclamation"></i> Debe ingresar su correo electronico</li>`
     inputEmail.style.marginBottom = '30px';
     inputEmail.style.border = '1px solid crimson';
   } else {
@@ -54,7 +52,7 @@ function validacionPassword() {
     let  botonInciar = document.querySelector('#iniciarButton')
     let inputPassword = document.querySelector('#input-box');
     if (Password.value.length == 0){
-      LoginError.innerHTML = "Debe ingresar su contraseña";
+      LoginError.innerHTML = `<li><i class="fa-solid fa-circle-exclamation" id="fa-exclamation2"></i>  Debe ingresar su contraseña</li>`;
       botonInciar.style.marginTop = '40px';
       inputPassword.style.border = '1px solid crimson';
     } else {

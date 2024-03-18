@@ -52,7 +52,6 @@ botonCar.addEventListener("click", function(){
   window.location.href = "/carrito.html";
 });
 
-
 // ========Funciones para el carrito============
 
 //visibilidad del carrito

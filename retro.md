@@ -1,29 +1,29 @@
-# Retrospectiva del Primer Sprint
+# Retrospectiva del segundo Sprint - Actualizada
 
-1. Lo que hicimos bien:
+# Lo que hicimos bien:
 
--Colaboración en equipo: Aprovechamos las grabaciones, reuniones en el salón para colaborar en equipo
+Colaboración en equipo: Aprovechamos las grabaciones y las reuniones en el salón para colaborar eficazmente en equipo.
 
--Comunicación: Mantuvimos una comunicación constante durante las horas de trabajo en la universidad.
+Comunicación: Mantuvimos una comunicación constante durante las horas de trabajo en la universidad, lo que facilitó la coordinación y el progreso de las tareas.
 
--Uso eficiente de recursos: Aunque fue dificil tratamos de optimizar el tiempo en la universidad al centrarnos en tareas clave.
+Uso eficiente de recursos: A pesar de las dificultades, optimizamos el tiempo en la universidad al enfocarnos en las tareas clave y sacar el máximo provecho de los recursos disponibles.
 
-2. Lo que hicimos mal:
+# Lo que corregimos:
 
--Dependencia de las laptos: Limitación al trabajar exclusivamente con las laptops proporcionadas.
+Dependencia de las laptops: Reconocimos la limitación de trabajar exclusivamente con las laptops proporcionadas y hemos diversificado nuestras opciones de trabajo, incluyendo la posibilidad de utilizar nuestras propias computadoras cuando sea necesario.
 
--Coordinación fuera de la universidad: El no tratar de continuar con las tareas fuera de las horas de clases nos atraso un poco.
+Coordinación fuera de la universidad: Hemos implementado una estrategia para continuar con las tareas fuera del horario de clases, asignando responsabilidades y estableciendo plazos claros para cada uno de nosotros y mantenernos en camino.
 
-3. Qué deberíamos empezar a hacer:
+# Qué empezamos a hacer:
 
--Buscar solución: Investigar opciones para colaborar y trabajar de forma remota cuando no estamos en la universidad.
+Búsqueda de soluciones: Investigamos opciones para colaborar y trabajar de forma remota cuando no estamos en la universidad, lo que nos permite ser más flexibles y adaptarnos a diferentes situaciones.
 
-5. Qué deberíamos dejar de hacer:
+# Qué dejamos de hacer:
 
--Depender exclusivamente de recursos universitarios: Buscar alternativas para trabajar en casa cuando sea necesario. Asi avanzaremos mucho.
+Dependencia exclusiva de recursos universitarios: Hemos buscado alternativas para trabajar desde casa cuando sea necesario, lo que nos permite avanzar de manera más constante y eficiente en nuestro proyecto.
 
-6. Comunicacón: 
+Comunicación: Utilización de herramientas en línea: Incorporamos herramientas como Zoom para mantenernos conectados y facilitar la comunicación, incluso fuera del entorno universitario.
 
--Debemos utilizar herramientas en línea para mantenernos conectados incluso fuera de la universidad. como por ejemplo zoom.
+# Conclusión: 
 
-# Conclusión: Debemos ver como encontramos una solución como equipo para trabajar tanto en la universidad como en casa para avanzar, mejorar nuestro proyecto y continuar con el próximo sprint.
+Como grupo de Workout Store 507 hemos identificado y corregido nuestros puntos débiles, lo que nos permite trabajar de manera más efectiva tanto en la universidad como en casa. Esta mejora continua fortalecerá nuestro proyecto y nos preparará para el próximo sprint con mayor confianza.

@@ -117,10 +117,15 @@ form p a {
 
 #errores {
   color: red;
-  padding-top: 10px;
   list-style: none;
   text-align: start;
   font-size: 10px;
+  padding: 0; 
+  margin: 5px 0;
+}
+
+#errores li {
+  text-shadow: none;
 }
 
 #signUp {
