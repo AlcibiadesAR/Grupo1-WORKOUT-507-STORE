@@ -7,15 +7,18 @@ let contraseña = document.querySelector('#Contraseña')
 let confContraseña = document.querySelector('#Confcontraseña')
 let erroresUl = document.querySelector('#errores')
 let contenedor = document.querySelector('.form-content')
+let contraseñaCondicion = /^(?=.*\d)(?=.*[a-z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
 
 formulario.addEventListener("submit",function(e){
     e.preventDefault()
     let errores = []
     erroresUl.innerHTML = ''
     if (nombre.value == '') errores.push(' El campo de nombre no debe quedar vacio')
+    if (nombre.value.length < 2) errores.push('Su nombre debe tener 2 caracteres o mas')
     if (apellido.value == '') errores.push(' El campo apellido no debe estar vacio')
-    if (correo.value == '') errores.push(' El campo no puede estar vacio')
-    if (contraseña.value == '') errores.push(' El campo no puede quedar vacio')
+    if (apellido.value.length < 2) errores.push('Su apellido debe tener 2 caracteres o mas')
+    if (correo.value == '') errores.push(' El campo de correo no puede estar vacio')
+    if (contraseña.value == '') errores.push(' El campo de contraseña no puede quedar vacio')
     if (confContraseña.value !== contraseña.value) errores.push("Debe tener la misma contraseña")
     if (errores.length > 0) {
         for (const item of errores){
