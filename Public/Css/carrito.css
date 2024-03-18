@@ -32,9 +32,9 @@
     0,
     0,
     0.5
-  ); /* Puedes ajustar el nivel de opacidad aquí */
-  z-index: 1; /* Asegúrate de que la capa esté encima del resto de los elementos */
-  display: none; /* Inicialmente oculta la capa */
+  ); 
+  z-index: 1;
+  display: none; 
 }
 
 /*header*/
