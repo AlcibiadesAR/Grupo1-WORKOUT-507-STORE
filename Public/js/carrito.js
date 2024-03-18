@@ -48,19 +48,10 @@ function darkMode(body, header, footer, icon, h1, shoppingIcon) {
 //=========rutas de botones===========
 //boton para ir al carrito de compras
 let botonCar = document.querySelector("#button-cars-carrito");
-botonCar.addEventListener("click", function () {
+botonCar.addEventListener("click", function(){
   window.location.href = "/carrito.html";
 });
 
-let botonAñadir = document.querySelector('.button-carrito');
-botonAñadir.addEventListener("click", function () {
-  window.location.href = "/carrito.html";
-});
-
-let botonAñadir2 = document.querySelector('#button-carrito');
-botonAñadir2.addEventListener("click", function () {
-  window.location.href = "/carrito.html";
-});
 
 // ========Funciones para el carrito============
 
