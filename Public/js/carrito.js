@@ -57,6 +57,11 @@ botonAñadir.addEventListener("click", function () {
   window.location.href = "/carrito.html";
 });
 
+let botonAñadir2 = document.querySelector('#button-carrito');
+botonAñadir2.addEventListener("click", function () {
+  window.location.href = "/carrito.html";
+});
+
 // ========Funciones para el carrito============
 
 //visibilidad del carrito

@@ -73,24 +73,3 @@ function Moveleft() {
     Slider.style.transition = "all ease .6s";
   }
 }
-
-
-/*let currentIndex = 0;
-
-document.querySelector('.prev-button').addEventListener('click', () => {
-   navigate(-1);
-});
-
-document.querySelector('.next-button').addEventListener('click', () => {
-   navigate(1);
-});
-
-function navigate(direction) {
-   const galleryContainer = document.querySelector('#gallery');
-   const tImages = document.querySelectorAll('.gallery-item').length;
-
-   currentIndex = (currentIndex + direction + tImages) % tImages;
-   const offset = -currentIndex * 100;
-
-   galleryContainer.style.transform = `translateX(${offset}%)`;
-}*/
