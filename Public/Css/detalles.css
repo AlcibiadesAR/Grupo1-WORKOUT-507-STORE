@@ -344,9 +344,19 @@ h2 {
   .products1 .products-item1 .description-article1 {
     background-color: #2c2f35;
     color: #fff;
-    max-width: 200px;
-    padding: 14px;
+    width: 27%;
+    padding: 12px;
+
   }
+}
+@media (min-width: 900px) {
+  .products1 .products-item1 .description-article1 {
+    background-color: #2c2f35;
+    color: #fff;
+    width: 22%;
+    padding: 12px;
+  }
+  
 }
 
 @media (min-width: 1024px) {
@@ -408,5 +418,10 @@ h2 {
     color: white;
     border: 5px solid #00e1ff;
   }
-
+  .products1 .products-item1 .description-article1 {
+    background-color: #2c2f35;
+    color: #fff;
+    width: 20%;
+    padding: 12px;
+  }
 }
