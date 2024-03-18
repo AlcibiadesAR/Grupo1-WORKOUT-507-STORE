@@ -40,20 +40,25 @@ function validacionEmail() {
   if (Email.value.length == 0){
     LoginError.innerHTML = "Debe ingresar su correo electronico";
     inputEmail.style.marginBottom = '30px';
+    inputEmail.style.border = '1px solid crimson';
   } else {
     LoginError.innerHTML = "";
     inputEmail.style.marginBottom = '';
+    inputEmail.style.border = '';
   }
 }
 
 function validacionPassword() {
     let LoginError = document.querySelector("#errorPassword");
     let  botonInciar = document.querySelector('#iniciarButton')
+    let inputPassword = document.querySelector('#input-box');
     if (Password.value.length == 0){
       LoginError.innerHTML = "Debe ingresar su contraseña";
-      botonInciar.style.marginTop = '40px'
+      botonInciar.style.marginTop = '40px';
+      inputPassword.style.border = '1px solid crimson';
     } else {
       LoginError.innerHTML = "";
       botonInciar.style.marginTop = ''
+      inputPassword.style.border = '';
     }
   }

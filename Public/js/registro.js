@@ -6,10 +6,10 @@ let correo = document.querySelector('#Correo')
 let contraseña = document.querySelector('#Contraseña')
 let confContraseña = document.querySelector('#Confcontraseña')
 let erroresUl = document.querySelector('#errores')
+let contenedor = document.querySelector('.form-content')
 
 formulario.addEventListener("submit",function(e){
     e.preventDefault()
-    console.log("hola");
     let errores = []
     erroresUl.innerHTML = ''
     if (nombre.value == '') errores.push(' El campo de nombre no debe quedar vacio')
@@ -21,6 +21,8 @@ formulario.addEventListener("submit",function(e){
         for (const item of errores){
         erroresUl.innerHTML += `<li><i class="fa-solid fa-circle-exclamation"></i> ${item}</li>`
         }
+        contenedor.style.marginTop = '50px';
+        contenedor.style.marginBottom = '50px';
     } else {
         alert('formulario enviado')
     }

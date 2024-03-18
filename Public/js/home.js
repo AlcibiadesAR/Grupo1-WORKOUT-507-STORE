@@ -25,15 +25,14 @@ buttonMenu.addEventListener("click", function () {
 });
 
 /*========slider========*/
-
-let botonRight = document.querySelector("#fa-angle-right");
-let botonLeft = document.querySelector("#fa-angle-left");
+let botonRight = document.querySelector("#fa-right");
+let botonLeft = document.querySelector("#fa-left");
 let Slider = document.querySelector("#slider");
 let sectionSlider = document.querySelectorAll(".section-img");
 
 botonRight.addEventListener("click", function(){
   MoveRigth();
-})
+});
 
 botonLeft.addEventListener("click", function(){
   Moveleft();
@@ -74,6 +73,7 @@ function Moveleft() {
     Slider.style.transition = "all ease .6s";
   }
 }
+
 
 /*let currentIndex = 0;
 

@@ -58,33 +58,105 @@
         </li>
         <li>
           <a href="#">
-            <i class="fa-solid fa-cart-shopping"></i><span id="number">0</span>
+            <i class="fa-solid fa-cart-shopping"></i><span id="number">6</span>
           </a>
         </li>
       </ul>
-    </nav>
-      <div class="container">
-        <div class="slider-container" id="slider">
-         <section class="section-img">
-          <img src="/Images/BANNER1.png">
-         </section>
-         <section class="section-img">
-          <img src="/Images/BANNER2.jpg">
-         </section>
-         <section class="section-img">
-          <img src="/Images/shoesBANNER.png">
-         </section>
-         <section class="section-img">
-          <img src="/Images/Banner4.jpeg">
-         </section>
-         <section class="section-img">
-          <img src="/Images/banner5.png">
-         </section>
+      <div class="overlay"></div>
+      <div class="box-car">
+        <div class="box-product">
+          <div class="title-car">
+            <h2>Tu Carrito</h2>
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="cart-product">
+            <div class="descriptions-car">
+              <img src="/Images/guantes_everlast.jpg" alt="" />
+              <span class="cantidad-producto-carrito">1</span>
+              <span>$0.00</span>
+            </div>
+            <i class="fa-solid fa-trash"></i>
+          </div>
+          <div class="cart-product">
+            <div class="descriptions-car">
+              <img src="/Images/zapatilla-nike-running-girl.jpg" alt="" />
+              <span class="cantidad-producto-carrito">1</span>
+              <span>$0.00</span>
+            </div>
+            <i class="fa-solid fa-trash"></i>
+          </div>
+          <div class="cart-product">
+            <div class="descriptions-car">
+              <img src="/Images/calcetines_adidas_3par.jpg" alt="" />
+              <span class="cantidad-producto-carrito">1</span>
+              <span>$0.00</span>
+            </div>
+            <i class="fa-solid fa-trash"></i>
+          </div>
+          <div class="cart-product">
+            <div class="descriptions-car">
+              <img src="/Images/saco_de_boxeo.jpg" alt="" />
+              <span class="cantidad-producto-carrito">1</span>
+              <span>$0.00</span>
+            </div>
+            <i class="fa-solid fa-trash"></i>
+          </div>
+          <div class="cart-product">
+            <div class="descriptions-car">
+              <img src="/Images/bici_estatica_rali.jpg" alt="" />
+              <span class="cantidad-producto-carrito">1</span>
+              <span>$0.00</span>
+            </div>
+            <i class="fa-solid fa-trash"></i>
+          </div>
+          <div class="cart-product">
+            <div class="descriptions-car">
+              <img src="/Images/pesas_25kg.jpg" alt="" />
+              <span class="cantidad-producto-carrito">1</span>
+              <span>$0.00</span>
+            </div>
+            <i class="fa-solid fa-trash"></i>
+          </div>
         </div>
-        <div class="button-right"><i class="fa-solid fa-angle-left" id="fa-angle-left"></i></div>
-        <div class="button-left"><i class="fa-solid fa-angle-right" id="fa-angle-right"></i></div>
+        <div class="box-total-car">
+          <p>Total</p>
+          <span>$0.00</span>
+        </div>
+        <p class="car-message">El carrito está vacío</p>
+        <div class="box-button-cars">
+          <button class="button-cars" type="submit" id="button-cars-carrito">
+            Ir al carrito >>
+          </button>
+          <button class="button-cars" type="button">Vaciar Carrito</button>
+        </div>
       </div>
-  <!--<section id="gallery">
+    </nav>
+    <div class="container">
+      <div class="slider-container" id="slider">
+        <section class="section-img">
+          <img src="/Images/BANNER1.png" />
+        </section>
+        <section class="section-img">
+          <img src="/Images/BANNER2.png" />
+        </section>
+        <section class="section-img">
+          <img src="/Images/shoesBANNER.png" />
+        </section>
+        <section class="section-img">
+          <img src="/Images/Banner4.jpeg" />
+        </section>
+        <section class="section-img">
+          <img src="/Images/bannerr5.png" />
+        </section>
+      </div>
+      <div class="button-right">
+        <i class="fa-solid fa-angle-left" id="fa-left"></i>
+      </div>
+      <div class="button-left">
+        <i class="fa-solid fa-angle-right" id="fa-right"></i>
+      </div>
+    </div>
+    <!--<section id="gallery">
           <figure class="gallery-item">
             <img src="/Images/banner-1.jpg" alt="Imagen 1" />
             <figcaption>Descripción de la imagen 1</figcaption>
@@ -104,7 +176,7 @@
       </section>
     </div>
   -->
-  <main>
+    <main>
       <section class="products">
         <div class="products-item">
           <h3 class="subtitle-seccion">Lo Nuevo en equipo de Gym</h3>
@@ -136,15 +208,15 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button id="Button-carrito" class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button id="Button-carrito" class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
             <h3>Bicicleta estatica RALI negro</h3>
@@ -155,14 +227,14 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
             </div>
           </article>
           <article class="description-article">
@@ -174,14 +246,14 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
             </div>
           </article>
           <article class="description-article">
@@ -189,19 +261,19 @@
             <img src="/Images/barra_recta.jpg" width="150px" height="150px" />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
             </div>
           </article>
           <h3 class="subtitle-seccion">Lo Nuevo en equipo de boxeo</h3>
           <article class="description-article">
-            <h3>Guantes De Boexeo Everlast Classic</h3>
+            <h3>Guantes De Boxeo Everlast Classic</h3>
             <img
               src="/Images/guantes_everlast.jpg"
               width="150px"
@@ -209,15 +281,15 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
             <h3>Cuerda Para Saltar Everlast</h3>
@@ -228,45 +300,45 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
-            <h3>Saco De Boexeo Everlast</h3>
+            <h3>Saco De Boxeo Everlast</h3>
             <img src="/Images/saco_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
             <h3>Pera De Boxear Everlast</h3>
             <img src="/Images/pera_de_boxeo.jpg" width="150px" height="150px" />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
             <h3>Diana de mano para boxeo</h3>
@@ -277,15 +349,15 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <h3 class="subtitle-seccion">Lo Nuevo en Ropa Deportiva</h3>
           <article class="description-article">
@@ -297,15 +369,15 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
             <h3>Pantalon Nike Dri Fit (hombres)</h3>
@@ -316,75 +388,75 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
-       
-        <article class="description-article">
-          <h3>Pantalon Nike Dri Fit (mujeres)</h3>
-          <img
-            src="/Images/dri_fit_academy_pantalon-de_futbol_girl.png"
-            width="150px"
-            height="150px"
-          />
-          <p>Precio: <span>$0.00</span></p>
-          <div class="bottons">
-          <button class="button-carrito" type="submit">
-            <span>Añadir al carrito</span>
-            <i class="fa-solid fa-cart-plus"></i>
-          </button>
-          <button class="button-carrito" type="submit">
-            <a href="./detalles.html"><span>Ver mas detalles</span></a>
-            <i class="fa-solid fa-file-lines"></i>
-          </button>
-        </div>
-        </article>
-        <article class="description-article">
-          <h3>Camiseta Nike Dri Fit (mujeres)</h3>
-          <img
-            src="/Images/camiseta_dry_fit_nike_manga_larga_girl.png"
-            width="150px"
-            height="150px"
-          />
-          <p>Precio: <span>$0.00</span></p>
-          <div class="bottons">
-          <button class="button-carrito" type="submit">
-            <span>Añadir al carrito</span>
-            <i class="fa-solid fa-cart-plus"></i>
-          </button>
-          <button class="button-carrito" type="submit">
-            <a href="./detalles.html"><span>Ver mas detalles</span></a>
-            <i class="fa-solid fa-file-lines"></i>
-          </button>
-        </div>
-        </article>
-        <article class="description-article">
-          <h3>Calcetines adidas 3 pares (blanco,negro,gris)</h3>
-          <img
-            src="/Images/calcetines_adidas_3par.jpg"
-            width="150px"
-            height="150px"
-          />
-          <p>Precio: <span>$0.00</span></p>
-          <div class="bottons">
-          <button class="button-carrito" type="submit">
-            <span>Añadir al carrito</span>
-            <i class="fa-solid fa-cart-plus"></i>
-          </button>
-          <button class="button-carrito" type="submit">
-            <a href="./detalles.html"><span>Ver mas detalles</span></a>
-            <i class="fa-solid fa-file-lines"></i>
-          </button>
-        </div>
-        </article>
-        <h3 class="subtitle-seccion">Lo Nuevo en calzado deportivo</h3>
+
+          <article class="description-article">
+            <h3>Pantalon Nike Dri Fit (mujeres)</h3>
+            <img
+              src="/Images/dri_fit_academy_pantalon-de_futbol_girl.png"
+              width="150px"
+              height="150px"
+            />
+            <p>Precio: <span>$0.00</span></p>
+            <div class="bottons">
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
+          </article>
+          <article class="description-article">
+            <h3>Camiseta Nike Dri Fit (mujeres)</h3>
+            <img
+              src="/Images/camiseta_dry_fit_nike_manga_larga_girl.png"
+              width="150px"
+              height="150px"
+            />
+            <p>Precio: <span>$0.00</span></p>
+            <div class="bottons">
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
+          </article>
+          <article class="description-article">
+            <h3>Calcetines adidas 3 pares (blanco,negro,gris)</h3>
+            <img
+              src="/Images/calcetines_adidas_3par.jpg"
+              width="150px"
+              height="150px"
+            />
+            <p>Precio: <span>$0.00</span></p>
+            <div class="bottons">
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
+          </article>
+          <h3 class="subtitle-seccion">Lo Nuevo en calzado deportivo</h3>
           <article class="description-article">
             <h3>Zapatillas Adidas Running (Hombres)</h3>
             <img
@@ -394,15 +466,15 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
             <h3>Zapatillas Adidas Running (Mujeres)</h3>
@@ -413,114 +485,106 @@
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
-       
-        <article class="description-article">
-          <h3>Zapatilla Nike Running (Hombres)</h3>
-          <img
-            src="/Images/zapatilla-nike-running-men.png"
-            width="150px"
-            height="150px"
-          />
-          <p>Precio: <span>$0.00</span></p>
-          <div class="bottons">
-          <button class="button-carrito" type="submit">
-            <span>Añadir al carrito</span>
-            <i class="fa-solid fa-cart-plus"></i>
-          </button>
-          <button class="button-carrito" type="submit">
-            <a href="./detalles.html"><span>Ver mas detalles</span></a>
-            <i class="fa-solid fa-file-lines"></i>
-          </button>
-        </div>
-        </article>
-        <article class="description-article">
-          <h3>Zapatilla Nike Running (mujeres)</h3>
-          <img
-            src="/Images/zapatilla-nike-running-girl.jpg"
-            width="150px"
-            height="150px"
-          />
-          <p>Precio: <span>$0.00</span></p>
-          <div class="bottons">
-          <button class="button-carrito" type="submit">
-            <span>Añadir al carrito</span>
-            <i class="fa-solid fa-cart-plus"></i>
-          </button>
-          <button class="button-carrito" type="submit">
-            <a href="./detalles.html"><span>Ver mas detalles</span></a>
-            <i class="fa-solid fa-file-lines"></i>
-          </button>
-        </div>
-        </article>
-        <article class="description-article">
-          <h3>Zapatos de kung fu (Hombres)</h3>
-          <img
-            src="/Images/zapato-de-kung-fu-men.jpg"
-            width="150px"
-            height="150px"
-          />
-          <p>Precio: <span>$0.00</span></p>
-          <div class="bottons">
-          <button class="button-carrito" type="submit">
-            <span>Añadir al carrito</span>
-            <i class="fa-solid fa-cart-plus"></i>
-          </button>
-          <button class="button-carrito" type="submit">
-            <a href="./detalles.html"><span>Ver mas detalles</span></a>
-            <i class="fa-solid fa-file-lines"></i>
-          </button>
-        </div>
-        </article>
-        <h3 class="subtitle-seccion">Nuevo producto: Suplementos</h3>
+
           <article class="description-article">
-            <h3>Suplemento MuscleTech</h3>
+            <h3>Zapatilla Nike Running (Hombres)</h3>
             <img
-              src="/Images/suplemento1.jpg"
+              src="/Images/zapatilla-nike-running-men.png"
               width="150px"
               height="150px"
             />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
+          </article>
+          <article class="description-article">
+            <h3>Zapatilla Nike Running (mujeres)</h3>
+            <img
+              src="/Images/zapatilla-nike-running-girl.jpg"
+              width="150px"
+              height="150px"
+            />
+            <p>Precio: <span>$0.00</span></p>
+            <div class="bottons">
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
+          </article>
+          <article class="description-article">
+            <h3>Zapatos de kung fu (Hombres)</h3>
+            <img
+              src="/Images/zapato-de-kung-fu-men.jpg"
+              width="150px"
+              height="150px"
+            />
+            <p>Precio: <span>$0.00</span></p>
+            <div class="bottons">
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
+          </article>
+          <h3 class="subtitle-seccion">Nuevo producto: Suplementos</h3>
+          <article class="description-article">
+            <h3>Suplemento MuscleTech</h3>
+            <img src="/Images/suplemento1.jpg" width="150px" height="150px" />
+            <p>Precio: <span>$0.00</span></p>
+            <div class="bottons">
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
           <article class="description-article">
             <h3>Pre entreno C4</h3>
-            <img
-              src="/Images/suplemento2.jpg"
-              width="150px"
-              height="150px"
-            />
+            <img src="/Images/suplemento2.jpg" width="150px" height="150px" />
             <p>Precio: <span>$0.00</span></p>
             <div class="bottons">
-            <button class="button-carrito" type="submit">
-              <span>Añadir al carrito</span>
-              <i class="fa-solid fa-cart-plus"></i>
-            </button>
-            <button class="button-carrito" type="submit">
-              <a href="./detalles.html"><span>Ver mas detalles</span></a>
-              <i class="fa-solid fa-file-lines"></i>
-            </button>
-          </div>
+              <button class="button-carrito" type="submit">
+                <span>Añadir al carrito</span>
+                <i class="fa-solid fa-cart-plus"></i>
+              </button>
+              <button class="button-carrito" type="submit">
+                <a href="./detalles.html"><span>Ver mas detalles</span></a>
+                <i class="fa-solid fa-file-lines"></i>
+              </button>
+            </div>
           </article>
-      </div>
+        </div>
       </section>
     </main>
     <footer>

@@ -1,4 +1,4 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -32,9 +32,9 @@
     0,
     0,
     0.5
-  ); /* Puedes ajustar el nivel de opacidad aquí */
-  z-index: 1; /* Asegúrate de que la capa esté encima del resto de los elementos */
-  display: none; /* Inicialmente oculta la capa */
+  ); 
+  z-index: 1; 
+  display: none; 
 }
 
 /*header*/
@@ -159,6 +159,7 @@ nav .nav2 {
 
 .nav2 #number {
   margin-left: 10px;
+  font-size: 16px;
 }
 
 nav ul,
@@ -177,7 +178,7 @@ nav ul li a i:hover {
   top: 220px;
   right: 0;
   width: 250px;
-  height: 240px;
+  height: auto;
   background-color: #fff;
   border: 1px solid #fff;
   opacity: 0;
@@ -204,6 +205,10 @@ nav ul li a i:hover {
   font-size: 20px;
   color: #fff;
   cursor: pointer;
+}
+
+.fa-trash:hover{
+ color: crimson;
 }
 
 .cart-product {
@@ -656,6 +661,11 @@ footer i {
 }
 
 @media (min-width: 768px) {
+
+  .nav2 li a i{
+    font-size: 16px;
+  }
+
   #logo-top {
     display: none;
   }

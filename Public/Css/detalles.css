@@ -2,10 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: white;
 }
 
@@ -33,15 +34,14 @@ main {
 }
 
 .product0 {
-  width: 80%;
+  width: 100%;
   padding: 10px;
   margin: 10px auto;
   display: flex;
   flex-direction: column;
-  
 }
 
-.description-article0 h3{
+.description-article0 h3 {
   font-size: 16px;
   margin-bottom: 20px;
 }
@@ -55,11 +55,11 @@ main {
   box-shadow: 0 0 15px #bbc3a4;
   transition: 0.3s;
 }
-.product0 .description-article:hover{
+.product0 .description-article:hover {
   scale: 1.05;
   box-shadow: 0 0 15px #fff;
 }
-.product0 .description-article0{
+.product0 .description-article0 {
   border-radius: 20px;
 }
 .bottons {
@@ -67,24 +67,23 @@ main {
   justify-content: space-around;
   margin-top: 20px;
 }
-.button-carrito{
-  background-color: #2C2F35;
-  padding: 10px 10px ;
+.button-carrito {
+  background-color: #2c2f35;
+  padding: 10px 10px;
   border-radius: 6px;
   color: #00e1ff;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 12px;
   border: none;
   white-space: nowrap;
   border: solid #00e1ff;
-
+  margin-bottom: 10px;
 }
 
-.button-carrito span{
+.button-carrito span {
   display: none;
-  
 }
-.button-carrito:hover span{
+.button-carrito:hover span {
   display: block;
   color: #fff;
 }
@@ -92,7 +91,7 @@ main {
   display: none;
 }
 
-.description-article0 p{
+.description-article0 p {
   font-size: 18px;
 }
 .spans {
@@ -126,7 +125,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background:none;
+  background: none;
   color: #fff;
   border: solid #00e1ff;
   padding: 10px 15px;
@@ -141,16 +140,16 @@ main {
 }
 
 .technical-specs {
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   text-align: center;
   border-radius: 5px;
   border: 2px solid #00e1ff;
   width: 100%;
 }
 
-#title-detalle-descripcion{
+#title-detalle-descripcion {
   font-size: 24px;
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   margin-top: 20px;
 }
 
@@ -168,11 +167,11 @@ main {
   margin-right: 5px;
 }
 
-.box-payment{
- display: flex;
- justify-content: justify;
- align-items: justify;
- margin: 0 auto ;
+.box-payment {
+  display: flex;
+  justify-content: justify;
+  align-items: justify;
+  margin: 0 auto;
 }
 
 #payment {
@@ -187,7 +186,7 @@ main {
 #img-3,
 #img-4 {
   display: flex;
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   color: #fff;
   border-radius: 5px;
   border: 2px solid black;
@@ -196,23 +195,24 @@ main {
 }
 
 .products {
-display: flex;
-flex-direction: column;
-text-align: center;
-width: 30%;
-margin: 10px auto;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+  margin: 10px auto;
 }
 
 .products-item {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  gap: 40%;
+  gap: 10%;
   margin: 10px 10px;
 }
-.products-item .description-article:hover{
+.products-item .description-article:hover {
   scale: 1.05;
   box-shadow: 0 0 15px #fff;
 }
@@ -227,7 +227,6 @@ margin: 10px auto;
   border: 5px solid white;
   border-radius: 10px;
 }
-
 
 #payment {
   margin: 3rem;
@@ -248,10 +247,11 @@ margin: 10px auto;
 }
 
 .contenido-inter {
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   border: 2px solid #00e1ff;
   border-radius: 10px;
   margin: 15%;
+  width: 100%;
 }
 
 h2 {
@@ -261,13 +261,11 @@ h2 {
 
 #parrafo-detalle {
   color: white;
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   text-align: justify;
   margin: 10px 20px;
   font-size: 20px;
 }
-
-
 
 .products1 .products-item1 {
   margin: 15px;
@@ -280,19 +278,17 @@ h2 {
 }
 
 .products1 .products-item1 .description-article1 {
-  background-color: #2C2F35;
+  background-color: #2c2f35;
   color: #fff;
   max-width: 250px;
   padding: 18px;
   border: 3px solid #00e1ff;
   border-radius: 10px;
 }
-.products-item1 .description-article1:hover{
+.products-item1 .description-article1:hover {
   scale: 1.05;
   box-shadow: 0 0 15px #fff;
 }
-
-
 
 @media (min-width: 481px) {
   .products {
@@ -303,19 +299,24 @@ h2 {
     gap: 150px;
     width: 320px;
   }
-  .products-item{
+  .products-item {
     width: 20%;
     justify-content: center;
     align-items: center;
   }
-  .button-delete:hover{
+  .button-delete:hover {
     background-color: #0e0e14;
     color: white;
     border: 5px solid #00e1ff;
-      }
+  }
 }
 
 @media (min-width: 768px) {
+
+  .contenido-inter{
+    margin-bottom: 30px;
+  }
+
   .products {
     flex-direction: row;
     justify-content: space-between;
@@ -324,28 +325,33 @@ h2 {
     gap: 150px;
     width: 550px;
   }
-  .products-item{
+  .products-item {
     width: 50%;
     justify-content: center;
     align-items: center;
   }
-  .button-delete:hover{
+  .button-delete:hover {
     background-color: #0e0e14;
     color: white;
     border: 5px solid #00e1ff;
-      }
+  }
 }
 
 @media (min-width: 1024px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
   .products {
-    width:28%;
+    width: 28%;
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
     position: absolute;
     gap: 20%;
   }
-  
+
   .products .products-item {
     display: flex;
     flex-wrap: nowrap;
@@ -354,14 +360,14 @@ h2 {
     margin-bottom: 30px;
     align-items: center;
   }
-  .products-item .description-article:hover{
+  .products-item .description-article:hover {
     scale: 1.05;
     box-shadow: 0 0 15px #fff;
   }
- 
-  .description-article img{
-  height: 140px;
-}
+
+  .description-article img {
+    height: 140px;
+  }
 
   .box-card {
     display: flex;
@@ -380,15 +386,15 @@ h2 {
     margin: 1%;
     display: flex;
     font-size: 18px;
-}
-.description-article1{
-  flex-direction: row;
-  align-items: center;
-}
-  .button-delete:hover{
+  }
+  .description-article1 {
+    flex-direction: row;
+    align-items: center;
+  }
+  .button-delete:hover {
     background-color: #0e0e14;
     color: white;
     border: 5px solid #00e1ff;
   }
-}
 
+}
