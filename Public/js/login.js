@@ -13,6 +13,7 @@ form.addEventListener("submit", function (e) {
         alert('Formulario enviado con exito')
         Email.value = ''
         Password.value = ''
+        window.location.href = "/";
     }
 });
 

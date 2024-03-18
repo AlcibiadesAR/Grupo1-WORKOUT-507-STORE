@@ -52,7 +52,7 @@ botonCar.addEventListener("click", function () {
   window.location.href = "/carrito.html";
 });
 
-let botonAñadir = document.querySelector('.button-carrito span');
+let botonAñadir = document.querySelector('.button-carrito');
 botonAñadir.addEventListener("click", function () {
   window.location.href = "/carrito.html";
 });

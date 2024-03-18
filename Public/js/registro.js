@@ -25,6 +25,7 @@ formulario.addEventListener("submit",function(e){
         contenedor.style.marginBottom = '50px';
     } else {
         alert('formulario enviado')
+        window.location.href = "/login.html";
     }
 })
 
