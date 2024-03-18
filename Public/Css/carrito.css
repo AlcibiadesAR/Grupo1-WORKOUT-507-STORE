@@ -33,7 +33,11 @@
     0,
     0.5
   ); 
+<<<<<<< HEAD
   z-index: 1; 
+=======
+  z-index: 1;
+>>>>>>> 5c311ab41663d81bfaee89043e0011071f5e6565
   display: none; 
 }
 
